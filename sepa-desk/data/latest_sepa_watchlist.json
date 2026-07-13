@@ -1,0 +1,290 @@
+{
+  "contract": "Custom Minervini-style 100-Point Contract",
+  "generatedAt": "2026-07-10T19:37:34.205887+00:00",
+  "dataDate": "2026-07-09",
+  "article": {
+    "title": "Trade Journal",
+    "date": "July 6, 2026",
+    "url": "https://www.tradingforbj.com/products/bj-trading-journal/categories/2159892046/posts/2198637659"
+  },
+  "summary": {
+    "activeCount": 1,
+    "readyNow": 1,
+    "prepareOrder": 0,
+    "approaching": 0,
+    "practicalApproved": 0,
+    "practicalConditional": 1,
+    "practicalBlocked": 0,
+    "alerts": 0
+  },
+  "rankings": [
+    {
+      "ticker": "NTAP",
+      "company": "NetApp",
+      "dataDate": "2026-07-09",
+      "currentPrice": 171.73,
+      "source": "nasdaq",
+      "score": 90,
+      "rawScore": 90,
+      "rating": "A",
+      "stage2Pass": true,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "ready_now",
+      "practicalDecision": "conditional",
+      "practicalAction": "等 trigger / 補 event evidence",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 751.71; 20/50/200MA 742.34/740.37/693.82; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 10,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 3,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 2,
+            "volumeConfirmation": 1,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 2.39%; stop 5.50% if valid; volume 1.55x; 50D dollar volume $582M."
+        },
+        "catalystEventRisk": {
+          "score": 4,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 1,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 2.39,
+          "atr20Pct": 3.68,
+          "return10dPct": 10.39,
+          "evidence": "Earnings unknown; cushion 2.39%; ATR20 3.68% if available; 10D return 10.39% if available."
+        }
+      },
+      "readiness": "breakout_confirmed",
+      "primaryPattern": "High Tight Flag",
+      "patternMatches": [
+        {
+          "name": "High Tight Flag",
+          "matched": true,
+          "window": 25,
+          "depth": 0.1836776769112984,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 1,
+          "pullbackDepths": [
+            9.34
+          ],
+          "finalContractionPct": 13.2,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": false,
+          "confidence": 7,
+          "notes": "Prior 40-session advance 103.2%; flag depth 18.4%."
+        },
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 35,
+          "depth": 0.39018824871648605,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            18.89,
+            9.34
+          ],
+          "finalContractionPct": 13.2,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": false,
+          "confidence": 5,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 35,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": true,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 159.3,
+        "ma50": 144.51,
+        "ma150": 117.67,
+        "ma200": 117.15,
+        "ma50Change20dPct": 18.47,
+        "ma150Change20dPct": 5.85,
+        "ma200Change20dPct": 3.55,
+        "high52Week": 192.83,
+        "low52Week": 93.69,
+        "distanceFromHighPct": -10.94,
+        "aboveLowPct": 83.3,
+        "stockReturn6mPct": 64.63,
+        "spyReturn6mPct": 8.66,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "High Tight Flag",
+        "matched": true,
+        "window": 25,
+        "depth": 0.1836776769112984,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 1,
+        "pullbackDepths": [
+          9.34
+        ],
+        "finalContractionPct": 13.2,
+        "tightCloses": false,
+        "atrContracting": true,
+        "volumeDryUp": false,
+        "confidence": 7,
+        "notes": "Prior 40-session advance 103.2%; flag depth 18.4%."
+      },
+      "levels": {
+        "support": 159.3,
+        "resistance": 192.83,
+        "pivot": 167.72,
+        "buyZoneLow": 167.72,
+        "buyZoneHigh": 181.14,
+        "technicalStop": 158.5,
+        "stopPct": 5.5,
+        "target2R": 186.16,
+        "target3R": 195.38,
+        "distanceToPivotPct": 2.39,
+        "rewardRiskRatio": 3.0,
+        "riskPerShare": 9.22,
+        "quantitySuggested": 27,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": true,
+        "volumeRatio50": 1.55,
+        "retestHold": false,
+        "averageVolume50": 3387960.0,
+        "dollarVolume50": 581814340.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 35,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": true,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 16,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 2,
+            "finalTightness": 0,
+            "atrContraction": 2,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 25,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 5,
+            "pivotDistance": 8,
+            "breakoutVolume": 5,
+            "confirmationRetest": 4,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 14,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 3,
+            "buyZone": 2,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "Technical stop 158.50, below structural support 159.30; risk 5.5% from pivot.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green than red candles, and pivot/20MA hold. Bad: drop-like-an-egg, weak bounce, high-volume selling, or remaining below pivot.",
+        "earlyExit": "Exit risk rises on 2+ violations: high-volume close below 20MA soon after breakout, three lower lows on above-average volume, breakout volume below +50%, immediate negative action, or earnings without a 5-10% cushion.",
+        "stopAdjustment": "At 2R (186.16) move stop to breakeven or +2-3%; at 3R (195.38) trail under higher lows/10-20MA.",
+        "profitTaking": "Use sell-into-weakness for early Stage 2 momentum; use sell-into-strength near clear resistance or for mature/extended action.",
+        "climaxRisk": "Watch >25% in 1-2 weeks, >30% above area of value, near-vertical action, or exhaustion-volume reversal."
+      },
+      "caveats": [
+        "Verified earnings date unavailable; earnings-readiness point withheld."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "membership": {
+        "ticker": "NTAP",
+        "company": "NetApp",
+        "active": true,
+        "bjStatus": "new_watchlist",
+        "addedArticleDate": "July 6, 2026",
+        "lastSeenArticleDate": "July 6, 2026",
+        "evidenceDate": "July 6, 2026",
+        "evidenceOrigin": "July 6, 2026 article text, embedded monitoring table, and NTAP chart image",
+        "articleEvidence": "Article says NTAP has a flag setup and is being watched for a potential breakout; embedded monitoring table lists NTAP as the only monitoring name.",
+        "stale": false,
+        "chartEvidence": "Chart shows a sharp June advance followed by a descending flag, resistance around 160-162, and a possible breakout area near 167-168; price is above rising long MAs.",
+        "chartUrl": "./assets/2026-07-06/NTAP.png"
+      },
+      "previousScore": 90,
+      "scoreDelta": 0,
+      "previousRating": "A",
+      "categoryChanges": []
+    }
+  ],
+  "alerts": [],
+  "historyPolicy": "90 calendar days; changes below 3 points without a qualifying event are history-only.",
+  "disclaimer": "Educational trade-plan candidates only, not personalized financial advice."
+}

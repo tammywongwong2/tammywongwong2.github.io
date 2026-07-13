@@ -1,0 +1,88 @@
+{
+  "_Icon-BIno660b.js": {
+    "file": "assets/Icon-BIno660b.js",
+    "name": "Icon",
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "_framework-DjPHiq1u.js": {
+    "file": "assets/framework-DjPHiq1u.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js"
+    ]
+  },
+  "_link-Bqe0ijne.js": {
+    "file": "assets/link-Bqe0ijne.js",
+    "name": "link",
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js"
+    ],
+    "dynamicImports": [
+      "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._72d7466280c126a0d9164d58d92e4dd4/node_modules/vinext/dist/shims/router.js"
+    ]
+  },
+  "_rolldown-runtime-S-ySWqyJ.js": {
+    "file": "assets/rolldown-runtime-S-ySWqyJ.js",
+    "name": "rolldown-runtime"
+  },
+  "app/watchlist-dashboard.tsx": {
+    "file": "assets/watchlist-dashboard-C1HelmMx.js",
+    "name": "watchlist-dashboard",
+    "src": "app/watchlist-dashboard.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_Icon-BIno660b.js",
+      "_framework-DjPHiq1u.js",
+      "_link-Bqe0ijne.js"
+    ]
+  },
+  "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._72d7466280c126a0d9164d58d92e4dd4/node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "assets/layout-segment-context-jjLXrwpY.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._72d7466280c126a0d9164d58d92e4dd4/node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._72d7466280c126a0d9164d58d92e4dd4/node_modules/vinext/dist/shims/router.js": {
+    "file": "assets/router-Bkx4LvtP.js",
+    "name": "router",
+    "src": "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._72d7466280c126a0d9164d58d92e4dd4/node_modules/vinext/dist/shims/router.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-DjPHiq1u.js",
+      "_link-Bqe0ijne.js"
+    ],
+    "dynamicImports": [
+      "_framework-DjPHiq1u.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "assets/index-KPC1coUx.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-DjPHiq1u.js"
+    ],
+    "dynamicImports": [
+      "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._72d7466280c126a0d9164d58d92e4dd4/node_modules/vinext/dist/shims/layout-segment-context.js",
+      "_Icon-BIno660b.js",
+      "app/watchlist-dashboard.tsx",
+      "virtual:vinext-app-browser-entry",
+      "_link-Bqe0ijne.js"
+    ]
+  }
+}
