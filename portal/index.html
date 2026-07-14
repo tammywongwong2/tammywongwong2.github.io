@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BJ Watchlist Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">BJ Trading Journal Weekly Scan</p>
+        <h1>Watchlist Portal</h1>
+      </div>
+      <div class="run-meta" id="runMeta">Loading...</div>
+    </header>
+
+    <main class="layout">
+      <section class="summary-grid" id="summaryGrid" aria-label="Scan summary"></section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>今週重點</h2>
+            <p id="articleLine">Reading latest scan...</p>
+          </div>
+          <div class="filter-row" aria-label="Candidate filters">
+            <button class="filter active" data-filter="all">全部</button>
+            <button class="filter" data-filter="new">新加入</button>
+            <button class="filter" data-filter="stage2">Stage 2</button>
+            <button class="filter" data-filter="actionable">Entry confirmed</button>
+          </div>
+        </div>
+        <div class="candidate-grid" id="candidateGrid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>完整 Watchlist Table</h2>
+            <p>以文章文字和 chart/table 圖片作證據；價格以最近 scan data date 為準。</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Ticker</th>
+                <th>Course state</th>
+                <th>Stage 2</th>
+                <th>Pattern</th>
+                <th>Current</th>
+                <th>Pivot</th>
+                <th>Distance</th>
+                <th>Stop</th>
+                <th>2R / 3R</th>
+                <th>Qty</th>
+                <th>Evidence gaps</th>
+              </tr>
+            </thead>
+            <tbody id="candidateTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>Source Notes</h2>
+            <p id="sourceNotes">-</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
