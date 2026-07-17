@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-17T23:20:04+08:00",
-  "dataDate": "2026-07-15",
+  "generatedAt": "2026-07-17T23:31:19+08:00",
+  "dataDate": "2026-07-16",
   "article": {
     "title": "Trade Journal",
     "date": "July 13, 2026",
@@ -11,12 +11,12 @@
     "method": "Newest article selected by article date from the authenticated category page. July 6 watchlist/monitoring contained NTAP only. July 13 introduces MU, ALAB and SPCX as current shakeout-monitoring examples, so all three are new_watchlist. NTAP moved to a disclosed position. There are no continued_watchlist or rejoined_watchlist names."
   },
   "sourceNotes": [
-    "Authenticated Codex in-app browser verified on July 16 HKT that the July 13, 2026 article remains newest by article date, ahead of July 6, 2026.",
+    "Authenticated Codex in-app browser verified on July 17 HKT that the July 13, 2026 article remains newest by article date, ahead of July 6, 2026.",
     "Included tickers only when visible in the July 13 body text, financial disclosure, body chart images, or embedded holdings table. Sidebar lessons, previous/next previews, comments, thumbnails and unrelated page assets were excluded.",
     "Weekly new watchlist: MU, ALAB and SPCX. MRVL appears among the shakeout examples but is classified only as a current position because the same-day financial disclosure explicitly lists it long.",
     "Current positions disclosed: MRVL, PANW, CPER, DAVE, DELL, LRCX, KLAC, HOOD and NTAP. ONTO is exited. CPER is retained as disclosed exposure but excluded from the normal US single-stock screen.",
     "LRCX evidence conflicts inside the current article: disclosure/prose imply a live position and a future 50MA exit rule, while the embedded holdings table says Sold. It is classified as position with a manual-verification caveat.",
-    "Nasdaq daily OHLCV was refreshed on July 16 HKT for all listed equities plus SPY through the latest completed regular-session close, July 15, 2026. Provider rows dated July 16 were excluded to avoid look-ahead bias. Six-month stock-versus-SPY performance is a price-relative proxy, not a proprietary RS rank.",
+    "Nasdaq daily OHLCV was refreshed on July 17 HKT for all listed equities plus SPY through the latest completed regular-session close, July 16, 2026. Provider rows dated July 17 were excluded because the US session was still open. Six-month stock-versus-SPY performance is a price-relative proxy, not a proprietary RS rank.",
     "Trend -> Base/Pattern -> Pivot -> Volume -> Risk and the Bottom-Up Sell Techniques are applied. If any core execution element is unclear, the action remains wait/watchlist rather than buy.",
     "Educational trade-plan candidates only, not personalized financial advice."
   ],
@@ -30,8 +30,8 @@
       "evidenceOrigin": "July 13, 2026 article chart image",
       "articleEvidence": "MU is one of the current shakeout examples shown immediately after the author describes looking for 20-30% corrections into important support followed by a fast reversal.",
       "chartEvidence": "Body chart shows MU correcting from roughly 1,240 to the 886.55 support/50MA area, then rebounding; July 13 closed 937.00 above the rising 50MA but below the 10/20MA resistance cluster near 1,000-1,050.",
-      "currentPrice": 904.28,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 853.2,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "等 trigger",
       "caveat": "Conditional plan only. The entry is below the short-MA resistance cluster; if price cannot reclaim that cluster quickly, remain watchlist-only.",
       "comment": "MU: new_watchlist. MU is one of the current shakeout examples shown immediately after the author describes looking for 20-30% corrections into important support followed by a fast reversal. Educational trade-plan candidate only, not personalized financial advice.",
@@ -40,11 +40,11 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "MU",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "Price is 27.9% below the high.",
+          "Price is 32.0% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -54,7 +54,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "904.28 is above both averages.",
+              "evidence": "853.20 is above both averages.",
               "value": true
             },
             {
@@ -78,13 +78,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 27.9% below the high.",
+              "evidence": "Price is 32.0% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 774.7% above the low.",
+              "evidence": "Price is 725.3% above the low.",
               "value": true
             },
             {
@@ -101,15 +101,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 904.28,
-            "ma50": 923.98,
-            "ma150": 563.55,
-            "ma200": 476.18,
-            "ma200TwentySessionsAgo": 386.56,
+            "currentPrice": 853.2,
+            "ma50": 929.51,
+            "ma150": 567.59,
+            "ma200": 479.66,
+            "ma200TwentySessionsAgo": 391.05,
             "high52Week": 1255.0,
             "low52Week": 103.38,
-            "distanceFromHighPct": -27.95,
-            "aboveLowPct": 774.71,
+            "distanceFromHighPct": -32.02,
+            "aboveLowPct": 725.3,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -126,28 +126,28 @@
               "windowSessions": 126,
               "depthPct": 75.18,
               "notes": [
-                "Cup depth 31.6%; recovered to 198.5% of the rim."
+                "Cup depth 31.6%; recovered to 187.3% of the rim."
               ],
               "cupDepthPct": 31.62,
-              "priorAdvancePct": 98.32
+              "priorAdvancePct": 104.89
             },
             {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 67.45,
+              "depthPct": 66.15,
               "notes": [
-                "Long rounded base depth 67.5%; handle 20.4%."
+                "Long rounded base depth 66.1%; handle 21.1%."
               ],
-              "handleDepthPct": 20.36
+              "handleDepthPct": 21.05
             },
             {
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 34.64,
+              "depthPct": 33.03,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
@@ -163,21 +163,21 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 34.64,
+              "depthPct": 33.03,
               "notes": [
-                "Cup 32.4%; handle 30.4%; prior advance 236.1%."
+                "Cup 29.6%; handle 33.0%; prior advance 245.6%."
               ],
-              "cupDepthPct": 32.41,
-              "handleDepthPct": 30.39,
+              "cupDepthPct": 29.6,
+              "handleDepthPct": 33.03,
               "handleSessions": 15,
-              "priorAdvancePct": 236.12
+              "priorAdvancePct": 245.62
             },
             {
               "name": "Double Bottom",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 34.64,
+              "depthPct": 33.03,
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
@@ -186,11 +186,11 @@
           ]
         },
         "pivot": 1255.0,
-        "distanceToPivotPct": -27.95,
+        "distanceToPivotPct": -32.02,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 1.01,
+          "volumeRatio50": 0.86,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -267,9 +267,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 1041.51,
+          "ma20": 1033.13,
           "lowerLows": [
             991.1,
             1023.65,
@@ -356,7 +356,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/MU.csv"
+      "priceSource": "data/ohlcv_bj_20260717/MU.csv"
     },
     {
       "ticker": "ALAB",
@@ -367,8 +367,8 @@
       "evidenceOrigin": "July 13, 2026 article chart image",
       "articleEvidence": "ALAB is a current shakeout example shown inside the article body; the chart annotation identifies AI data-centre connectivity and memory-bottleneck exposure.",
       "chartEvidence": "Body chart marks support near 366.67 and deeper support near 295.09. July 13 sold off on 6.29M shares and closed 362.05 below the first shelf, while remaining above rising 50/150/200MA.",
-      "currentPrice": 350.62,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 319.74,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "只放 watchlist",
       "caveat": "The mathematical plan reaches 2R, but current pullback quality is poor because support failed on elevated selling. Wait for proof before treating 380 as actionable.",
       "comment": "ALAB: new_watchlist. ALAB is a current shakeout example shown inside the article body; the chart annotation identifies AI data-centre connectivity and memory-bottleneck exposure. Educational trade-plan candidate only, not personalized financial advice.",
@@ -377,11 +377,11 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "ALAB",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "Price is 29.8% below the high.",
+          "Price is 36.0% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -391,7 +391,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "350.62 is above both averages.",
+              "evidence": "319.74 is above both averages.",
               "value": true
             },
             {
@@ -415,13 +415,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 29.8% below the high.",
+              "evidence": "Price is 36.0% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 295.2% above the low.",
+              "evidence": "Price is 260.4% above the low.",
               "value": true
             },
             {
@@ -438,15 +438,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 350.62,
-            "ma50": 334.77,
-            "ma150": 212.31,
-            "ma200": 201.96,
-            "ma200TwentySessionsAgo": 183.18,
+            "currentPrice": 319.74,
+            "ma50": 337.14,
+            "ma150": 213.27,
+            "ma200": 202.57,
+            "ma200TwentySessionsAgo": 184.04,
             "high52Week": 499.48,
             "low52Week": 88.73,
-            "distanceFromHighPct": -29.8,
-            "aboveLowPct": 295.15,
+            "distanceFromHighPct": -35.98,
+            "aboveLowPct": 260.35,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -461,7 +461,7 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 69.91,
+              "depthPct": 68.27,
               "notes": [
                 "Two similar lows with recovery toward intervening resistance."
               ],
@@ -475,30 +475,18 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 69.91,
+              "depthPct": 68.27,
               "notes": [
-                "Long rounded base depth 69.9%; handle 28.2%."
+                "Long rounded base depth 68.3%; handle 32.7%."
               ],
-              "handleDepthPct": 28.21
-            },
-            {
-              "name": "Cup without Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 62.02,
-              "notes": [
-                "Cup depth 25.9%; recovered to 137.0% of the rim."
-              ],
-              "cupDepthPct": 25.89,
-              "priorAdvancePct": 136.72
+              "handleDepthPct": 32.69
             },
             {
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 41.84,
+              "windowSessions": 50,
+              "depthPct": 62.02,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
@@ -510,27 +498,39 @@
               ]
             },
             {
+              "name": "Cup without Handle",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 50,
+              "depthPct": 62.02,
+              "notes": [
+                "Cup depth 34.1%; recovered to 111.1% of the rim."
+              ],
+              "cupDepthPct": 34.07,
+              "priorAdvancePct": 136.72
+            },
+            {
               "name": "Cup and Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 41.84,
+              "depthPct": 39.34,
               "notes": [
-                "Cup 34.1%; handle 32.7%; prior advance 262.2%."
+                "Cup 31.3%; handle 37.2%; prior advance 264.1%."
               ],
-              "cupDepthPct": 34.13,
-              "handleDepthPct": 32.73,
+              "cupDepthPct": 31.29,
+              "handleDepthPct": 37.21,
               "handleSessions": 15,
-              "priorAdvancePct": 262.17
+              "priorAdvancePct": 264.07
             }
           ]
         },
         "pivot": 499.48,
-        "distanceToPivotPct": -29.8,
+        "distanceToPivotPct": -35.98,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.55,
+          "volumeRatio50": 0.76,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -607,9 +607,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 403.49,
+          "ma20": 401.39,
           "lowerLows": [
             303.0,
             372.5,
@@ -696,7 +696,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/ALAB.csv"
+      "priceSource": "data/ohlcv_bj_20260717/ALAB.csv"
     },
     {
       "ticker": "SPCX",
@@ -707,8 +707,8 @@
       "evidenceOrigin": "July 13, 2026 article chart image",
       "articleEvidence": "SPCX is a current shakeout example in the article body, visually tied to the author's search for reversals at important levels.",
       "chartEvidence": "Body chart shows a persistent post-IPO decline into the 136.29/IPO-price support area. The local series has fewer than 50 sessions, so 50/150/200MA Trend Template checks are unavailable.",
-      "currentPrice": 135.27,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 131.11,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "只放 watchlist",
       "caveat": "EntryLevel, stopPrice and quantity are null because the chart has not formed a valid setup and the OHLCV history is too short.",
       "comment": "SPCX: new_watchlist. SPCX is a current shakeout example in the article body, visually tied to the author's search for reversals at important levels. Educational trade-plan candidate only, not personalized financial advice.",
@@ -717,7 +717,7 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "SPCX",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
@@ -725,8 +725,8 @@
           "150MA or 200MA unavailable.",
           "At least 220 sessions are required.",
           "Required averages unavailable.",
-          "Price is 40.1% below the high.",
-          "Price is only 2.4% above the low.",
+          "Price is 41.9% below the high.",
+          "Price is only 0.3% above the low.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pivot or 50MA unavailable.",
           "Pattern candidate requires manual chart confirmation."
@@ -761,13 +761,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 40.1% below the high.",
+              "evidence": "Price is 41.9% below the high.",
               "value": false
             },
             {
               "status": "fail",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is only 2.4% above the low.",
+              "evidence": "Price is only 0.3% above the low.",
               "value": false
             },
             {
@@ -784,15 +784,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 135.27,
+            "currentPrice": 131.11,
             "ma50": null,
             "ma150": null,
             "ma200": null,
             "ma200TwentySessionsAgo": null,
             "high52Week": 225.64,
-            "low52Week": 132.15,
-            "distanceFromHighPct": -40.05,
-            "aboveLowPct": 2.36,
+            "low52Week": 130.74,
+            "distanceFromHighPct": -41.89,
+            "aboveLowPct": 0.28,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -804,11 +804,11 @@
           "candidates": []
         },
         "pivot": 225.64,
-        "distanceToPivotPct": -40.05,
+        "distanceToPivotPct": -41.89,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.41,
+          "volumeRatio50": 0.43,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -885,9 +885,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 158.54,
+          "ma20": 155.01,
           "lowerLows": [
             147.11,
             148.51
@@ -973,7 +973,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/SPCX.csv"
+      "priceSource": "data/ohlcv_bj_20260717/SPCX.csv"
     },
     {
       "ticker": "MRVL",
@@ -984,8 +984,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, financial disclosure, and embedded holdings table",
       "articleEvidence": "Financial disclosure lists MRVL long. MRVL is also shown as a shakeout example, but it remains a position rather than a new watchlist name.",
       "chartEvidence": "Body chart shows a sharp correction from the 300s into the 219.51 support/50MA area. Nasdaq close was 217.53, slightly below that shelf, on 25.62M shares.",
-      "currentPrice": 206.26,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 188.3,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "持倉管理",
       "caveat": "Position evidence overrides watchlist treatment. Current close is below the visible support shelf, so this is a risk-management item.",
       "comment": "MRVL: position. Financial disclosure lists MRVL long. MRVL is also shown as a shakeout example, but it remains a position rather than a new watchlist name. Educational trade-plan candidate only, not personalized financial advice.",
@@ -994,11 +994,11 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "MRVL",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "Price is 37.5% below the high.",
+          "Price is 42.9% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -1008,7 +1008,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "206.26 is above both averages.",
+              "evidence": "188.30 is above both averages.",
               "value": true
             },
             {
@@ -1032,13 +1032,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 37.5% below the high.",
+              "evidence": "Price is 42.9% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 235.7% above the low.",
+              "evidence": "Price is 206.5% above the low.",
               "value": true
             },
             {
@@ -1055,15 +1055,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 206.26,
-            "ma50": 234.66,
-            "ma150": 142.52,
-            "ma200": 128.8,
-            "ma200TwentySessionsAgo": 109.69,
+            "currentPrice": 188.3,
+            "ma50": 235.15,
+            "ma150": 143.16,
+            "ma200": 129.33,
+            "ma200TwentySessionsAgo": 110.7,
             "high52Week": 329.88,
             "low52Week": 61.44,
-            "distanceFromHighPct": -37.47,
-            "aboveLowPct": 235.71,
+            "distanceFromHighPct": -42.92,
+            "aboveLowPct": 206.48,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -1080,9 +1080,9 @@
               "windowSessions": 65,
               "depthPct": 61.07,
               "notes": [
-                "Long rounded base depth 61.1%; handle 31.2%."
+                "Long rounded base depth 61.1%; handle 32.3%."
               ],
-              "handleDepthPct": 31.21
+              "handleDepthPct": 32.3
             },
             {
               "name": "VCP",
@@ -1107,12 +1107,12 @@
               "windowSessions": 50,
               "depthPct": 52.12,
               "notes": [
-                "Cup 51.3%; handle 39.0%; prior advance 148.7%."
+                "Cup 51.3%; handle 43.6%; prior advance 133.7%."
               ],
               "cupDepthPct": 51.28,
-              "handleDepthPct": 39.0,
+              "handleDepthPct": 43.57,
               "handleSessions": 21,
-              "priorAdvancePct": 148.71
+              "priorAdvancePct": 133.65
             },
             {
               "name": "Cup without Handle",
@@ -1121,17 +1121,17 @@
               "windowSessions": 50,
               "depthPct": 52.12,
               "notes": [
-                "Cup depth 17.8%; recovered to 107.3% of the rim."
+                "Cup depth 18.3%; recovered to 97.4% of the rim."
               ],
-              "cupDepthPct": 17.79,
-              "priorAdvancePct": 148.71
+              "cupDepthPct": 18.29,
+              "priorAdvancePct": 133.65
             },
             {
               "name": "Double Bottom",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 40.98,
+              "depthPct": 43.57,
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
@@ -1140,11 +1140,11 @@
           ]
         },
         "pivot": 329.88,
-        "distanceToPivotPct": -37.47,
+        "distanceToPivotPct": -42.92,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.59,
+          "volumeRatio50": 0.76,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -1221,9 +1221,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 261.02,
+          "ma20": 256.5,
           "lowerLows": [
             244.0,
             250.52,
@@ -1310,7 +1310,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/MRVL.csv"
+      "priceSource": "data/ohlcv_bj_20260717/MRVL.csv"
     },
     {
       "ticker": "PANW",
@@ -1321,8 +1321,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, financial disclosure, and embedded holdings table",
       "articleEvidence": "Financial disclosure lists PANW long; article says a 25% correction after the rapid run is normal and uses 20MA as the trailing-stop guide.",
       "chartEvidence": "Body chart shows the prior breakout near 295, a support shelf near 315, and price 330.30 above rising 50/150/200MA after pulling back from the mid-360s.",
-      "currentPrice": 354.02,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 353.99,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "持倉管理",
       "caveat": "Author's plan is trailing-stop management, not a fresh entry.",
       "comment": "PANW: position. Financial disclosure lists PANW long; article says a 25% correction after the rapid run is normal and uses 20MA as the trailing-stop guide. Educational trade-plan candidate only, not personalized financial advice.",
@@ -1331,7 +1331,7 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "PANW",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -1344,7 +1344,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "354.02 is above both averages.",
+              "evidence": "353.99 is above both averages.",
               "value": true
             },
             {
@@ -1368,7 +1368,7 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 3.8% below the high.",
+              "evidence": "Price is 3.9% below the high.",
               "value": true
             },
             {
@@ -1391,15 +1391,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 354.02,
-            "ma50": 277.0,
-            "ma150": 207.08,
-            "ma200": 206.89,
-            "ma200TwentySessionsAgo": 194.75,
+            "currentPrice": 353.99,
+            "ma50": 280.38,
+            "ma150": 208.14,
+            "ma200": 207.65,
+            "ma200TwentySessionsAgo": 195.19,
             "high52Week": 368.17,
             "low52Week": 139.57,
-            "distanceFromHighPct": -3.84,
-            "aboveLowPct": 153.65,
+            "distanceFromHighPct": -3.85,
+            "aboveLowPct": 153.63,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -1443,9 +1443,9 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 57.94,
+              "depthPct": 56.86,
               "notes": [
-                "Long rounded base depth 54.8%; handle 14.5%."
+                "Long rounded base depth 55.6%; handle 14.5%."
               ],
               "handleDepthPct": 14.46
             },
@@ -1454,11 +1454,11 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 31.78,
+              "depthPct": 30.89,
               "notes": [
-                "Cup 31.8%; handle 12.8%; prior advance 111.1%."
+                "Cup 30.9%; handle 12.8%; prior advance 111.1%."
               ],
-              "cupDepthPct": 31.78,
+              "cupDepthPct": 30.89,
               "handleDepthPct": 12.81,
               "handleSessions": 5,
               "priorAdvancePct": 111.11
@@ -1468,21 +1468,21 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 31.78,
+              "depthPct": 30.89,
               "notes": [
-                "Cup depth 11.9%; recovered to 124.2% of the rim."
+                "Cup depth 10.8%; recovered to 124.2% of the rim."
               ],
-              "cupDepthPct": 11.91,
+              "cupDepthPct": 10.76,
               "priorAdvancePct": 111.11
             }
           ]
         },
         "pivot": 368.17,
-        "distanceToPivotPct": -3.84,
+        "distanceToPivotPct": -3.85,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.79,
+          "volumeRatio50": 0.69,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -1559,9 +1559,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 319.97,
+          "ma20": 323.67,
           "lowerLows": [
             251.15,
             314.95,
@@ -1648,7 +1648,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/PANW.csv"
+      "priceSource": "data/ohlcv_bj_20260717/PANW.csv"
     },
     {
       "ticker": "CPER",
@@ -1659,8 +1659,8 @@
       "evidenceOrigin": "July 13, 2026 financial disclosure and embedded holdings table",
       "articleEvidence": "Financial disclosure and holdings table list CPER as a medium-term copper position.",
       "chartEvidence": "No separate CPER stock chart is present; ticker evidence comes from the current article disclosure/table.",
-      "currentPrice": 38.63,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 38.06,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "持倉管理",
       "caveat": "ETF/fund excluded by default from the equity candidate ranking.",
       "comment": "CPER: excluded_fund. Financial disclosure and holdings table list CPER as a medium-term copper position. Educational trade-plan candidate only, not personalized financial advice.",
@@ -1669,7 +1669,7 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "CPER",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -1682,7 +1682,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "38.63 is above both averages.",
+              "evidence": "38.06 is above both averages.",
               "value": true
             },
             {
@@ -1706,13 +1706,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 5.3% below the high.",
+              "evidence": "Price is 6.7% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 42.7% above the low.",
+              "evidence": "Price is 40.5% above the low.",
               "value": true
             },
             {
@@ -1729,15 +1729,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 38.63,
-            "ma50": 38.36,
-            "ma150": 36.45,
-            "ma200": 35.15,
-            "ma200TwentySessionsAgo": 34.22,
+            "currentPrice": 38.06,
+            "ma50": 38.41,
+            "ma150": 36.48,
+            "ma200": 35.2,
+            "ma200TwentySessionsAgo": 34.28,
             "high52Week": 40.78,
             "low52Week": 27.08,
-            "distanceFromHighPct": -5.27,
-            "aboveLowPct": 42.65,
+            "distanceFromHighPct": -6.67,
+            "aboveLowPct": 40.55,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -1749,7 +1749,7 @@
           "candidates": [
             {
               "name": "Saucer with Handle",
-              "status": "candidate",
+              "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
               "depthPct": 13.36,
@@ -1757,6 +1757,20 @@
                 "Long rounded base depth 13.4%; handle 5.9%."
               ],
               "handleDepthPct": 5.88
+            },
+            {
+              "name": "Cup and Handle",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 35,
+              "depthPct": 11.35,
+              "notes": [
+                "Cup 11.4%; handle 5.9%; prior advance 26.2%."
+              ],
+              "cupDepthPct": 11.35,
+              "handleDepthPct": 5.91,
+              "handleSessions": 15,
+              "priorAdvancePct": 26.23
             },
             {
               "name": "Double Bottom",
@@ -1786,39 +1800,25 @@
               ]
             },
             {
-              "name": "Cup and Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 25,
-              "depthPct": 9.29,
-              "notes": [
-                "Cup 9.3%; handle 5.9%; prior advance 26.2%."
-              ],
-              "cupDepthPct": 9.29,
-              "handleDepthPct": 5.88,
-              "handleSessions": 10,
-              "priorAdvancePct": 26.23
-            },
-            {
               "name": "Cup without Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
               "depthPct": 9.29,
               "notes": [
-                "Cup depth 9.3%; recovered to 97.0% of the rim."
+                "Cup depth 9.3%; recovered to 95.6% of the rim."
               ],
               "cupDepthPct": 9.29,
               "priorAdvancePct": 26.23
             }
           ]
         },
-        "pivot": 40.78,
-        "distanceToPivotPct": -5.27,
+        "pivot": 39.82,
+        "distanceToPivotPct": -4.42,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.51,
+          "volumeRatio50": 0.44,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -1880,24 +1880,24 @@
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
-        "feasible": false,
-        "entryPrice": 40.78,
+        "feasible": true,
+        "entryPrice": 39.82,
         "initialStop": 36.66,
         "supportEvidence": "Most recent local low on 2026-07-08.",
-        "stopDistancePct": 10.1,
-        "riskPerShare": 4.12,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
+        "stopDistancePct": 7.94,
+        "riskPerShare": 3.16,
+        "quantitySuggested": 79,
+        "plannedMaxLossUsd": 249.64,
         "targets": {
-          "oneR": 44.9,
-          "twoR": 49.02,
-          "threeR": 53.14,
+          "oneR": 42.98,
+          "twoR": 46.14,
+          "threeR": 49.3,
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 37.82,
+          "ma20": 37.75,
           "lowerLows": [
             36.12,
             37.12,
@@ -1947,17 +1947,17 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "levels": {
-            "oneR": 44.9,
-            "twoR": 49.02,
-            "threeR": 53.14,
+            "oneR": 42.98,
+            "twoR": 46.14,
+            "threeR": 49.3,
             "chartResistance": "unknown"
           },
           "climaxSignals": [
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "This signal is not present in the latest session.",
+              "value": false
             },
             {
               "status": "unknown",
@@ -1966,10 +1966,10 @@
               "value": null
             },
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "Latest candle is not the widest since breakout.",
+              "value": false
             }
           ],
           "positiveNewsNegativeReaction": {
@@ -1980,11 +1980,10 @@
           }
         },
         "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/CPER.csv"
+      "priceSource": "data/ohlcv_bj_20260717/CPER.csv"
     },
     {
       "ticker": "ONTO",
@@ -1995,8 +1994,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, and embedded holdings table",
       "articleEvidence": "Article says ONTO was cut after falling below entry price and 50MA; the embedded table marks it Sold.",
       "chartEvidence": "Body chart shows a sharp gap/pullback through the 50MA, then a rebound toward the 293 support area; July 13 closed 304.21.",
-      "currentPrice": 304.73,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 281.61,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "不適合新買",
       "caveat": "Current evidence is an exit, not watchlist monitoring.",
       "comment": "ONTO: exited. Article says ONTO was cut after falling below entry price and 50MA; the embedded table marks it Sold. Educational trade-plan candidate only, not personalized financial advice.",
@@ -2005,20 +2004,21 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "ONTO",
         "availability": "available",
-        "dataDate": "2026-07-15",
-        "overallStatus": "needs_evidence",
-        "overallLabel": "Needs evidence",
+        "dataDate": "2026-07-16",
+        "overallStatus": "not_eligible",
+        "overallLabel": "Not eligible",
         "reasons": [
+          "Price is 27.1% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
         "stage2": {
-          "overall": "unknown",
+          "overall": "fail",
           "checks": [
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "304.73 is above both averages.",
+              "evidence": "281.61 is above both averages.",
               "value": true
             },
             {
@@ -2040,15 +2040,15 @@
               "value": true
             },
             {
-              "status": "pass",
+              "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 21.1% below the high.",
-              "value": true
+              "evidence": "Price is 27.1% below the high.",
+              "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 240.9% above the low.",
+              "evidence": "Price is 215.0% above the low.",
               "value": true
             },
             {
@@ -2065,15 +2065,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 304.73,
-            "ma50": 295.35,
-            "ma150": 238.85,
-            "ma200": 213.05,
-            "ma200TwentySessionsAgo": 192.21,
+            "currentPrice": 281.61,
+            "ma50": 294.99,
+            "ma150": 239.66,
+            "ma200": 213.82,
+            "ma200TwentySessionsAgo": 193.25,
             "high52Week": 386.46,
             "low52Week": 89.4,
-            "distanceFromHighPct": -21.15,
-            "aboveLowPct": 240.86,
+            "distanceFromHighPct": -27.13,
+            "aboveLowPct": 215.0,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -2104,10 +2104,10 @@
               "windowSessions": 35,
               "depthPct": 35.25,
               "notes": [
-                "Cup depth 12.2%; recovered to 106.9% of the rim."
+                "Cup depth 12.2%; recovered to 98.8% of the rim."
               ],
               "cupDepthPct": 12.21,
-              "priorAdvancePct": 77.05
+              "priorAdvancePct": 76.48
             },
             {
               "name": "Saucer with Handle",
@@ -2116,9 +2116,9 @@
               "windowSessions": 65,
               "depthPct": 38.38,
               "notes": [
-                "Long rounded base depth 38.4%; handle 25.4%."
+                "Long rounded base depth 38.4%; handle 23.7%."
               ],
-              "handleDepthPct": 25.36
+              "handleDepthPct": 23.67
             },
             {
               "name": "VCP",
@@ -2143,21 +2143,21 @@
               "windowSessions": 35,
               "depthPct": 35.25,
               "notes": [
-                "Cup 28.4%; handle 30.5%; prior advance 77.0%."
+                "Cup 28.4%; handle 30.5%; prior advance 76.5%."
               ],
               "cupDepthPct": 28.38,
               "handleDepthPct": 30.51,
               "handleSessions": 15,
-              "priorAdvancePct": 77.05
+              "priorAdvancePct": 76.48
             }
           ]
         },
         "pivot": 386.46,
-        "distanceToPivotPct": -21.15,
+        "distanceToPivotPct": -27.13,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.74,
+          "volumeRatio50": 0.8,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -2234,9 +2234,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 322.69,
+          "ma20": 320.96,
           "lowerLows": [
             308.23,
             312.23,
@@ -2323,7 +2323,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/ONTO.csv"
+      "priceSource": "data/ohlcv_bj_20260717/ONTO.csv"
     },
     {
       "ticker": "DAVE",
@@ -2334,8 +2334,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, financial disclosure, and embedded holdings table",
       "articleEvidence": "Financial disclosure lists DAVE long. Article says it reached the consolidation-depth sell-into-strength target and uses 20MA for sell-into-weakness.",
       "chartEvidence": "Body chart draws measured targets at 285.81, 360.78 and 407.12. July 13 closed 389.56, near the upper target after a near-vertical run.",
-      "currentPrice": 438.19,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 442.53,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "減倉/止賺觀察",
       "caveat": "Position-management candidate only; setup stop would be too wide for a new buy.",
       "comment": "DAVE: position. Financial disclosure lists DAVE long. Article says it reached the consolidation-depth sell-into-strength target and uses 20MA for sell-into-weakness. Educational trade-plan candidate only, not personalized financial advice.",
@@ -2344,7 +2344,7 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "DAVE",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -2357,7 +2357,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "438.19 is above both averages.",
+              "evidence": "442.53 is above both averages.",
               "value": true
             },
             {
@@ -2381,13 +2381,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 1.0% below the high.",
+              "evidence": "Price is 2.9% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 187.9% above the low.",
+              "evidence": "Price is 190.7% above the low.",
               "value": true
             },
             {
@@ -2397,22 +2397,22 @@
               "value": null
             },
             {
-              "status": "pass",
+              "status": "pending",
               "label": "Above 50MA when leaving the base",
-              "evidence": "Breakout close is above 50MA.",
-              "value": true
+              "evidence": "Price has not closed above the candidate resistance.",
+              "value": null
             }
           ],
           "indicators": {
-            "currentPrice": 438.19,
-            "ma50": 299.87,
-            "ma150": 236.64,
-            "ma200": 231.59,
-            "ma200TwentySessionsAgo": 217.26,
-            "high52Week": 442.82,
+            "currentPrice": 442.53,
+            "ma50": 303.13,
+            "ma150": 238.25,
+            "ma200": 232.71,
+            "ma200TwentySessionsAgo": 217.66,
+            "high52Week": 455.98,
             "low52Week": 152.21,
-            "distanceFromHighPct": -1.05,
-            "aboveLowPct": 187.89,
+            "distanceFromHighPct": -2.95,
+            "aboveLowPct": 190.74,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -2427,30 +2427,30 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 50,
-              "depthPct": 49.23,
+              "depthPct": 50.7,
               "notes": [
-                "Cup depth 21.2%; recovered to 153.5% of the rim."
+                "Cup depth 20.3%; recovered to 156.9% of the rim."
               ],
-              "cupDepthPct": 21.23,
-              "priorAdvancePct": 89.01
+              "cupDepthPct": 20.31,
+              "priorAdvancePct": 80.12
             },
             {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 58.63,
+              "depthPct": 56.19,
               "notes": [
-                "Long rounded base depth 51.7%; handle 17.5%."
+                "Long rounded base depth 50.6%; handle 19.8%."
               ],
-              "handleDepthPct": 17.46
+              "handleDepthPct": 19.84
             },
             {
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 47.78,
+              "depthPct": 46.92,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
@@ -2466,7 +2466,7 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 47.78,
+              "depthPct": 46.92,
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
@@ -2477,23 +2477,23 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 42.85,
+              "depthPct": 44.5,
               "notes": [
-                "Cup 38.1%; handle 14.7%; prior advance 92.1%."
+                "Cup 38.1%; handle 15.9%; prior advance 94.3%."
               ],
               "cupDepthPct": 38.13,
-              "handleDepthPct": 14.7,
+              "handleDepthPct": 15.9,
               "handleSessions": 5,
-              "priorAdvancePct": 92.12
+              "priorAdvancePct": 94.3
             }
           ]
         },
-        "pivot": 419.86,
-        "distanceToPivotPct": 4.37,
+        "pivot": 442.82,
+        "distanceToPivotPct": -0.07,
         "breakoutEvidence": {
           "intradayCrossObserved": true,
-          "closeAbovePivot": true,
-          "volumeRatio50": 1.25,
+          "closeAbovePivot": false,
+          "volumeRatio50": 0.93,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -2507,8 +2507,8 @@
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
-            "status": "pass",
-            "evidence": "Daily close is above candidate resistance.",
+            "status": "pending",
+            "evidence": "Await a daily close above candidate resistance.",
             "modelDefault": true
           },
           {
@@ -2556,23 +2556,23 @@
           "defaultBuyMethod": "end_of_day"
         },
         "feasible": false,
-        "entryPrice": 419.86,
+        "entryPrice": 442.82,
         "initialStop": 365.5,
         "supportEvidence": "Most recent local low on 2026-07-08.",
-        "stopDistancePct": 12.95,
-        "riskPerShare": 54.36,
+        "stopDistancePct": 17.46,
+        "riskPerShare": 77.32,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
         "targets": {
-          "oneR": 474.22,
-          "twoR": 528.58,
-          "threeR": 582.94,
+          "oneR": 520.14,
+          "twoR": 597.46,
+          "threeR": 674.78,
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 361.35,
+          "ma20": 368.55,
           "lowerLows": [
             283.86,
             312.09,
@@ -2622,9 +2622,9 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "levels": {
-            "oneR": 474.22,
-            "twoR": 528.58,
-            "threeR": 582.94,
+            "oneR": 520.14,
+            "twoR": 597.46,
+            "threeR": 674.78,
             "chartResistance": "unknown"
           },
           "climaxSignals": [
@@ -2659,7 +2659,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/DAVE.csv"
+      "priceSource": "data/ohlcv_bj_20260717/DAVE.csv"
     },
     {
       "ticker": "DELL",
@@ -2670,8 +2670,8 @@
       "evidenceOrigin": "July 13, 2026 financial disclosure and embedded holdings table",
       "articleEvidence": "Financial disclosure and holdings table list DELL long as of July 13.",
       "chartEvidence": "No separate DELL chart appears in the current article body; chart-level entry, support and pattern evidence are therefore not inferred from another page.",
-      "currentPrice": 412.68,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 391.38,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "持倉管理",
       "caveat": "Current price/MA data are fresh, but article chart evidence is limited to the holdings table.",
       "comment": "DELL: position. Financial disclosure and holdings table list DELL long as of July 13. Educational trade-plan candidate only, not personalized financial advice.",
@@ -2680,7 +2680,7 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "DELL",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -2693,7 +2693,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "412.68 is above both averages.",
+              "evidence": "391.38 is above both averages.",
               "value": true
             },
             {
@@ -2717,13 +2717,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 12.1% below the high.",
+              "evidence": "Price is 16.6% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 274.4% above the low.",
+              "evidence": "Price is 255.1% above the low.",
               "value": true
             },
             {
@@ -2740,15 +2740,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 412.68,
-            "ma50": 358.17,
-            "ma150": 216.97,
-            "ma200": 198.72,
-            "ma200TwentySessionsAgo": 169.33,
+            "currentPrice": 391.38,
+            "ma50": 361.77,
+            "ma150": 218.64,
+            "ma200": 200.02,
+            "ma200TwentySessionsAgo": 170.68,
             "high52Week": 469.47,
             "low52Week": 110.22,
-            "distanceFromHighPct": -12.1,
-            "aboveLowPct": 274.41,
+            "distanceFromHighPct": -16.63,
+            "aboveLowPct": 255.09,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -2784,6 +2784,18 @@
               "handleDepthPct": 16.71
             },
             {
+              "name": "Cup without Handle",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 50,
+              "depthPct": 55.07,
+              "notes": [
+                "Cup depth 20.1%; recovered to 148.3% of the rim."
+              ],
+              "cupDepthPct": 20.1,
+              "priorAdvancePct": 137.4
+            },
+            {
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
@@ -2804,35 +2816,23 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 22.96,
+              "depthPct": 20.83,
               "notes": [
-                "Cup 20.6%; handle 15.6%; prior advance 220.3%."
+                "Cup 20.3%; handle 15.6%; prior advance 220.3%."
               ],
-              "cupDepthPct": 20.55,
+              "cupDepthPct": 20.31,
               "handleDepthPct": 15.61,
               "handleSessions": 5,
-              "priorAdvancePct": 220.3
-            },
-            {
-              "name": "Cup without Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 25,
-              "depthPct": 22.96,
-              "notes": [
-                "Cup depth 15.4%; recovered to 97.8% of the rim."
-              ],
-              "cupDepthPct": 15.35,
               "priorAdvancePct": 220.3
             }
           ]
         },
         "pivot": 469.47,
-        "distanceToPivotPct": -12.1,
+        "distanceToPivotPct": -16.63,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 1.36,
+          "volumeRatio50": 0.67,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -2909,9 +2909,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 421.58,
+          "ma20": 420.94,
           "lowerLows": [
             391.0,
             378.66,
@@ -2998,7 +2998,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/DELL.csv"
+      "priceSource": "data/ohlcv_bj_20260717/DELL.csv"
     },
     {
       "ticker": "LRCX",
@@ -3009,8 +3009,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, financial disclosure, and embedded holdings table",
       "articleEvidence": "Disclosure lists LRCX long and prose says the author will monitor for a rebound and cut only on a close below 50MA. The embedded table also says Sold, creating an unresolved same-article conflict.",
       "chartEvidence": "Body chart shows a return to the original breakout shelf and rising 50MA around 330; July 13 closed 329.92, just below the calculated 50MA 330.91.",
-      "currentPrice": 335.43,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 320.96,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "持倉管理",
       "caveat": "Same-article conflict: disclosure/prose imply a live position, while holdings table says Sold. Classified as position because the dated disclosure and explicit forward-looking exit rule are more specific; verify manually before acting.",
       "comment": "LRCX: position. Disclosure lists LRCX long and prose says the author will monitor for a rebound and cut only on a close below 50MA. The embedded table also says Sold, creating an unresolved same-article conflict. Educational trade-plan candidate only, not personalized financial advice.",
@@ -3019,20 +3019,21 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "LRCX",
         "availability": "available",
-        "dataDate": "2026-07-15",
-        "overallStatus": "needs_evidence",
-        "overallLabel": "Needs evidence",
+        "dataDate": "2026-07-16",
+        "overallStatus": "not_eligible",
+        "overallLabel": "Not eligible",
         "reasons": [
+          "Price is 26.8% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
         "stage2": {
-          "overall": "unknown",
+          "overall": "fail",
           "checks": [
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "335.43 is above both averages.",
+              "evidence": "320.96 is above both averages.",
               "value": true
             },
             {
@@ -3054,15 +3055,15 @@
               "value": true
             },
             {
-              "status": "pass",
+              "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 23.5% below the high.",
-              "value": true
+              "evidence": "Price is 26.8% below the high.",
+              "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 268.9% above the low.",
+              "evidence": "Price is 253.0% above the low.",
               "value": true
             },
             {
@@ -3079,15 +3080,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 335.43,
-            "ma50": 334.25,
-            "ma150": 258.66,
-            "ma200": 231.37,
-            "ma200TwentySessionsAgo": 205.91,
+            "currentPrice": 320.96,
+            "ma50": 335.5,
+            "ma150": 259.72,
+            "ma200": 232.33,
+            "ma200TwentySessionsAgo": 207.24,
             "high52Week": 438.5,
             "low52Week": 90.94,
-            "distanceFromHighPct": -23.51,
-            "aboveLowPct": 268.87,
+            "distanceFromHighPct": -26.81,
+            "aboveLowPct": 252.96,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -3101,13 +3102,13 @@
               "name": "Cup without Handle",
               "status": "candidate",
               "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 30.96,
+              "windowSessions": 50,
+              "depthPct": 39.86,
               "notes": [
-                "Cup depth 12.6%; recovered to 96.9% of the rim."
+                "Cup depth 12.7%; recovered to 106.3% of the rim."
               ],
-              "cupDepthPct": 12.55,
-              "priorAdvancePct": 71.75
+              "cupDepthPct": 12.68,
+              "priorAdvancePct": 54.58
             },
             {
               "name": "Saucer with Handle",
@@ -3116,16 +3117,16 @@
               "windowSessions": 65,
               "depthPct": 44.9,
               "notes": [
-                "Long rounded base depth 44.9%; handle 24.6%."
+                "Long rounded base depth 44.9%; handle 20.2%."
               ],
-              "handleDepthPct": 24.64
+              "handleDepthPct": 20.23
             },
             {
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 50,
-              "depthPct": 41.86,
+              "depthPct": 39.86,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
@@ -3143,12 +3144,12 @@
               "windowSessions": 35,
               "depthPct": 30.96,
               "notes": [
-                "Cup 26.1%; handle 28.6%; prior advance 71.7%."
+                "Cup 26.1%; handle 28.6%; prior advance 72.9%."
               ],
               "cupDepthPct": 26.12,
               "handleDepthPct": 28.6,
               "handleSessions": 15,
-              "priorAdvancePct": 71.75
+              "priorAdvancePct": 72.89
             },
             {
               "name": "Double Bottom",
@@ -3164,11 +3165,11 @@
           ]
         },
         "pivot": 438.5,
-        "distanceToPivotPct": -23.51,
+        "distanceToPivotPct": -26.81,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.88,
+          "volumeRatio50": 0.91,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -3245,9 +3246,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 369.02,
+          "ma20": 366.61,
           "lowerLows": [
             302.74,
             361.41,
@@ -3334,7 +3335,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/LRCX.csv"
+      "priceSource": "data/ohlcv_bj_20260717/LRCX.csv"
     },
     {
       "ticker": "KLAC",
@@ -3345,8 +3346,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, financial disclosure, and embedded holdings table",
       "articleEvidence": "Financial disclosure lists KLAC long. Article says it is back at the original breakout point/50MA and will be cut if it closes below 50MA.",
       "chartEvidence": "Body chart shows support around 213-216 and a bounce to 222.25; calculated 50MA is 213.72.",
-      "currentPrice": 224.5,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 219.37,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "持倉管理",
       "caveat": "Position management only; current article does not present a new base/pivot.",
       "comment": "KLAC: position. Financial disclosure lists KLAC long. Article says it is back at the original breakout point/50MA and will be cut if it closes below 50MA. Educational trade-plan candidate only, not personalized financial advice.",
@@ -3355,11 +3356,11 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "KLAC",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "Price is 27.0% below the high.",
+          "Price is 28.6% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -3369,7 +3370,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "224.50 is above both averages.",
+              "evidence": "219.37 is above both averages.",
               "value": true
             },
             {
@@ -3393,13 +3394,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 27.0% below the high.",
+              "evidence": "Price is 28.6% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 169.8% above the low.",
+              "evidence": "Price is 163.6% above the low.",
               "value": true
             },
             {
@@ -3416,15 +3417,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 224.5,
-            "ma50": 215.86,
-            "ma150": 170.97,
-            "ma200": 156.85,
-            "ma200TwentySessionsAgo": 142.04,
+            "currentPrice": 219.37,
+            "ma50": 216.82,
+            "ma150": 171.62,
+            "ma200": 157.42,
+            "ma200TwentySessionsAgo": 142.78,
             "high52Week": 307.37,
             "low52Week": 83.22,
-            "distanceFromHighPct": -26.96,
-            "aboveLowPct": 169.75,
+            "distanceFromHighPct": -28.63,
+            "aboveLowPct": 163.59,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -3432,20 +3433,8 @@
         "pattern": {
           "confirmation": "unknown",
           "confirmedType": null,
-          "candidateType": "Cup without Handle",
+          "candidateType": "Double Bottom",
           "candidates": [
-            {
-              "name": "Cup without Handle",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 65,
-              "depthPct": 46.45,
-              "notes": [
-                "Cup depth 15.1%; recovered to 115.8% of the rim."
-              ],
-              "cupDepthPct": 15.13,
-              "priorAdvancePct": 39.92
-            },
             {
               "name": "Double Bottom",
               "status": "candidate",
@@ -3461,22 +3450,34 @@
               ]
             },
             {
+              "name": "Cup without Handle",
+              "status": "candidate",
+              "confirmation": "unknown",
+              "windowSessions": 50,
+              "depthPct": 45.01,
+              "notes": [
+                "Cup depth 11.6%; recovered to 114.8% of the rim."
+              ],
+              "cupDepthPct": 11.56,
+              "priorAdvancePct": 46.81
+            },
+            {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
               "depthPct": 46.45,
               "notes": [
-                "Long rounded base depth 46.4%; handle 27.5%."
+                "Long rounded base depth 46.4%; handle 21.1%."
               ],
-              "handleDepthPct": 27.5
+              "handleDepthPct": 21.12
             },
             {
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 50,
-              "depthPct": 45.45,
+              "depthPct": 45.01,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
@@ -3504,11 +3505,11 @@
           ]
         },
         "pivot": 307.37,
-        "distanceToPivotPct": -26.96,
+        "distanceToPivotPct": -28.63,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.82,
+          "volumeRatio50": 1.15,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -3585,9 +3586,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 244.41,
+          "ma20": 243.51,
           "lowerLows": [
             192.77,
             235.0,
@@ -3674,7 +3675,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/KLAC.csv"
+      "priceSource": "data/ohlcv_bj_20260717/KLAC.csv"
     },
     {
       "ticker": "HOOD",
@@ -3685,8 +3686,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, financial disclosure, and embedded holdings table",
       "articleEvidence": "Financial disclosure lists HOOD long. Article says the first sell-into-strength target was reached last week and the second target is around 140, the December 2025 high.",
       "chartEvidence": "Body chart shows support near 97, current price 109.86, intermediate resistance around 117 and major overhead resistance at 136.85-140.",
-      "currentPrice": 115.54,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 106.02,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "減倉/止賺觀察",
       "caveat": "Current evidence supports position management, not a fresh watchlist buy.",
       "comment": "HOOD: position. Financial disclosure lists HOOD long. Article says the first sell-into-strength target was reached last week and the second target is around 140, the December 2025 high. Educational trade-plan candidate only, not personalized financial advice.",
@@ -3695,13 +3696,14 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "HOOD",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
           "150MA is not above 200MA.",
           "200MA is not above its value 20 sessions ago.",
           "The required moving-average order is absent.",
+          "Price is 31.1% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -3711,7 +3713,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "115.54 is above both averages.",
+              "evidence": "106.02 is above both averages.",
               "value": true
             },
             {
@@ -3733,15 +3735,15 @@
               "value": false
             },
             {
-              "status": "pass",
+              "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 24.9% below the high.",
-              "value": true
+              "evidence": "Price is 31.1% below the high.",
+              "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 81.9% above the low.",
+              "evidence": "Price is 66.9% above the low.",
               "value": true
             },
             {
@@ -3758,15 +3760,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 115.54,
-            "ma50": 91.97,
-            "ma150": 91.62,
-            "ma200": 102.01,
-            "ma200TwentySessionsAgo": 102.78,
+            "currentPrice": 106.02,
+            "ma50": 92.56,
+            "ma150": 91.42,
+            "ma200": 101.93,
+            "ma200TwentySessionsAgo": 102.75,
             "high52Week": 153.86,
             "low52Week": 63.52,
-            "distanceFromHighPct": -24.91,
-            "aboveLowPct": 81.91,
+            "distanceFromHighPct": -31.09,
+            "aboveLowPct": 66.92,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -3783,7 +3785,7 @@
               "windowSessions": 50,
               "depthPct": 39.04,
               "notes": [
-                "Cup depth 10.7%; recovered to 141.0% of the rim."
+                "Cup depth 10.7%; recovered to 129.4% of the rim."
               ],
               "cupDepthPct": 10.68,
               "priorAdvancePct": 46.93
@@ -3807,7 +3809,7 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 34.25,
+              "depthPct": 29.96,
               "notes": [
                 "Progressively smaller pullbacks observed."
               ],
@@ -3817,38 +3819,38 @@
               ]
             },
             {
-              "name": "Cup and Handle",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 25,
-              "depthPct": 34.25,
-              "notes": [
-                "Cup 34.3%; handle 8.9%; prior advance 58.8%."
-              ],
-              "cupDepthPct": 34.25,
-              "handleDepthPct": 8.89,
-              "handleSessions": 5,
-              "priorAdvancePct": 58.81
-            },
-            {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 43.52,
+              "depthPct": 41.75,
               "notes": [
-                "Long rounded base depth 39.7%; handle 16.4%."
+                "Long rounded base depth 37.8%; handle 12.1%."
               ],
-              "handleDepthPct": 16.38
+              "handleDepthPct": 12.14
+            },
+            {
+              "name": "Cup and Handle",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 25,
+              "depthPct": 29.96,
+              "notes": [
+                "Cup 30.0%; handle 11.7%; prior advance 60.4%."
+              ],
+              "cupDepthPct": 29.96,
+              "handleDepthPct": 11.68,
+              "handleSessions": 5,
+              "priorAdvancePct": 60.4
             }
           ]
         },
         "pivot": 120.05,
-        "distanceToPivotPct": -3.76,
+        "distanceToPivotPct": -11.69,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.74,
+          "volumeRatio50": 1.0,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -3925,9 +3927,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 107.09,
+          "ma20": 107.55,
           "lowerLows": [
             78.93,
             92.8,
@@ -3943,10 +3945,10 @@
           "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
           "signals": [
             {
-              "status": "fail",
+              "status": "pass",
               "label": "Close below 20MA",
-              "evidence": "Latest close remains above 20MA.",
-              "value": false
+              "evidence": "Latest close is below 20MA.",
+              "value": true
             },
             {
               "status": "fail",
@@ -3955,9 +3957,9 @@
               "value": false
             },
             {
-              "status": "pending",
+              "status": "pass",
               "label": "Initial stop / support breach",
-              "evidence": "Model stop has not been reached.",
+              "evidence": "Latest daily low reached the model stop.",
               "value": null
             },
             {
@@ -4013,7 +4015,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/HOOD.csv"
+      "priceSource": "data/ohlcv_bj_20260717/HOOD.csv"
     },
     {
       "ticker": "NTAP",
@@ -4024,8 +4026,8 @@
       "evidenceOrigin": "July 13, 2026 article text, chart image, financial disclosure, and embedded holdings table",
       "articleEvidence": "Financial disclosure lists NTAP long; holdings table says Added. Article says it broke out July 9 and the slight pullback is constructive.",
       "chartEvidence": "Body chart shows the descending flag breakout and a retest around 163-164. July 13 closed 163.93 above rising 50/150/200MA but below the July 9-10 highs.",
-      "currentPrice": 162.1,
-      "currentPriceLastUpdate": "2026-07-15 nasdaq daily close",
+      "currentPrice": 159.69,
+      "currentPriceLastUpdate": "2026-07-16 nasdaq daily close",
       "action": "持倉管理",
       "caveat": "NTAP was July 6 new watchlist but is a disclosed July 13 position, so it is excluded from the weekly new/continued watchlist buckets.",
       "comment": "NTAP: position. Financial disclosure lists NTAP long; holdings table says Added. Article says it broke out July 9 and the slight pullback is constructive. Educational trade-plan candidate only, not personalized financial advice.",
@@ -4034,7 +4036,7 @@
         "schemaVersion": "course_rules_v1",
         "symbol": "NTAP",
         "availability": "available",
-        "dataDate": "2026-07-15",
+        "dataDate": "2026-07-16",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -4047,7 +4049,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "162.10 is above both averages.",
+              "evidence": "159.69 is above both averages.",
               "value": true
             },
             {
@@ -4071,13 +4073,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 15.9% below the high.",
+              "evidence": "Price is 17.2% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 73.0% above the low.",
+              "evidence": "Price is 70.4% above the low.",
               "value": true
             },
             {
@@ -4094,15 +4096,15 @@
             }
           ],
           "indicators": {
-            "currentPrice": 162.1,
-            "ma50": 149.1,
-            "ma150": 119.05,
-            "ma200": 118.03,
-            "ma200TwentySessionsAgo": 114.14,
+            "currentPrice": 159.69,
+            "ma50": 150.08,
+            "ma150": 119.33,
+            "ma200": 118.23,
+            "ma200TwentySessionsAgo": 114.36,
             "high52Week": 192.83,
             "low52Week": 93.69,
-            "distanceFromHighPct": -15.94,
-            "aboveLowPct": 73.02,
+            "distanceFromHighPct": -17.19,
+            "aboveLowPct": 70.45,
             "rsRating": null,
             "rsRisingSixWeeks": null
           }
@@ -4117,7 +4119,7 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 29.05,
+              "depthPct": 28.73,
               "notes": [
                 "Progressively smaller pullbacks observed."
               ],
@@ -4131,7 +4133,7 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 29.05,
+              "depthPct": 28.73,
               "notes": [
                 "Two similar lows with recovery toward intervening resistance."
               ],
@@ -4141,27 +4143,27 @@
               ]
             },
             {
+              "name": "Cup without Handle",
+              "status": "candidate",
+              "confirmation": "unknown",
+              "windowSessions": 25,
+              "depthPct": 15.65,
+              "notes": [
+                "Cup depth 10.1%; recovered to 96.1% of the rim."
+              ],
+              "cupDepthPct": 10.14,
+              "priorAdvancePct": 103.21
+            },
+            {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 50.7,
+              "depthPct": 49.54,
               "notes": [
-                "Long rounded base depth 50.7%; handle 13.5%."
+                "Long rounded base depth 49.5%; handle 13.5%."
               ],
-              "handleDepthPct": 13.49
-            },
-            {
-              "name": "Cup without Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 42.82,
-              "notes": [
-                "Cup depth 10.7%; recovered to 131.3% of the rim."
-              ],
-              "cupDepthPct": 10.69,
-              "priorAdvancePct": 24.59
+              "handleDepthPct": 13.45
             },
             {
               "name": "Cup and Handle",
@@ -4172,19 +4174,19 @@
               "notes": [
                 "Cup 13.2%; handle 11.7%; prior advance 103.2%."
               ],
-              "cupDepthPct": 13.17,
-              "handleDepthPct": 11.67,
+              "cupDepthPct": 13.2,
+              "handleDepthPct": 11.7,
               "handleSessions": 5,
               "priorAdvancePct": 103.21
             }
           ]
         },
         "pivot": 192.83,
-        "distanceToPivotPct": -15.94,
+        "distanceToPivotPct": -17.19,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 1.02,
+          "volumeRatio50": 0.67,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -4261,9 +4263,9 @@
           "partialExitAllocation": "unknown"
         },
         "monitoring": {
-          "asOf": "2026-07-15",
+          "asOf": "2026-07-16",
           "dailyCloseOnly": true,
-          "ma20": 160.54,
+          "ma20": 160.46,
           "lowerLows": [
             156.41,
             149.27
@@ -4278,10 +4280,10 @@
           "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
           "signals": [
             {
-              "status": "fail",
+              "status": "pass",
               "label": "Close below 20MA",
-              "evidence": "Latest close remains above 20MA.",
-              "value": false
+              "evidence": "Latest close is below 20MA.",
+              "value": true
             },
             {
               "status": "unknown",
@@ -4349,7 +4351,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260715/NTAP.csv"
+      "priceSource": "data/ohlcv_bj_20260717/NTAP.csv"
     }
   ],
   "schema_version": "course_rules_v1",
