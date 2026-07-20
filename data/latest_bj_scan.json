@@ -100,6 +100,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "pass",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 152.33,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 144.34,
+              "twelveMonthReturnPct": 610.35,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 590.2,
+              "sixWeekExcessPct": -18.65,
+              "proxyRisingSixWeeks": false,
+              "universePercentile": 90.9,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 853.2,
             "ma50": 929.51,
@@ -111,7 +130,45 @@
             "distanceFromHighPct": -32.02,
             "aboveLowPct": 725.3,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "pass",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 152.33,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 144.34,
+                "twelveMonthReturnPct": 610.35,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 590.2,
+                "sixWeekExcessPct": -18.65,
+                "proxyRisingSixWeeks": false,
+                "universePercentile": 90.9,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "pass",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 152.33,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 144.34,
+            "twelveMonthReturnPct": 610.35,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 590.2,
+            "sixWeekExcessPct": -18.65,
+            "proxyRisingSixWeeks": false,
+            "universePercentile": 90.9,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -437,6 +494,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 77.08,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 69.09,
+              "twelveMonthReturnPct": 246.19,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 226.04,
+              "sixWeekExcessPct": -8.96,
+              "proxyRisingSixWeeks": false,
+              "universePercentile": 54.5,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 319.74,
             "ma50": 337.14,
@@ -448,7 +524,45 @@
             "distanceFromHighPct": -35.98,
             "aboveLowPct": 260.35,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 77.08,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 69.09,
+                "twelveMonthReturnPct": 246.19,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 226.04,
+                "sixWeekExcessPct": -8.96,
+                "proxyRisingSixWeeks": false,
+                "universePercentile": 54.5,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 77.08,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 69.09,
+            "twelveMonthReturnPct": 246.19,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 226.04,
+            "sixWeekExcessPct": -8.96,
+            "proxyRisingSixWeeks": false,
+            "universePercentile": 54.5,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -783,6 +897,12 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "unknown",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "At least 12 months of aligned ticker and SPY OHLCV history is required.",
+            "value": null
+          },
           "indicators": {
             "currentPrice": 131.11,
             "ma50": null,
@@ -794,8 +914,20 @@
             "distanceFromHighPct": -41.89,
             "aboveLowPct": 0.28,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "unknown",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "At least 12 months of aligned ticker and SPY OHLCV history is required.",
+              "value": null
+            }
           }
+        },
+        "relativeStrengthProxy": {
+          "status": "unknown",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "At least 12 months of aligned ticker and SPY OHLCV history is required.",
+          "value": null
         },
         "pattern": {
           "confirmation": "unknown",
@@ -1054,6 +1186,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "pass",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 126.73,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 118.74,
+              "twelveMonthReturnPct": 160.05,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 139.9,
+              "sixWeekExcessPct": -34.08,
+              "proxyRisingSixWeeks": false,
+              "universePercentile": 81.8,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 188.3,
             "ma50": 235.15,
@@ -1065,7 +1216,45 @@
             "distanceFromHighPct": -42.92,
             "aboveLowPct": 206.48,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "pass",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 126.73,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 118.74,
+                "twelveMonthReturnPct": 160.05,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 139.9,
+                "sixWeekExcessPct": -34.08,
+                "proxyRisingSixWeeks": false,
+                "universePercentile": 81.8,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "pass",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 126.73,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 118.74,
+            "twelveMonthReturnPct": 160.05,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 139.9,
+            "sixWeekExcessPct": -34.08,
+            "proxyRisingSixWeeks": false,
+            "universePercentile": 81.8,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -1390,6 +1579,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 85.48,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 77.49,
+              "twelveMonthReturnPct": 84.13,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 63.98,
+              "sixWeekExcessPct": 20.28,
+              "proxyRisingSixWeeks": true,
+              "universePercentile": 63.6,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 353.99,
             "ma50": 280.38,
@@ -1401,7 +1609,45 @@
             "distanceFromHighPct": -3.85,
             "aboveLowPct": 153.63,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 85.48,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 77.49,
+                "twelveMonthReturnPct": 84.13,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 63.98,
+                "sixWeekExcessPct": 20.28,
+                "proxyRisingSixWeeks": true,
+                "universePercentile": 63.6,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 85.48,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 77.49,
+            "twelveMonthReturnPct": 84.13,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 63.98,
+            "sixWeekExcessPct": 20.28,
+            "proxyRisingSixWeeks": true,
+            "universePercentile": 63.6,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -1728,6 +1974,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 3.17,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": -4.82,
+              "twelveMonthReturnPct": 10.93,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": -9.22,
+              "sixWeekExcessPct": -5.09,
+              "proxyRisingSixWeeks": false,
+              "universePercentile": 9.1,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 38.06,
             "ma50": 38.41,
@@ -1739,7 +2004,45 @@
             "distanceFromHighPct": -6.67,
             "aboveLowPct": 40.55,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 3.17,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": -4.82,
+                "twelveMonthReturnPct": 10.93,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": -9.22,
+                "sixWeekExcessPct": -5.09,
+                "proxyRisingSixWeeks": false,
+                "universePercentile": 9.1,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 3.17,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": -4.82,
+            "twelveMonthReturnPct": 10.93,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": -9.22,
+            "sixWeekExcessPct": -5.09,
+            "proxyRisingSixWeeks": false,
+            "universePercentile": 9.1,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -2064,6 +2367,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 42.63,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 34.64,
+              "twelveMonthReturnPct": 182.49,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 162.33,
+              "sixWeekExcessPct": 2.46,
+              "proxyRisingSixWeeks": true,
+              "universePercentile": 18.2,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 281.61,
             "ma50": 294.99,
@@ -2075,7 +2397,45 @@
             "distanceFromHighPct": -27.13,
             "aboveLowPct": 215.0,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 42.63,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 34.64,
+                "twelveMonthReturnPct": 182.49,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 162.33,
+                "sixWeekExcessPct": 2.46,
+                "proxyRisingSixWeeks": true,
+                "universePercentile": 18.2,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 42.63,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 34.64,
+            "twelveMonthReturnPct": 182.49,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 162.33,
+            "sixWeekExcessPct": 2.46,
+            "proxyRisingSixWeeks": true,
+            "universePercentile": 18.2,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -2403,6 +2763,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "pass",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 109.02,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 101.02,
+              "twelveMonthReturnPct": 118.54,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 98.39,
+              "sixWeekExcessPct": 67.01,
+              "proxyRisingSixWeeks": true,
+              "universePercentile": 72.7,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 442.53,
             "ma50": 303.13,
@@ -2414,7 +2793,45 @@
             "distanceFromHighPct": -2.95,
             "aboveLowPct": 190.74,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "pass",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 109.02,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 101.02,
+                "twelveMonthReturnPct": 118.54,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 98.39,
+                "sixWeekExcessPct": 67.01,
+                "proxyRisingSixWeeks": true,
+                "universePercentile": 72.7,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "pass",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 109.02,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 101.02,
+            "twelveMonthReturnPct": 118.54,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 98.39,
+            "sixWeekExcessPct": 67.01,
+            "proxyRisingSixWeeks": true,
+            "universePercentile": 72.7,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -2739,6 +3156,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "pass",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 227.08,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 219.08,
+              "twelveMonthReturnPct": 211.39,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 191.23,
+              "sixWeekExcessPct": -8.93,
+              "proxyRisingSixWeeks": false,
+              "universePercentile": 100.0,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 391.38,
             "ma50": 361.77,
@@ -2750,7 +3186,45 @@
             "distanceFromHighPct": -16.63,
             "aboveLowPct": 255.09,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "pass",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 227.08,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 219.08,
+                "twelveMonthReturnPct": 211.39,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 191.23,
+                "sixWeekExcessPct": -8.93,
+                "proxyRisingSixWeeks": false,
+                "universePercentile": 100.0,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "pass",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is in the top 30% of the article equity universe and outperforms SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 227.08,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 219.08,
+            "twelveMonthReturnPct": 211.39,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 191.23,
+            "sixWeekExcessPct": -8.93,
+            "proxyRisingSixWeeks": false,
+            "universePercentile": 100.0,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -3079,6 +3553,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 49.72,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 41.72,
+              "twelveMonthReturnPct": 217.56,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 197.41,
+              "sixWeekExcessPct": -2.86,
+              "proxyRisingSixWeeks": false,
+              "universePercentile": 36.4,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 320.96,
             "ma50": 335.5,
@@ -3090,7 +3583,45 @@
             "distanceFromHighPct": -26.81,
             "aboveLowPct": 252.96,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 49.72,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 41.72,
+                "twelveMonthReturnPct": 217.56,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 197.41,
+                "sixWeekExcessPct": -2.86,
+                "proxyRisingSixWeeks": false,
+                "universePercentile": 36.4,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 49.72,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 41.72,
+            "twelveMonthReturnPct": 217.56,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 197.41,
+            "sixWeekExcessPct": -2.86,
+            "proxyRisingSixWeeks": false,
+            "universePercentile": 36.4,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -3416,6 +3947,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 52.15,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 44.16,
+              "twelveMonthReturnPct": 134.24,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 114.09,
+              "sixWeekExcessPct": 8.43,
+              "proxyRisingSixWeeks": true,
+              "universePercentile": 45.5,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 219.37,
             "ma50": 216.82,
@@ -3427,7 +3977,45 @@
             "distanceFromHighPct": -28.63,
             "aboveLowPct": 163.59,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 52.15,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 44.16,
+                "twelveMonthReturnPct": 134.24,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 114.09,
+                "sixWeekExcessPct": 8.43,
+                "proxyRisingSixWeeks": true,
+                "universePercentile": 45.5,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 52.15,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 44.16,
+            "twelveMonthReturnPct": 134.24,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 114.09,
+            "sixWeekExcessPct": 8.43,
+            "proxyRisingSixWeeks": true,
+            "universePercentile": 45.5,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -3759,6 +4347,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": -11.83,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": -19.82,
+              "twelveMonthReturnPct": 6.51,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": -13.64,
+              "sixWeekExcessPct": 21.42,
+              "proxyRisingSixWeeks": true,
+              "universePercentile": 9.1,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 106.02,
             "ma50": 92.56,
@@ -3770,7 +4377,45 @@
             "distanceFromHighPct": -31.09,
             "aboveLowPct": 66.92,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": -11.83,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": -19.82,
+                "twelveMonthReturnPct": 6.51,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": -13.64,
+                "sixWeekExcessPct": 21.42,
+                "proxyRisingSixWeeks": true,
+                "universePercentile": 9.1,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": -11.83,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": -19.82,
+            "twelveMonthReturnPct": 6.51,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": -13.64,
+            "sixWeekExcessPct": 21.42,
+            "proxyRisingSixWeeks": true,
+            "universePercentile": 9.1,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
@@ -4095,6 +4740,25 @@
               "value": null
             }
           ],
+          "relativeStrengthProxy": {
+            "status": "fail",
+            "label": "Public relative-strength proxy (not RS Rating)",
+            "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+            "value": {
+              "sixMonthReturnPct": 48.85,
+              "spySixMonthReturnPct": 7.99,
+              "sixMonthExcessPct": 40.86,
+              "twelveMonthReturnPct": 54.33,
+              "spyTwelveMonthReturnPct": 20.15,
+              "twelveMonthExcessPct": 34.18,
+              "sixWeekExcessPct": -7.92,
+              "proxyRisingSixWeeks": false,
+              "universePercentile": 27.3,
+              "universeSize": 11,
+              "universeLabel": "Current article US equities with sufficient OHLCV history",
+              "asOf": "2026-07-16"
+            }
+          },
           "indicators": {
             "currentPrice": 159.69,
             "ma50": 150.08,
@@ -4106,7 +4770,45 @@
             "distanceFromHighPct": -17.19,
             "aboveLowPct": 70.45,
             "rsRating": null,
-            "rsRisingSixWeeks": null
+            "rsRisingSixWeeks": null,
+            "relativeStrengthProxy": {
+              "status": "fail",
+              "label": "Public relative-strength proxy (not RS Rating)",
+              "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+              "value": {
+                "sixMonthReturnPct": 48.85,
+                "spySixMonthReturnPct": 7.99,
+                "sixMonthExcessPct": 40.86,
+                "twelveMonthReturnPct": 54.33,
+                "spyTwelveMonthReturnPct": 20.15,
+                "twelveMonthExcessPct": 34.18,
+                "sixWeekExcessPct": -7.92,
+                "proxyRisingSixWeeks": false,
+                "universePercentile": 27.3,
+                "universeSize": 11,
+                "universeLabel": "Current article US equities with sufficient OHLCV history",
+                "asOf": "2026-07-16"
+              }
+            }
+          }
+        },
+        "relativeStrengthProxy": {
+          "status": "fail",
+          "label": "Public relative-strength proxy (not RS Rating)",
+          "evidence": "Proxy is not in the top 30% of the article equity universe or does not outperform SPY over 6M.",
+          "value": {
+            "sixMonthReturnPct": 48.85,
+            "spySixMonthReturnPct": 7.99,
+            "sixMonthExcessPct": 40.86,
+            "twelveMonthReturnPct": 54.33,
+            "spyTwelveMonthReturnPct": 20.15,
+            "twelveMonthExcessPct": 34.18,
+            "sixWeekExcessPct": -7.92,
+            "proxyRisingSixWeeks": false,
+            "universePercentile": 27.3,
+            "universeSize": 11,
+            "universeLabel": "Current article US equities with sufficient OHLCV history",
+            "asOf": "2026-07-16"
           }
         },
         "pattern": {
