@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T06:02:45+08:00",
-  "dataDate": "2026-07-20",
+  "generatedAt": "2026-07-23T06:03:19+08:00",
+  "dataDate": "2026-07-21",
   "article": {
     "title": "Trade Journal",
     "date": "July 20, 2026",
@@ -17,7 +17,7 @@
     "Weekly new watchlist: IOT. Prior July 13 new-watchlist names MU, ALAB and SPCX are not carried forward because they are not evidenced in the current article body.",
     "MRVL has a same-article conflict: the dated disclosure says long while the holdings table says Sold. It is retained as position with a manual-verification caveat.",
     "Formal proprietary RS Rating, sales, EPS, industry strength, earnings reaction, base count, late-stage status and pattern confirmation remain Unknown unless directly evidenced. Article language about relative strength is kept as qualitative evidence only.",
-    "OHLCV refreshed through the latest confirmed Nasdaq regular-session close on 2026-07-20 for all current article equities plus SPY. The public relative-strength proxy is separate from proprietary RS Rating.",
+    "OHLCV refreshed through the latest confirmed Nasdaq regular-session close on 2026-07-21 for all current article equities plus SPY. The public relative-strength proxy is separate from proprietary RS Rating.",
     "Trend -> Base/Pattern -> Pivot -> Volume -> Risk and Lesson 4 public model-plan rules are applied after export. If a technical stop or pivot cannot be answered, the action remains wait/watchlist rather than buy.",
     "Educational model plans based on daily closing data, not actual positions, live orders or personalized financial advice."
   ],
@@ -39,11 +39,11 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "MRVL",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "Price is 40.9% below the high.",
+          "Price is 37.0% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -53,7 +53,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "194.94 is above both averages.",
+              "evidence": "207.96 is above both averages.",
               "value": true
             },
             {
@@ -77,13 +77,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 40.9% below the high.",
+              "evidence": "Price is 37.0% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 217.3% above the low.",
+              "evidence": "Price is 238.5% above the low.",
               "value": true
             },
             {
@@ -104,30 +104,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 142.52,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 135.03,
-              "twelveMonthReturnPct": 170.71,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": 151.83,
-              "sixWeekExcessPct": -36.41,
+              "sixMonthReturnPct": 158.46,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 150.37,
+              "twelveMonthReturnPct": 178.58,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": 159.43,
+              "sixWeekExcessPct": -22.52,
               "proxyRisingSixWeeks": false,
               "universePercentile": 88.9,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 194.94,
-            "ma50": 236.01,
-            "ma150": 144.51,
-            "ma200": 130.42,
-            "ma200TwentySessionsAgo": 113.06,
+            "currentPrice": 207.96,
+            "ma50": 236.97,
+            "ma150": 145.3,
+            "ma200": 131.04,
+            "ma200TwentySessionsAgo": 114.29,
             "high52Week": 329.88,
             "low52Week": 61.44,
-            "distanceFromHighPct": -40.91,
-            "aboveLowPct": 217.29,
+            "distanceFromHighPct": -36.96,
+            "aboveLowPct": 238.48,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -135,18 +135,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 142.52,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 135.03,
-                "twelveMonthReturnPct": 170.71,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": 151.83,
-                "sixWeekExcessPct": -36.41,
+                "sixMonthReturnPct": 158.46,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 150.37,
+                "twelveMonthReturnPct": 178.58,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": 159.43,
+                "sixWeekExcessPct": -22.52,
                 "proxyRisingSixWeeks": false,
                 "universePercentile": 88.9,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -156,18 +156,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 142.52,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 135.03,
-            "twelveMonthReturnPct": 170.71,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": 151.83,
-            "sixWeekExcessPct": -36.41,
+            "sixMonthReturnPct": 158.46,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 150.37,
+            "twelveMonthReturnPct": 178.58,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": 159.43,
+            "sixWeekExcessPct": -22.52,
             "proxyRisingSixWeeks": false,
             "universePercentile": 88.9,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -180,27 +180,11 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 61.07,
+              "depthPct": 59.63,
               "notes": [
-                "Long rounded base depth 61.1%; handle 29.3%."
+                "Long rounded base depth 59.6%; handle 29.3%."
               ],
               "handleDepthPct": 29.3
-            },
-            {
-              "name": "VCP",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 52.12,
-              "notes": [
-                "A complete contraction sequence was not observed."
-              ],
-              "pullbackDepthsPct": [
-                10.79,
-                24.74,
-                14.36,
-                25.69
-              ]
             },
             {
               "name": "Cup and Handle",
@@ -209,12 +193,12 @@
               "windowSessions": 50,
               "depthPct": 52.12,
               "notes": [
-                "Cup 51.3%; handle 46.1%; prior advance 142.3%."
+                "Cup 52.1%; handle 43.4%; prior advance 155.4%."
               ],
-              "cupDepthPct": 51.28,
-              "handleDepthPct": 46.06,
+              "cupDepthPct": 52.12,
+              "handleDepthPct": 43.36,
               "handleSessions": 21,
-              "priorAdvancePct": 142.3
+              "priorAdvancePct": 155.38
             },
             {
               "name": "Cup without Handle",
@@ -223,10 +207,26 @@
               "windowSessions": 50,
               "depthPct": 52.12,
               "notes": [
-                "Cup depth 20.4%; recovered to 98.3% of the rim."
+                "Cup depth 27.4%; recovered to 95.6% of the rim."
               ],
-              "cupDepthPct": 20.38,
-              "priorAdvancePct": 142.3
+              "cupDepthPct": 27.36,
+              "priorAdvancePct": 155.38
+            },
+            {
+              "name": "VCP",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 35,
+              "depthPct": 46.06,
+              "notes": [
+                "A complete contraction sequence was not observed."
+              ],
+              "pullbackDepthsPct": [
+                24.74,
+                14.36,
+                25.69,
+                29.3
+              ]
             },
             {
               "name": "Double Bottom",
@@ -242,11 +242,11 @@
           ]
         },
         "pivot": 329.88,
-        "distanceToPivotPct": -40.91,
+        "distanceToPivotPct": -36.96,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.54,
+          "volumeRatio50": 0.48,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -310,10 +310,10 @@
         },
         "feasible": false,
         "entryPrice": 329.88,
-        "initialStop": 222.94,
-        "supportEvidence": "Most recent local low on 2026-07-07.",
-        "stopDistancePct": 32.42,
-        "riskPerShare": 106.94,
+        "initialStop": 177.95,
+        "supportEvidence": "Most recent local low on 2026-07-17.",
+        "stopDistancePct": 46.06,
+        "riskPerShare": 151.93,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
         "entryGate": {
@@ -331,8 +331,8 @@
           "evidence": "No daily-close confirmation above pivot."
         },
         "courseReferenceLevels": {
-          "twoR": 543.76,
-          "threeR": 650.7,
+          "twoR": 633.74,
+          "threeR": 785.67,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -358,13 +358,13 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 245.68,
+          "ma20": 240.68,
           "lowerLows": [
-            244.0,
             250.52,
-            222.94
+            222.94,
+            177.95
           ]
         },
         "stageMaturity": {
@@ -382,15 +382,15 @@
               "value": true
             },
             {
-              "status": "fail",
+              "status": "pass",
               "label": "Three lower lows",
-              "evidence": "The latest three local lows are not descending.",
-              "value": false
+              "evidence": "Three descending local lows observed.",
+              "value": true
             },
             {
-              "status": "pass",
+              "status": "pending",
               "label": "Initial stop / support breach",
-              "evidence": "Latest daily low reached the model stop.",
+              "evidence": "Model stop has not been reached.",
               "value": null
             },
             {
@@ -410,8 +410,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 543.76,
-            "threeR": 650.7
+            "twoR": 633.74,
+            "threeR": 785.67
           },
           "climaxSignals": [
             {
@@ -446,7 +446,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/MRVL.csv"
+      "priceSource": "data/ohlcv_bj_20260723/MRVL.csv"
     },
     {
       "ticker": "PANW",
@@ -465,7 +465,7 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "PANW",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -478,7 +478,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "348.66 is above both averages.",
+              "evidence": "342.15 is above both averages.",
               "value": true
             },
             {
@@ -502,13 +502,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 5.5% below the high.",
+              "evidence": "Price is 7.2% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 149.8% above the low.",
+              "evidence": "Price is 145.1% above the low.",
               "value": true
             },
             {
@@ -529,30 +529,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 85.72,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 78.23,
-              "twelveMonthReturnPct": 77.63,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": 58.75,
-              "sixWeekExcessPct": 26.84,
+              "sixMonthReturnPct": 82.32,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 74.23,
+              "twelveMonthReturnPct": 74.76,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": 55.62,
+              "sixWeekExcessPct": 24.31,
               "proxyRisingSixWeeks": true,
               "universePercentile": 66.7,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 348.66,
-            "ma50": 287.18,
-            "ma150": 210.27,
-            "ma200": 209.15,
-            "ma200TwentySessionsAgo": 196.14,
+            "currentPrice": 342.15,
+            "ma50": 290.09,
+            "ma150": 211.28,
+            "ma200": 209.82,
+            "ma200TwentySessionsAgo": 196.61,
             "high52Week": 368.8,
             "low52Week": 139.57,
-            "distanceFromHighPct": -5.46,
-            "aboveLowPct": 149.81,
+            "distanceFromHighPct": -7.23,
+            "aboveLowPct": 145.14,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -560,18 +560,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 85.72,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 78.23,
-                "twelveMonthReturnPct": 77.63,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": 58.75,
-                "sixWeekExcessPct": 26.84,
+                "sixMonthReturnPct": 82.32,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 74.23,
+                "twelveMonthReturnPct": 74.76,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": 55.62,
+                "sixWeekExcessPct": 24.31,
                 "proxyRisingSixWeeks": true,
                 "universePercentile": 66.7,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -581,18 +581,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 85.72,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 78.23,
-            "twelveMonthReturnPct": 77.63,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": 58.75,
-            "sixWeekExcessPct": 26.84,
+            "sixMonthReturnPct": 82.32,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 74.23,
+            "twelveMonthReturnPct": 74.76,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": 55.62,
+            "sixWeekExcessPct": 24.31,
             "proxyRisingSixWeeks": true,
             "universePercentile": 66.7,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -605,7 +605,7 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 50,
-              "depthPct": 48.27,
+              "depthPct": 47.55,
               "notes": [
                 "Two similar lows with recovery toward intervening resistance."
               ],
@@ -615,23 +615,11 @@
               ]
             },
             {
-              "name": "Cup without Handle",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 31.9,
-              "notes": [
-                "Cup depth 17.1%; recovered to 115.1% of the rim."
-              ],
-              "cupDepthPct": 17.1,
-              "priorAdvancePct": 111.11
-            },
-            {
               "name": "VCP",
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 26.39,
+              "depthPct": 25.62,
               "notes": [
                 "Progressively smaller pullbacks observed."
               ],
@@ -641,38 +629,50 @@
               ]
             },
             {
+              "name": "Cup and Handle",
+              "status": "candidate",
+              "confirmation": "unknown",
+              "windowSessions": 25,
+              "depthPct": 25.62,
+              "notes": [
+                "Cup 25.5%; handle 9.4%; prior advance 111.1%."
+              ],
+              "cupDepthPct": 25.49,
+              "handleDepthPct": 9.43,
+              "handleSessions": 5,
+              "priorAdvancePct": 111.11
+            },
+            {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 55.26,
+              "depthPct": 55.21,
               "notes": [
-                "Long rounded base depth 55.2%; handle 14.6%."
+                "Long rounded base depth 55.1%; handle 14.6%."
               ],
               "handleDepthPct": 14.6
             },
             {
-              "name": "Cup and Handle",
+              "name": "Cup without Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 26.39,
+              "depthPct": 25.62,
               "notes": [
-                "Cup 26.3%; handle 10.4%; prior advance 111.1%."
+                "Cup depth 7.2%; recovered to 115.7% of the rim."
               ],
-              "cupDepthPct": 26.26,
-              "handleDepthPct": 10.44,
-              "handleSessions": 5,
+              "cupDepthPct": 7.24,
               "priorAdvancePct": 111.11
             }
           ]
         },
         "pivot": 368.8,
-        "distanceToPivotPct": -5.46,
+        "distanceToPivotPct": -7.23,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.65,
+          "volumeRatio50": 0.79,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -784,9 +784,9 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 330.55,
+          "ma20": 333.33,
           "lowerLows": [
             251.15,
             314.95,
@@ -872,7 +872,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/PANW.csv"
+      "priceSource": "data/ohlcv_bj_20260723/PANW.csv"
     },
     {
       "ticker": "CPER",
@@ -891,7 +891,7 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "CPER",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -904,7 +904,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "38.42 is above both averages.",
+              "evidence": "39.53 is above both averages.",
               "value": true
             },
             {
@@ -928,13 +928,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 5.8% below the high.",
+              "evidence": "Price is 3.1% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 41.9% above the low.",
+              "evidence": "Price is 46.0% above the low.",
               "value": true
             },
             {
@@ -955,30 +955,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 4.49,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": -3.01,
-              "twelveMonthReturnPct": 12.5,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": -6.38,
-              "sixWeekExcessPct": -1.32,
-              "proxyRisingSixWeeks": false,
-              "universePercentile": 11.1,
+              "sixMonthReturnPct": 9.99,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 1.89,
+              "twelveMonthReturnPct": 14.05,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": -5.09,
+              "sixWeekExcessPct": 2.35,
+              "proxyRisingSixWeeks": true,
+              "universePercentile": 22.2,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 38.42,
-            "ma50": 38.46,
-            "ma150": 36.55,
-            "ma200": 35.28,
-            "ma200TwentySessionsAgo": 34.39,
+            "currentPrice": 39.53,
+            "ma50": 38.5,
+            "ma150": 36.59,
+            "ma200": 35.32,
+            "ma200TwentySessionsAgo": 34.44,
             "high52Week": 40.78,
             "low52Week": 27.08,
-            "distanceFromHighPct": -5.79,
-            "aboveLowPct": 41.88,
+            "distanceFromHighPct": -3.07,
+            "aboveLowPct": 45.97,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -986,18 +986,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 4.49,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": -3.01,
-                "twelveMonthReturnPct": 12.5,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": -6.38,
-                "sixWeekExcessPct": -1.32,
-                "proxyRisingSixWeeks": false,
-                "universePercentile": 11.1,
+                "sixMonthReturnPct": 9.99,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 1.89,
+                "twelveMonthReturnPct": 14.05,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": -5.09,
+                "sixWeekExcessPct": 2.35,
+                "proxyRisingSixWeeks": true,
+                "universePercentile": 22.2,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -1007,18 +1007,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 4.49,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": -3.01,
-            "twelveMonthReturnPct": 12.5,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": -6.38,
-            "sixWeekExcessPct": -1.32,
-            "proxyRisingSixWeeks": false,
-            "universePercentile": 11.1,
+            "sixMonthReturnPct": 9.99,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 1.89,
+            "twelveMonthReturnPct": 14.05,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": -5.09,
+            "sixWeekExcessPct": 2.35,
+            "proxyRisingSixWeeks": true,
+            "universePercentile": 22.2,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -1033,35 +1033,38 @@
               "windowSessions": 65,
               "depthPct": 13.36,
               "notes": [
-                "Long rounded base depth 13.4%; handle 5.9%."
+                "Long rounded base depth 13.4%; handle 7.8%."
               ],
-              "handleDepthPct": 5.88
+              "handleDepthPct": 7.76
             },
             {
               "name": "Double Bottom",
-              "status": "not_observed",
+              "status": "candidate",
               "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 11.35,
+              "windowSessions": 65,
+              "depthPct": 13.36,
               "notes": [
-                "No complete W-shaped candidate observed."
+                "Two similar lows with recovery toward intervening resistance."
               ],
-              "troughs": null
+              "troughs": [
+                35.33,
+                37.4
+              ]
             },
             {
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
-              "windowSessions": 25,
-              "depthPct": 9.29,
+              "windowSessions": 35,
+              "depthPct": 11.35,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
               "pullbackDepthsPct": [
-                3.21,
                 9.29,
                 2.57,
-                3.78
+                3.78,
+                3.67
               ]
             },
             {
@@ -1071,11 +1074,11 @@
               "windowSessions": 25,
               "depthPct": 9.29,
               "notes": [
-                "Cup 9.3%; handle 5.9%; prior advance 26.1%."
+                "Cup 9.3%; handle 5.6%; prior advance 26.1%."
               ],
               "cupDepthPct": 9.29,
-              "handleDepthPct": 5.88,
-              "handleSessions": 10,
+              "handleDepthPct": 5.6,
+              "handleSessions": 5,
               "priorAdvancePct": 26.13
             },
             {
@@ -1085,7 +1088,7 @@
               "windowSessions": 25,
               "depthPct": 9.29,
               "notes": [
-                "Cup depth 9.3%; recovered to 96.5% of the rim."
+                "Cup depth 9.3%; recovered to 99.3% of the rim."
               ],
               "cupDepthPct": 9.29,
               "priorAdvancePct": 26.13
@@ -1093,11 +1096,11 @@
           ]
         },
         "pivot": 40.78,
-        "distanceToPivotPct": -5.79,
+        "distanceToPivotPct": -3.07,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.48,
+          "volumeRatio50": 0.92,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -1159,18 +1162,18 @@
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
-        "feasible": false,
+        "feasible": true,
         "entryPrice": 40.78,
-        "initialStop": 36.66,
-        "supportEvidence": "Most recent local low on 2026-07-08.",
-        "stopDistancePct": 10.1,
-        "riskPerShare": 4.12,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
+        "initialStop": 37.52,
+        "supportEvidence": "Most recent local low on 2026-07-17.",
+        "stopDistancePct": 7.99,
+        "riskPerShare": 3.26,
+        "quantitySuggested": 76,
+        "plannedMaxLossUsd": 247.76,
         "entryGate": {
-          "status": "fail",
+          "status": "pending",
           "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+          "evidence": "Await a daily close above the pivot before activating a model trade plan."
         },
         "execution": {
           "status": "pending",
@@ -1182,8 +1185,8 @@
           "evidence": "No daily-close confirmation above pivot."
         },
         "courseReferenceLevels": {
-          "twoR": 49.02,
-          "threeR": 53.14,
+          "twoR": 47.3,
+          "threeR": 50.56,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -1209,13 +1212,13 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 37.69,
+          "ma20": 37.72,
           "lowerLows": [
-            36.12,
             37.12,
-            36.66
+            36.66,
+            37.52
           ]
         },
         "stageMaturity": {
@@ -1261,8 +1264,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 49.02,
-            "threeR": 53.14
+            "twoR": 47.3,
+            "threeR": 50.56
           },
           "climaxSignals": [
             {
@@ -1291,13 +1294,12 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
+        "currentAction": "Model entry gate is Pending: Await a daily close above the pivot before activating a model trade plan.",
         "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/CPER.csv"
+      "priceSource": "data/ohlcv_bj_20260723/CPER.csv"
     },
     {
       "ticker": "DAVE",
@@ -1316,7 +1318,7 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "DAVE",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -1329,7 +1331,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "438.28 is above both averages.",
+              "evidence": "438.90 is above both averages.",
               "value": true
             },
             {
@@ -1353,13 +1355,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 3.9% below the high.",
+              "evidence": "Price is 4.2% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 187.9% above the low.",
+              "evidence": "Price is 188.4% above the low.",
               "value": true
             },
             {
@@ -1380,30 +1382,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy is in the top 30% of the article equity universe, outperforms SPY over 6M, and has positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 128.2,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 120.71,
-              "twelveMonthReturnPct": 114.82,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": 95.94,
-              "sixWeekExcessPct": 69.46,
+              "sixMonthReturnPct": 126.23,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 118.13,
+              "twelveMonthReturnPct": 101.24,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": 82.09,
+              "sixWeekExcessPct": 68.5,
               "proxyRisingSixWeeks": true,
               "universePercentile": 77.8,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 438.28,
-            "ma50": 310.5,
-            "ma150": 241.49,
-            "ma200": 235.05,
-            "ma200TwentySessionsAgo": 218.55,
-            "high52Week": 455.98,
+            "currentPrice": 438.9,
+            "ma50": 314.3,
+            "ma150": 243.06,
+            "ma200": 236.26,
+            "ma200TwentySessionsAgo": 219.07,
+            "high52Week": 458.25,
             "low52Week": 152.21,
-            "distanceFromHighPct": -3.88,
-            "aboveLowPct": 187.94,
+            "distanceFromHighPct": -4.22,
+            "aboveLowPct": 188.35,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -1411,18 +1413,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy is in the top 30% of the article equity universe, outperforms SPY over 6M, and has positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 128.2,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 120.71,
-                "twelveMonthReturnPct": 114.82,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": 95.94,
-                "sixWeekExcessPct": 69.46,
+                "sixMonthReturnPct": 126.23,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 118.13,
+                "twelveMonthReturnPct": 101.24,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": 82.09,
+                "sixWeekExcessPct": 68.5,
                 "proxyRisingSixWeeks": true,
                 "universePercentile": 77.8,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -1432,18 +1434,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy is in the top 30% of the article equity universe, outperforms SPY over 6M, and has positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 128.2,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 120.71,
-            "twelveMonthReturnPct": 114.82,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": 95.94,
-            "sixWeekExcessPct": 69.46,
+            "sixMonthReturnPct": 126.23,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 118.13,
+            "twelveMonthReturnPct": 101.24,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": 82.09,
+            "sixWeekExcessPct": 68.5,
             "proxyRisingSixWeeks": true,
             "universePercentile": 77.8,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -1456,46 +1458,44 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 50,
-              "depthPct": 50.7,
+              "depthPct": 50.94,
               "notes": [
-                "Cup depth 15.3%; recovered to 165.2% of the rim."
+                "Cup depth 12.7%; recovered to 170.4% of the rim."
               ],
-              "cupDepthPct": 15.27,
+              "cupDepthPct": 12.72,
               "priorAdvancePct": 80.12
+            },
+            {
+              "name": "VCP",
+              "status": "candidate",
+              "confirmation": "unknown",
+              "windowSessions": 25,
+              "depthPct": 38.06,
+              "notes": [
+                "Progressively smaller pullbacks observed."
+              ],
+              "pullbackDepthsPct": [
+                10.64,
+                9.73
+              ]
             },
             {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 51.0,
+              "depthPct": 50.94,
               "notes": [
-                "Long rounded base depth 44.8%; handle 19.8%."
+                "Long rounded base depth 45.0%; handle 20.2%."
               ],
-              "handleDepthPct": 19.84
-            },
-            {
-              "name": "VCP",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 50.7,
-              "notes": [
-                "A complete contraction sequence was not observed."
-              ],
-              "pullbackDepthsPct": [
-                13.9,
-                10.92,
-                2.06,
-                10.64
-              ]
+              "handleDepthPct": 20.24
             },
             {
               "name": "Double Bottom",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 46.92,
+              "depthPct": 47.19,
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
@@ -1506,23 +1506,23 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 44.5,
+              "depthPct": 38.06,
               "notes": [
-                "Cup 38.1%; handle 13.8%; prior advance 94.3%."
+                "Cup 32.4%; handle 10.2%; prior advance 96.3%."
               ],
-              "cupDepthPct": 38.13,
-              "handleDepthPct": 13.81,
+              "cupDepthPct": 32.39,
+              "handleDepthPct": 10.17,
               "handleSessions": 5,
-              "priorAdvancePct": 94.3
+              "priorAdvancePct": 96.35
             }
           ]
         },
         "pivot": 455.98,
-        "distanceToPivotPct": -3.88,
+        "distanceToPivotPct": -3.74,
         "breakoutEvidence": {
-          "intradayCrossObserved": false,
+          "intradayCrossObserved": true,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.7,
+          "volumeRatio50": 1.03,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -1530,8 +1530,8 @@
           {
             "id": "breakout_immediate",
             "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "status": "observed",
+            "evidence": "Daily high crossed candidate resistance; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
@@ -1584,18 +1584,18 @@
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
-        "feasible": false,
+        "feasible": true,
         "entryPrice": 455.98,
-        "initialStop": 365.5,
-        "supportEvidence": "Most recent local low on 2026-07-08.",
-        "stopDistancePct": 19.84,
-        "riskPerShare": 90.48,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
+        "initialStop": 411.63,
+        "supportEvidence": "Most recent local low on 2026-07-17.",
+        "stopDistancePct": 9.73,
+        "riskPerShare": 44.35,
+        "quantitySuggested": 5,
+        "plannedMaxLossUsd": 221.75,
         "entryGate": {
-          "status": "fail",
+          "status": "pending",
           "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+          "evidence": "Await a daily close above the pivot before activating a model trade plan."
         },
         "execution": {
           "status": "pending",
@@ -1607,8 +1607,8 @@
           "evidence": "No daily-close confirmation above pivot."
         },
         "courseReferenceLevels": {
-          "twoR": 636.94,
-          "threeR": 727.42,
+          "twoR": 544.68,
+          "threeR": 589.03,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -1634,13 +1634,13 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 382.47,
+          "ma20": 388.93,
           "lowerLows": [
-            283.86,
             312.09,
-            365.5
+            365.5,
+            411.63
           ]
         },
         "stageMaturity": {
@@ -1686,8 +1686,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 636.94,
-            "threeR": 727.42
+            "twoR": 544.68,
+            "threeR": 589.03
           },
           "climaxSignals": [
             {
@@ -1716,13 +1716,12 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
+        "currentAction": "Model entry gate is Pending: Await a daily close above the pivot before activating a model trade plan.",
         "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/DAVE.csv"
+      "priceSource": "data/ohlcv_bj_20260723/DAVE.csv"
     },
     {
       "ticker": "DELL",
@@ -1741,7 +1740,7 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "DELL",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -1754,7 +1753,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "381.88 is above both averages.",
+              "evidence": "404.15 is above both averages.",
               "value": true
             },
             {
@@ -1778,13 +1777,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 18.7% below the high.",
+              "evidence": "Price is 13.9% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 246.5% above the low.",
+              "evidence": "Price is 266.7% above the low.",
               "value": true
             },
             {
@@ -1801,74 +1800,74 @@
             }
           ],
           "relativeStrengthProxy": {
-            "status": "fail",
+            "status": "pass",
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
-            "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
+            "evidence": "Proxy is in the top 30% of the article equity universe, outperforms SPY over 6M, and has positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 219.14,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 211.64,
-              "twelveMonthReturnPct": 208.27,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": 189.38,
-              "sixWeekExcessPct": -7.54,
-              "proxyRisingSixWeeks": false,
+              "sixMonthReturnPct": 235.31,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 227.22,
+              "twelveMonthReturnPct": 207.95,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": 188.8,
+              "sixWeekExcessPct": 1.02,
+              "proxyRisingSixWeeks": true,
               "universePercentile": 100.0,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 381.88,
-            "ma50": 368.23,
-            "ma150": 221.97,
-            "ma200": 202.54,
-            "ma200TwentySessionsAgo": 173.61,
+            "currentPrice": 404.15,
+            "ma50": 371.71,
+            "ma150": 223.74,
+            "ma200": 203.81,
+            "ma200TwentySessionsAgo": 175.08,
             "high52Week": 469.47,
             "low52Week": 110.22,
-            "distanceFromHighPct": -18.66,
-            "aboveLowPct": 246.47,
+            "distanceFromHighPct": -13.91,
+            "aboveLowPct": 266.68,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
-              "status": "fail",
+              "status": "pass",
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
-              "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
+              "evidence": "Proxy is in the top 30% of the article equity universe, outperforms SPY over 6M, and has positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 219.14,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 211.64,
-                "twelveMonthReturnPct": 208.27,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": 189.38,
-                "sixWeekExcessPct": -7.54,
-                "proxyRisingSixWeeks": false,
+                "sixMonthReturnPct": 235.31,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 227.22,
+                "twelveMonthReturnPct": 207.95,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": 188.8,
+                "sixWeekExcessPct": 1.02,
+                "proxyRisingSixWeeks": true,
                 "universePercentile": 100.0,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
         },
         "relativeStrengthProxy": {
-          "status": "fail",
+          "status": "pass",
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
-          "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
+          "evidence": "Proxy is in the top 30% of the article equity universe, outperforms SPY over 6M, and has positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 219.14,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 211.64,
-            "twelveMonthReturnPct": 208.27,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": 189.38,
-            "sixWeekExcessPct": -7.54,
-            "proxyRisingSixWeeks": false,
+            "sixMonthReturnPct": 235.31,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 227.22,
+            "twelveMonthReturnPct": 207.95,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": 188.8,
+            "sixWeekExcessPct": 1.02,
+            "proxyRisingSixWeeks": true,
             "universePercentile": 100.0,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -1881,7 +1880,7 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 90,
-              "depthPct": 69.08,
+              "depthPct": 68.78,
               "notes": [
                 "Two similar lows with recovery toward intervening resistance."
               ],
@@ -1895,27 +1894,11 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 61.98,
+              "depthPct": 59.16,
               "notes": [
-                "Long rounded base depth 62.0%; handle 20.6%."
+                "Long rounded base depth 59.2%; handle 20.6%."
               ],
               "handleDepthPct": 20.57
-            },
-            {
-              "name": "VCP",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 51.59,
-              "notes": [
-                "A complete contraction sequence was not observed."
-              ],
-              "pullbackDepthsPct": [
-                23.94,
-                11.94,
-                14.72,
-                11.97
-              ]
             },
             {
               "name": "Cup without Handle",
@@ -1924,10 +1907,26 @@
               "windowSessions": 50,
               "depthPct": 51.59,
               "notes": [
-                "Cup depth 23.8%; recovered to 128.0% of the rim."
+                "Cup depth 26.4%; recovered to 130.9% of the rim."
               ],
-              "cupDepthPct": 23.82,
+              "cupDepthPct": 26.36,
               "priorAdvancePct": 137.4
+            },
+            {
+              "name": "VCP",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 25,
+              "depthPct": 20.57,
+              "notes": [
+                "A complete contraction sequence was not observed."
+              ],
+              "pullbackDepthsPct": [
+                11.94,
+                14.72,
+                11.97,
+                20.57
+              ]
             },
             {
               "name": "Cup and Handle",
@@ -1936,21 +1935,21 @@
               "windowSessions": 25,
               "depthPct": 20.57,
               "notes": [
-                "Cup 17.8%; handle 20.6%; prior advance 220.3%."
+                "Cup 18.3%; handle 20.2%; prior advance 220.3%."
               ],
-              "cupDepthPct": 17.77,
-              "handleDepthPct": 20.57,
+              "cupDepthPct": 18.3,
+              "handleDepthPct": 20.18,
               "handleSessions": 5,
               "priorAdvancePct": 220.3
             }
           ]
         },
         "pivot": 469.47,
-        "distanceToPivotPct": -18.66,
+        "distanceToPivotPct": -13.91,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.49,
+          "volumeRatio50": 0.55,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -2014,10 +2013,10 @@
         },
         "feasible": false,
         "entryPrice": 469.47,
-        "initialStop": 386.01,
-        "supportEvidence": "Most recent local low on 2026-07-02.",
-        "stopDistancePct": 17.78,
-        "riskPerShare": 83.46,
+        "initialStop": 368.14,
+        "supportEvidence": "Most recent local low on 2026-07-17.",
+        "stopDistancePct": 21.58,
+        "riskPerShare": 101.33,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
         "entryGate": {
@@ -2035,8 +2034,8 @@
           "evidence": "No daily-close confirmation above pivot."
         },
         "courseReferenceLevels": {
-          "twoR": 636.39,
-          "threeR": 719.85,
+          "twoR": 672.12,
+          "threeR": 773.45,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -2062,13 +2061,13 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 418.41,
+          "ma20": 417.69,
           "lowerLows": [
-            391.0,
             378.66,
-            386.01
+            386.01,
+            368.14
           ]
         },
         "stageMaturity": {
@@ -2092,9 +2091,9 @@
               "value": false
             },
             {
-              "status": "pass",
+              "status": "pending",
               "label": "Initial stop / support breach",
-              "evidence": "Latest daily low reached the model stop.",
+              "evidence": "Model stop has not been reached.",
               "value": null
             },
             {
@@ -2114,8 +2113,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 636.39,
-            "threeR": 719.85
+            "twoR": 672.12,
+            "threeR": 773.45
           },
           "climaxSignals": [
             {
@@ -2150,7 +2149,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/DELL.csv"
+      "priceSource": "data/ohlcv_bj_20260723/DELL.csv"
     },
     {
       "ticker": "LRCX",
@@ -2169,11 +2168,11 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "LRCX",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "Price is 30.0% below the high.",
+          "Price is 26.6% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -2183,7 +2182,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "306.76 is above both averages.",
+              "evidence": "322.00 is above both averages.",
               "value": true
             },
             {
@@ -2207,13 +2206,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 30.0% below the high.",
+              "evidence": "Price is 26.6% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 237.3% above the low.",
+              "evidence": "Price is 254.1% above the low.",
               "value": true
             },
             {
@@ -2234,30 +2233,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 41.06,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 33.57,
-              "twelveMonthReturnPct": 204.36,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": 185.47,
-              "sixWeekExcessPct": -6.83,
-              "proxyRisingSixWeeks": false,
+              "sixMonthReturnPct": 44.42,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 36.33,
+              "twelveMonthReturnPct": 219.89,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": 200.74,
+              "sixWeekExcessPct": 4.72,
+              "proxyRisingSixWeeks": true,
               "universePercentile": 44.4,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 306.76,
-            "ma50": 336.44,
-            "ma150": 261.62,
-            "ma200": 234.11,
-            "ma200TwentySessionsAgo": 210.07,
+            "currentPrice": 322.0,
+            "ma50": 337.15,
+            "ma150": 262.64,
+            "ma200": 235.01,
+            "ma200TwentySessionsAgo": 211.63,
             "high52Week": 438.5,
             "low52Week": 90.94,
-            "distanceFromHighPct": -30.04,
-            "aboveLowPct": 237.34,
+            "distanceFromHighPct": -26.57,
+            "aboveLowPct": 254.1,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -2265,18 +2264,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 41.06,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 33.57,
-                "twelveMonthReturnPct": 204.36,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": 185.47,
-                "sixWeekExcessPct": -6.83,
-                "proxyRisingSixWeeks": false,
+                "sixMonthReturnPct": 44.42,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 36.33,
+                "twelveMonthReturnPct": 219.89,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": 200.74,
+                "sixWeekExcessPct": 4.72,
+                "proxyRisingSixWeeks": true,
                 "universePercentile": 44.4,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -2286,18 +2285,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 41.06,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 33.57,
-            "twelveMonthReturnPct": 204.36,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": 185.47,
-            "sixWeekExcessPct": -6.83,
-            "proxyRisingSixWeeks": false,
+            "sixMonthReturnPct": 44.42,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 36.33,
+            "twelveMonthReturnPct": 219.89,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": 200.74,
+            "sixWeekExcessPct": 4.72,
+            "proxyRisingSixWeeks": true,
             "universePercentile": 44.4,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -2312,7 +2311,7 @@
               "windowSessions": 126,
               "depthPct": 55.74,
               "notes": [
-                "Cup depth 24.4%; recovered to 119.5% of the rim."
+                "Cup depth 24.4%; recovered to 125.4% of the rim."
               ],
               "cupDepthPct": 24.39,
               "priorAdvancePct": 74.24
@@ -2332,16 +2331,16 @@
               "name": "VCP",
               "status": "not_observed",
               "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 39.86,
+              "windowSessions": 35,
+              "depthPct": 31.89,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
               "pullbackDepthsPct": [
-                7.89,
                 12.55,
                 11.8,
-                28.6
+                28.6,
+                16.4
               ]
             },
             {
@@ -2351,9 +2350,9 @@
               "windowSessions": 35,
               "depthPct": 31.89,
               "notes": [
-                "Cup 26.1%; handle 31.9%; prior advance 78.4%."
+                "Cup 27.0%; handle 31.9%; prior advance 78.4%."
               ],
-              "cupDepthPct": 26.12,
+              "cupDepthPct": 27.05,
               "handleDepthPct": 31.89,
               "handleSessions": 15,
               "priorAdvancePct": 78.37
@@ -2372,11 +2371,11 @@
           ]
         },
         "pivot": 438.5,
-        "distanceToPivotPct": -30.04,
+        "distanceToPivotPct": -26.57,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.7,
+          "volumeRatio50": 1.03,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -2440,10 +2439,10 @@
         },
         "feasible": false,
         "entryPrice": 438.5,
-        "initialStop": 313.1,
-        "supportEvidence": "Most recent local low on 2026-07-07.",
-        "stopDistancePct": 28.6,
-        "riskPerShare": 125.4,
+        "initialStop": 298.65,
+        "supportEvidence": "Most recent local low on 2026-07-17.",
+        "stopDistancePct": 31.89,
+        "riskPerShare": 139.85,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
         "entryGate": {
@@ -2461,8 +2460,8 @@
           "evidence": "No daily-close confirmation above pivot."
         },
         "courseReferenceLevels": {
-          "twoR": 689.3,
-          "threeR": 814.7,
+          "twoR": 718.2,
+          "threeR": 858.05,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -2488,13 +2487,13 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 359.45,
+          "ma20": 355.07,
           "lowerLows": [
-            302.74,
             361.41,
-            313.1
+            313.1,
+            298.65
           ]
         },
         "stageMaturity": {
@@ -2512,15 +2511,15 @@
               "value": true
             },
             {
-              "status": "fail",
+              "status": "pass",
               "label": "Three lower lows",
-              "evidence": "The latest three local lows are not descending.",
-              "value": false
+              "evidence": "Three descending local lows observed.",
+              "value": true
             },
             {
-              "status": "pass",
+              "status": "pending",
               "label": "Initial stop / support breach",
-              "evidence": "Latest daily low reached the model stop.",
+              "evidence": "Model stop has not been reached.",
               "value": null
             },
             {
@@ -2540,8 +2539,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 689.3,
-            "threeR": 814.7
+            "twoR": 718.2,
+            "threeR": 858.05
           },
           "climaxSignals": [
             {
@@ -2576,7 +2575,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/LRCX.csv"
+      "priceSource": "data/ohlcv_bj_20260723/LRCX.csv"
     },
     {
       "ticker": "KLAC",
@@ -2595,11 +2594,11 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "KLAC",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "Price is 32.5% below the high.",
+          "Price is 29.2% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -2609,7 +2608,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "207.60 is above both averages.",
+              "evidence": "217.56 is above both averages.",
               "value": true
             },
             {
@@ -2633,13 +2632,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 32.5% below the high.",
+              "evidence": "Price is 29.2% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 149.4% above the low.",
+              "evidence": "Price is 161.4% above the low.",
               "value": true
             },
             {
@@ -2660,30 +2659,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 34.37,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 26.88,
-              "twelveMonthReturnPct": 121.54,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": 102.66,
-              "sixWeekExcessPct": -0.6,
-              "proxyRisingSixWeeks": false,
+              "sixMonthReturnPct": 38.77,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 30.67,
+              "twelveMonthReturnPct": 133.65,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": 114.51,
+              "sixWeekExcessPct": 11.32,
+              "proxyRisingSixWeeks": true,
               "universePercentile": 33.3,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 207.6,
-            "ma50": 218.13,
-            "ma150": 172.78,
-            "ma200": 158.45,
-            "ma200TwentySessionsAgo": 144.41,
+            "currentPrice": 217.56,
+            "ma50": 218.95,
+            "ma150": 173.4,
+            "ma200": 158.97,
+            "ma200TwentySessionsAgo": 145.33,
             "high52Week": 307.37,
             "low52Week": 83.22,
-            "distanceFromHighPct": -32.46,
-            "aboveLowPct": 149.45,
+            "distanceFromHighPct": -29.22,
+            "aboveLowPct": 161.41,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -2691,18 +2690,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 34.37,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 26.88,
-                "twelveMonthReturnPct": 121.54,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": 102.66,
-                "sixWeekExcessPct": -0.6,
-                "proxyRisingSixWeeks": false,
+                "sixMonthReturnPct": 38.77,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 30.67,
+                "twelveMonthReturnPct": 133.65,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": 114.51,
+                "sixWeekExcessPct": 11.32,
+                "proxyRisingSixWeeks": true,
                 "universePercentile": 33.3,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -2712,18 +2711,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 34.37,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 26.88,
-            "twelveMonthReturnPct": 121.54,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": 102.66,
-            "sixWeekExcessPct": -0.6,
-            "proxyRisingSixWeeks": false,
+            "sixMonthReturnPct": 38.77,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 30.67,
+            "twelveMonthReturnPct": 133.65,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": 114.51,
+            "sixWeekExcessPct": 11.32,
+            "proxyRisingSixWeeks": true,
             "universePercentile": 33.3,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -2757,32 +2756,32 @@
               "handleDepthPct": 17.34
             },
             {
-              "name": "VCP",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 45.01,
-              "notes": [
-                "A complete contraction sequence was not observed."
-              ],
-              "pullbackDepthsPct": [
-                8.45,
-                10.62,
-                12.93,
-                31.4
-              ]
-            },
-            {
               "name": "Cup without Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 50,
               "depthPct": 45.01,
               "notes": [
-                "Cup depth 11.6%; recovered to 108.6% of the rim."
+                "Cup depth 16.4%; recovered to 107.6% of the rim."
               ],
-              "cupDepthPct": 11.56,
+              "cupDepthPct": 16.44,
               "priorAdvancePct": 46.81
+            },
+            {
+              "name": "VCP",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 35,
+              "depthPct": 38.64,
+              "notes": [
+                "A complete contraction sequence was not observed."
+              ],
+              "pullbackDepthsPct": [
+                10.62,
+                12.93,
+                31.4,
+                13.94
+              ]
             },
             {
               "name": "Cup and Handle",
@@ -2791,9 +2790,9 @@
               "windowSessions": 35,
               "depthPct": 38.64,
               "notes": [
-                "Cup 30.1%; handle 33.4%; prior advance 63.3%."
+                "Cup 32.5%; handle 33.4%; prior advance 63.3%."
               ],
-              "cupDepthPct": 30.12,
+              "cupDepthPct": 32.48,
               "handleDepthPct": 33.44,
               "handleSessions": 15,
               "priorAdvancePct": 63.26
@@ -2801,11 +2800,11 @@
           ]
         },
         "pivot": 307.37,
-        "distanceToPivotPct": -32.46,
+        "distanceToPivotPct": -29.22,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.65,
+          "volumeRatio50": 0.77,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -2869,10 +2868,10 @@
         },
         "feasible": false,
         "entryPrice": 307.37,
-        "initialStop": 210.86,
-        "supportEvidence": "Most recent local low on 2026-07-07.",
-        "stopDistancePct": 31.4,
-        "riskPerShare": 96.51,
+        "initialStop": 204.58,
+        "supportEvidence": "Most recent local low on 2026-07-17.",
+        "stopDistancePct": 33.44,
+        "riskPerShare": 102.79,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
         "entryGate": {
@@ -2890,8 +2889,8 @@
           "evidence": "No daily-close confirmation above pivot."
         },
         "courseReferenceLevels": {
-          "twoR": 500.39,
-          "threeR": 596.9,
+          "twoR": 512.94,
+          "threeR": 615.73,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -2917,13 +2916,13 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 239.61,
+          "ma20": 237.03,
           "lowerLows": [
-            192.77,
             235.0,
-            210.86
+            210.86,
+            204.58
           ]
         },
         "stageMaturity": {
@@ -2941,15 +2940,15 @@
               "value": true
             },
             {
-              "status": "fail",
+              "status": "pass",
               "label": "Three lower lows",
-              "evidence": "The latest three local lows are not descending.",
-              "value": false
+              "evidence": "Three descending local lows observed.",
+              "value": true
             },
             {
-              "status": "pass",
+              "status": "pending",
               "label": "Initial stop / support breach",
-              "evidence": "Latest daily low reached the model stop.",
+              "evidence": "Model stop has not been reached.",
               "value": null
             },
             {
@@ -2969,8 +2968,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 500.39,
-            "threeR": 596.9
+            "twoR": 512.94,
+            "threeR": 615.73
           },
           "climaxSignals": [
             {
@@ -3005,7 +3004,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/KLAC.csv"
+      "priceSource": "data/ohlcv_bj_20260723/KLAC.csv"
     },
     {
       "ticker": "HOOD",
@@ -3024,15 +3023,14 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "HOOD",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
-          "99.28 is not above both averages.",
           "150MA is not above 200MA.",
           "200MA is not above its value 20 sessions ago.",
           "The required moving-average order is absent.",
-          "Price is 35.5% below the high.",
+          "Price is 30.9% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
@@ -3040,10 +3038,10 @@
           "overall": "fail",
           "checks": [
             {
-              "status": "fail",
+              "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "99.28 is not above both averages.",
-              "value": false
+              "evidence": "106.36 is above both averages.",
+              "value": true
             },
             {
               "status": "fail",
@@ -3066,13 +3064,13 @@
             {
               "status": "fail",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 35.5% below the high.",
+              "evidence": "Price is 30.9% below the high.",
               "value": false
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 56.3% above the low.",
+              "evidence": "Price is 67.5% above the low.",
               "value": true
             },
             {
@@ -3093,30 +3091,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": -10.03,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": -17.52,
-              "twelveMonthReturnPct": -5.85,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": -24.73,
-              "sixWeekExcessPct": 14.38,
+              "sixMonthReturnPct": -2.19,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": -10.28,
+              "twelveMonthReturnPct": -3.08,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": -22.23,
+              "sixWeekExcessPct": 27.51,
               "proxyRisingSixWeeks": true,
               "universePercentile": 11.1,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 99.28,
-            "ma50": 93.43,
-            "ma150": 90.94,
-            "ma200": 101.53,
-            "ma200TwentySessionsAgo": 102.79,
+            "currentPrice": 106.36,
+            "ma50": 94.03,
+            "ma150": 90.83,
+            "ma200": 101.36,
+            "ma200TwentySessionsAgo": 102.82,
             "high52Week": 153.86,
             "low52Week": 63.52,
-            "distanceFromHighPct": -35.47,
-            "aboveLowPct": 56.31,
+            "distanceFromHighPct": -30.87,
+            "aboveLowPct": 67.46,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -3124,18 +3122,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": -10.03,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": -17.52,
-                "twelveMonthReturnPct": -5.85,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": -24.73,
-                "sixWeekExcessPct": 14.38,
+                "sixMonthReturnPct": -2.19,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": -10.28,
+                "twelveMonthReturnPct": -3.08,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": -22.23,
+                "sixWeekExcessPct": 27.51,
                 "proxyRisingSixWeeks": true,
                 "universePercentile": 11.1,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -3145,18 +3143,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": -10.03,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": -17.52,
-            "twelveMonthReturnPct": -5.85,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": -24.73,
-            "sixWeekExcessPct": 14.38,
+            "sixMonthReturnPct": -2.19,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": -10.28,
+            "twelveMonthReturnPct": -3.08,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": -22.23,
+            "sixWeekExcessPct": 27.51,
             "proxyRisingSixWeeks": true,
             "universePercentile": 11.1,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -3179,32 +3177,6 @@
               ]
             },
             {
-              "name": "Cup without Handle",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 34.25,
-              "notes": [
-                "Cup depth 16.4%; recovered to 105.2% of the rim."
-              ],
-              "cupDepthPct": 16.39,
-              "priorAdvancePct": 48.63
-            },
-            {
-              "name": "VCP",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 25,
-              "depthPct": 24.85,
-              "notes": [
-                "Progressively smaller pullbacks observed."
-              ],
-              "pullbackDepthsPct": [
-                17.51,
-                9.36
-              ]
-            },
-            {
               "name": "Saucer with Handle",
               "status": "not_observed",
               "confirmation": "unknown",
@@ -3216,27 +3188,55 @@
               "handleDepthPct": 19.12
             },
             {
+              "name": "VCP",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 50,
+              "depthPct": 39.04,
+              "notes": [
+                "A complete contraction sequence was not observed."
+              ],
+              "pullbackDepthsPct": [
+                16.39,
+                17.51,
+                9.36,
+                17.16
+              ]
+            },
+            {
+              "name": "Cup without Handle",
+              "status": "not_observed",
+              "confirmation": "unknown",
+              "windowSessions": 35,
+              "depthPct": 34.25,
+              "notes": [
+                "Cup depth 14.6%; recovered to 115.1% of the rim."
+              ],
+              "cupDepthPct": 14.58,
+              "priorAdvancePct": 48.63
+            },
+            {
               "name": "Cup and Handle",
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 25,
-              "depthPct": 24.85,
+              "depthPct": 22.7,
               "notes": [
-                "Cup 24.8%; handle 17.2%; prior advance 74.3%."
+                "Cup 22.7%; handle 17.2%; prior advance 77.1%."
               ],
-              "cupDepthPct": 24.85,
+              "cupDepthPct": 22.7,
               "handleDepthPct": 17.16,
               "handleSessions": 5,
-              "priorAdvancePct": 74.33
+              "priorAdvancePct": 77.12
             }
           ]
         },
         "pivot": 120.05,
-        "distanceToPivotPct": -17.3,
+        "distanceToPivotPct": -11.4,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.66,
+          "volumeRatio50": 0.69,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -3300,12 +3300,12 @@
         },
         "feasible": false,
         "entryPrice": 120.05,
-        "initialStop": 108.81,
-        "supportEvidence": "Most recent local low on 2026-07-10.",
-        "stopDistancePct": 9.36,
-        "riskPerShare": 11.24,
-        "quantitySuggested": 22,
-        "plannedMaxLossUsd": 247.28,
+        "initialStop": 96.59,
+        "supportEvidence": "Most recent local low on 2026-07-17.",
+        "stopDistancePct": 19.54,
+        "riskPerShare": 23.46,
+        "quantitySuggested": null,
+        "plannedMaxLossUsd": null,
         "entryGate": {
           "status": "fail",
           "label": "Model entry gate",
@@ -3315,14 +3315,14 @@
           "status": "pass",
           "confirmationDate": "2025-09-18",
           "confirmationClose": 120.91,
-          "riskPerShare": 12.1,
-          "stopDistancePct": 10.01,
+          "riskPerShare": 24.32,
+          "stopDistancePct": 20.11,
           "entryExtended": true,
           "evidence": "Daily close above pivot observed; this is a model confirmation price, not a recorded fill."
         },
         "courseReferenceLevels": {
-          "twoR": 142.53,
-          "threeR": 153.77,
+          "twoR": 166.97,
+          "threeR": 190.43,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -3333,13 +3333,13 @@
             "evidence": "Nearest prior local swing high above the confirmation close. Candidate only; manually confirm the chart level before treating it as resistance.",
             "manualReviewRequired": true
           },
-          "modelRewardRisk": 0.3,
-          "executionRewardRisk": 0.21,
+          "modelRewardRisk": 0.14,
+          "executionRewardRisk": 0.1,
           "validation": {
             "status": "pending",
             "label": "Execution reward/risk at initial resistance",
             "evidence": "Candidate resistance requires manual confirmation before reward/risk can be approved.",
-            "value": 0.20909090909090927
+            "value": 0.10402960526315796
           }
         },
         "profitProtection": {
@@ -3348,13 +3348,13 @@
           "evidence": "Local swing low on 2025-11-07 is above the pivot and initial stop; manually confirm before raising the stop."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 106.85,
+          "ma20": 106.88,
           "lowerLows": [
-            78.93,
             92.8,
-            108.81
+            108.81,
+            96.59
           ]
         },
         "stageMaturity": {
@@ -3378,9 +3378,9 @@
               "value": false
             },
             {
-              "status": "pass",
+              "status": "pending",
               "label": "Initial stop / support breach",
-              "evidence": "Latest daily low reached the model stop.",
+              "evidence": "Model stop has not been reached.",
               "value": null
             },
             {
@@ -3400,8 +3400,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 142.53,
-            "threeR": 153.77
+            "twoR": 166.97,
+            "threeR": 190.43
           },
           "climaxSignals": [
             {
@@ -3432,12 +3432,13 @@
         },
         "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
+          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown.",
           "The daily-close confirmation is more than 10% above the technical stop; the entry is extended and the model plan is infeasible at that execution price.",
           "Initial resistance is a chart candidate, not a forecast or automatic sell order; manual chart confirmation is required."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/HOOD.csv"
+      "priceSource": "data/ohlcv_bj_20260723/HOOD.csv"
     },
     {
       "ticker": "NTAP",
@@ -3456,7 +3457,7 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "NTAP",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "needs_evidence",
         "overallLabel": "Needs evidence",
         "reasons": [
@@ -3469,7 +3470,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "161.16 is above both averages.",
+              "evidence": "165.76 is above both averages.",
               "value": true
             },
             {
@@ -3493,13 +3494,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 16.4% below the high.",
+              "evidence": "Price is 14.0% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 72.0% above the low.",
+              "evidence": "Price is 76.9% above the low.",
               "value": true
             },
             {
@@ -3520,30 +3521,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 48.67,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 41.18,
-              "twelveMonthReturnPct": 50.27,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": 31.38,
-              "sixWeekExcessPct": -7.92,
+              "sixMonthReturnPct": 59.63,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": 51.53,
+              "twelveMonthReturnPct": 52.96,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": 33.81,
+              "sixWeekExcessPct": -2.22,
               "proxyRisingSixWeeks": false,
               "universePercentile": 55.6,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 161.16,
-            "ma50": 152.06,
-            "ma150": 119.92,
-            "ma200": 118.67,
-            "ma200TwentySessionsAgo": 114.79,
+            "currentPrice": 165.76,
+            "ma50": 153.11,
+            "ma150": 120.23,
+            "ma200": 118.91,
+            "ma200TwentySessionsAgo": 115.0,
             "high52Week": 192.83,
             "low52Week": 93.69,
-            "distanceFromHighPct": -16.42,
-            "aboveLowPct": 72.01,
+            "distanceFromHighPct": -14.04,
+            "aboveLowPct": 76.92,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -3551,18 +3552,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 48.67,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 41.18,
-                "twelveMonthReturnPct": 50.27,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": 31.38,
-                "sixWeekExcessPct": -7.92,
+                "sixMonthReturnPct": 59.63,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": 51.53,
+                "twelveMonthReturnPct": 52.96,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": 33.81,
+                "sixWeekExcessPct": -2.22,
                 "proxyRisingSixWeeks": false,
                 "universePercentile": 55.6,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -3572,18 +3573,18 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 48.67,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 41.18,
-            "twelveMonthReturnPct": 50.27,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": 31.38,
-            "sixWeekExcessPct": -7.92,
+            "sixMonthReturnPct": 59.63,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": 51.53,
+            "twelveMonthReturnPct": 52.96,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": 33.81,
+            "sixWeekExcessPct": -2.22,
             "proxyRisingSixWeeks": false,
             "universePercentile": 55.6,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
@@ -3596,7 +3597,7 @@
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 35,
-              "depthPct": 22.59,
+              "depthPct": 19.97,
               "notes": [
                 "Two similar lows with recovery toward intervening resistance."
               ],
@@ -3612,7 +3613,7 @@
               "windowSessions": 25,
               "depthPct": 15.65,
               "notes": [
-                "Cup depth 9.3%; recovered to 97.9% of the rim."
+                "Cup depth 9.3%; recovered to 100.7% of the rim."
               ],
               "cupDepthPct": 9.34,
               "priorAdvancePct": 103.21
@@ -3622,7 +3623,7 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 48.08,
+              "depthPct": 46.59,
               "notes": [
                 "A complete contraction sequence was not observed."
               ],
@@ -3638,9 +3639,9 @@
               "status": "not_observed",
               "confirmation": "unknown",
               "windowSessions": 65,
-              "depthPct": 48.08,
+              "depthPct": 46.59,
               "notes": [
-                "Long rounded base depth 48.1%; handle 11.7%."
+                "Long rounded base depth 46.6%; handle 11.7%."
               ],
               "handleDepthPct": 11.7
             },
@@ -3660,12 +3661,12 @@
             }
           ]
         },
-        "pivot": 192.83,
-        "distanceToPivotPct": -16.42,
+        "pivot": 186.53,
+        "distanceToPivotPct": -11.13,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 0.53,
+          "volumeRatio50": 0.44,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -3728,11 +3729,11 @@
           "defaultBuyMethod": "end_of_day"
         },
         "feasible": false,
-        "entryPrice": 192.83,
+        "entryPrice": 186.53,
         "initialStop": 156.26,
         "supportEvidence": "Most recent local low on 2026-07-16.",
-        "stopDistancePct": 18.96,
-        "riskPerShare": 36.57,
+        "stopDistancePct": 16.23,
+        "riskPerShare": 30.27,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
         "entryGate": {
@@ -3750,8 +3751,8 @@
           "evidence": "No daily-close confirmation above pivot."
         },
         "courseReferenceLevels": {
-          "twoR": 265.97,
-          "threeR": 302.54,
+          "twoR": 247.07,
+          "threeR": 277.34,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
@@ -3777,9 +3778,9 @@
           "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 160.99,
+          "ma20": 161.36,
           "lowerLows": [
             156.41,
             149.27,
@@ -3829,8 +3830,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 265.97,
-            "threeR": 302.54
+            "twoR": 247.07,
+            "threeR": 277.34
           },
           "climaxSignals": [
             {
@@ -3865,7 +3866,7 @@
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/NTAP.csv"
+      "priceSource": "data/ohlcv_bj_20260723/NTAP.csv"
     },
     {
       "ticker": "IOT",
@@ -3884,7 +3885,7 @@
         "schemaVersion": "course_rules_v2",
         "symbol": "IOT",
         "availability": "available",
-        "dataDate": "2026-07-20",
+        "dataDate": "2026-07-21",
         "overallStatus": "not_eligible",
         "overallLabel": "Not eligible",
         "reasons": [
@@ -3900,7 +3901,7 @@
             {
               "status": "pass",
               "label": "Price above 150MA and 200MA",
-              "evidence": "38.55 is above both averages.",
+              "evidence": "36.07 is above both averages.",
               "value": true
             },
             {
@@ -3924,13 +3925,13 @@
             {
               "status": "pass",
               "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 18.8% below the high.",
+              "evidence": "Price is 24.0% below the high.",
               "value": true
             },
             {
               "status": "pass",
               "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 64.9% above the low.",
+              "evidence": "Price is 54.3% above the low.",
               "value": true
             },
             {
@@ -3951,30 +3952,30 @@
             "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
             "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
             "value": {
-              "sixMonthReturnPct": 12.52,
-              "spySixMonthReturnPct": 7.49,
-              "sixMonthExcessPct": 5.03,
-              "twelveMonthReturnPct": 1.05,
-              "spyTwelveMonthReturnPct": 18.88,
-              "twelveMonthExcessPct": -17.83,
-              "sixWeekExcessPct": 11.47,
+              "sixMonthReturnPct": 3.38,
+              "spySixMonthReturnPct": 8.1,
+              "sixMonthExcessPct": -4.71,
+              "twelveMonthReturnPct": -8.08,
+              "spyTwelveMonthReturnPct": 19.15,
+              "twelveMonthExcessPct": -27.22,
+              "sixWeekExcessPct": 2.19,
               "proxyRisingSixWeeks": true,
               "universePercentile": 22.2,
               "universeSize": 9,
               "universeLabel": "Current article US equities with sufficient OHLCV history",
-              "asOf": "2026-07-20"
+              "asOf": "2026-07-21"
             }
           },
           "indicators": {
-            "currentPrice": 38.55,
-            "ma50": 33.15,
-            "ma150": 31.98,
-            "ma200": 33.69,
-            "ma200TwentySessionsAgo": 34.07,
+            "currentPrice": 36.07,
+            "ma50": 33.27,
+            "ma150": 31.92,
+            "ma200": 33.68,
+            "ma200TwentySessionsAgo": 34.05,
             "high52Week": 47.47,
             "low52Week": 23.38,
-            "distanceFromHighPct": -18.79,
-            "aboveLowPct": 64.88,
+            "distanceFromHighPct": -24.02,
+            "aboveLowPct": 54.28,
             "rsRating": null,
             "rsRisingSixWeeks": null,
             "relativeStrengthProxy": {
@@ -3982,18 +3983,18 @@
               "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
               "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
               "value": {
-                "sixMonthReturnPct": 12.52,
-                "spySixMonthReturnPct": 7.49,
-                "sixMonthExcessPct": 5.03,
-                "twelveMonthReturnPct": 1.05,
-                "spyTwelveMonthReturnPct": 18.88,
-                "twelveMonthExcessPct": -17.83,
-                "sixWeekExcessPct": 11.47,
+                "sixMonthReturnPct": 3.38,
+                "spySixMonthReturnPct": 8.1,
+                "sixMonthExcessPct": -4.71,
+                "twelveMonthReturnPct": -8.08,
+                "spyTwelveMonthReturnPct": 19.15,
+                "twelveMonthExcessPct": -27.22,
+                "sixWeekExcessPct": 2.19,
                 "proxyRisingSixWeeks": true,
                 "universePercentile": 22.2,
                 "universeSize": 9,
                 "universeLabel": "Current article US equities with sufficient OHLCV history",
-                "asOf": "2026-07-20"
+                "asOf": "2026-07-21"
               }
             }
           }
@@ -4003,39 +4004,25 @@
           "label": "Public relative-strength proxy: >=70th percentile and six-week rising (not RS Rating)",
           "evidence": "Proxy misses at least one condition: top 30% of the article equity universe, positive 6M excess return, or positive six-week excess return.",
           "value": {
-            "sixMonthReturnPct": 12.52,
-            "spySixMonthReturnPct": 7.49,
-            "sixMonthExcessPct": 5.03,
-            "twelveMonthReturnPct": 1.05,
-            "spyTwelveMonthReturnPct": 18.88,
-            "twelveMonthExcessPct": -17.83,
-            "sixWeekExcessPct": 11.47,
+            "sixMonthReturnPct": 3.38,
+            "spySixMonthReturnPct": 8.1,
+            "sixMonthExcessPct": -4.71,
+            "twelveMonthReturnPct": -8.08,
+            "spyTwelveMonthReturnPct": 19.15,
+            "twelveMonthExcessPct": -27.22,
+            "sixWeekExcessPct": 2.19,
             "proxyRisingSixWeeks": true,
             "universePercentile": 22.2,
             "universeSize": 9,
             "universeLabel": "Current article US equities with sufficient OHLCV history",
-            "asOf": "2026-07-20"
+            "asOf": "2026-07-21"
           }
         },
         "pattern": {
           "confirmation": "unknown",
           "confirmedType": null,
-          "candidateType": "Double Bottom",
+          "candidateType": "VCP",
           "candidates": [
-            {
-              "name": "Double Bottom",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 50,
-              "depthPct": 32.13,
-              "notes": [
-                "Two similar lows with recovery toward intervening resistance."
-              ],
-              "troughs": [
-                29.25,
-                31.31
-              ]
-            },
             {
               "name": "VCP",
               "status": "candidate",
@@ -4051,13 +4038,27 @@
               ]
             },
             {
+              "name": "Cup and Handle",
+              "status": "candidate",
+              "confirmation": "unknown",
+              "windowSessions": 25,
+              "depthPct": 27.08,
+              "notes": [
+                "Cup 25.4%; handle 9.6%; prior advance 54.5%."
+              ],
+              "cupDepthPct": 25.43,
+              "handleDepthPct": 9.6,
+              "handleSessions": 5,
+              "priorAdvancePct": 54.46
+            },
+            {
               "name": "Cup without Handle",
               "status": "candidate",
               "confirmation": "unknown",
               "windowSessions": 25,
               "depthPct": 27.08,
               "notes": [
-                "Cup depth 16.5%; recovered to 111.9% of the rim."
+                "Cup depth 16.5%; recovered to 104.7% of the rim."
               ],
               "cupDepthPct": 16.46,
               "priorAdvancePct": 54.46
@@ -4074,27 +4075,24 @@
               "handleDepthPct": 12.46
             },
             {
-              "name": "Cup and Handle",
+              "name": "Double Bottom",
               "status": "not_observed",
               "confirmation": "unknown",
-              "windowSessions": 25,
+              "windowSessions": 35,
               "depthPct": 27.08,
               "notes": [
-                "Cup 25.4%; handle 11.9%; prior advance 54.5%."
+                "No complete W-shaped candidate observed."
               ],
-              "cupDepthPct": 25.43,
-              "handleDepthPct": 11.9,
-              "handleSessions": 5,
-              "priorAdvancePct": 54.46
+              "troughs": null
             }
           ]
         },
         "pivot": 39.46,
-        "distanceToPivotPct": -2.3,
+        "distanceToPivotPct": -8.58,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
           "closeAbovePivot": false,
-          "volumeRatio50": 1.09,
+          "volumeRatio50": 1.03,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
         },
@@ -4206,9 +4204,9 @@
           "evidence": "Local swing low on 2025-05-30 is above the pivot and initial stop; manually confirm before raising the stop."
         },
         "monitoring": {
-          "asOf": "2026-07-20",
+          "asOf": "2026-07-21",
           "dailyCloseOnly": true,
-          "ma20": 34.85,
+          "ma20": 35.09,
           "lowerLows": [
             28.77,
             34.54,
@@ -4295,7 +4293,7 @@
           "The daily-close confirmation is more than 10% above the technical stop; the entry is extended and the model plan is infeasible at that execution price."
         ]
       },
-      "priceSource": "data/ohlcv_bj_20260722/IOT.csv"
+      "priceSource": "data/ohlcv_bj_20260723/IOT.csv"
     }
   ],
   "schema_version": "course_rules_v2",
