@@ -36,7 +36,7 @@
       "action": "持倉管理",
       "chartUrl": "./assets/2026-07-20/MRVL.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "MRVL",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -299,7 +299,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -316,11 +316,46 @@
         "riskPerShare": 106.94,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 436.82,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 543.76,
           "threeR": 650.7,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -374,11 +409,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 436.82,
+          "courseReferenceLevels": {
             "twoR": 543.76,
-            "threeR": 650.7,
-            "chartResistance": "unknown"
+            "threeR": 650.7
           },
           "climaxSignals": [
             {
@@ -407,6 +440,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -428,7 +462,7 @@
       "action": "持倉管理",
       "chartUrl": "./assets/2026-07-20/PANW.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "PANW",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -691,7 +725,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -708,11 +742,46 @@
         "riskPerShare": 52.55,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 421.35,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 473.9,
           "threeR": 526.45,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -766,11 +835,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 421.35,
+          "courseReferenceLevels": {
             "twoR": 473.9,
-            "threeR": 526.45,
-            "chartResistance": "unknown"
+            "threeR": 526.45
           },
           "climaxSignals": [
             {
@@ -799,6 +866,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -820,7 +888,7 @@
       "action": "只放 watchlist",
       "chartUrl": "./assets/2026-07-20/HOLDINGS.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "CPER",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -1082,7 +1150,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -1099,11 +1167,46 @@
         "riskPerShare": 4.12,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 44.9,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 49.02,
           "threeR": 53.14,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -1157,11 +1260,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 44.9,
+          "courseReferenceLevels": {
             "twoR": 49.02,
-            "threeR": 53.14,
-            "chartResistance": "unknown"
+            "threeR": 53.14
           },
           "climaxSignals": [
             {
@@ -1190,6 +1291,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -1211,7 +1313,7 @@
       "action": "減倉/止賺觀察",
       "chartUrl": "./assets/2026-07-20/DAVE.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "DAVE",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -1473,7 +1575,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -1490,11 +1592,46 @@
         "riskPerShare": 90.48,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 546.46,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 636.94,
           "threeR": 727.42,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -1548,11 +1685,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 546.46,
+          "courseReferenceLevels": {
             "twoR": 636.94,
-            "threeR": 727.42,
-            "chartResistance": "unknown"
+            "threeR": 727.42
           },
           "climaxSignals": [
             {
@@ -1581,6 +1716,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -1602,7 +1738,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/DELL.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "DELL",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -1867,7 +2003,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -1884,16 +2020,51 @@
         "riskPerShare": 83.46,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 552.93,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 636.39,
           "threeR": 719.85,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
           "dailyCloseOnly": true,
-          "ma20": 418.42,
+          "ma20": 418.41,
           "lowerLows": [
             391.0,
             378.66,
@@ -1942,11 +2113,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 552.93,
+          "courseReferenceLevels": {
             "twoR": 636.39,
-            "threeR": 719.85,
-            "chartResistance": "unknown"
+            "threeR": 719.85
           },
           "climaxSignals": [
             {
@@ -1975,6 +2144,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -1996,7 +2166,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/LRCX.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "LRCX",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -2259,7 +2429,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -2276,11 +2446,46 @@
         "riskPerShare": 125.4,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 563.9,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 689.3,
           "threeR": 814.7,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -2334,11 +2539,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 563.9,
+          "courseReferenceLevels": {
             "twoR": 689.3,
-            "threeR": 814.7,
-            "chartResistance": "unknown"
+            "threeR": 814.7
           },
           "climaxSignals": [
             {
@@ -2367,6 +2570,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -2388,7 +2592,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/HOLDINGS.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "KLAC",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -2654,7 +2858,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -2671,11 +2875,46 @@
         "riskPerShare": 96.51,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 403.88,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 500.39,
           "threeR": 596.9,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -2729,11 +2968,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 403.88,
+          "courseReferenceLevels": {
             "twoR": 500.39,
-            "threeR": 596.9,
-            "chartResistance": "unknown"
+            "threeR": 596.9
           },
           "climaxSignals": [
             {
@@ -2762,6 +2999,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -2783,7 +3021,7 @@
       "action": "持倉管理",
       "chartUrl": "./assets/2026-07-20/HOLDINGS.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "HOOD",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -3051,7 +3289,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -3060,7 +3298,7 @@
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
-        "feasible": true,
+        "feasible": false,
         "entryPrice": 120.05,
         "initialStop": 108.81,
         "supportEvidence": "Most recent local low on 2026-07-10.",
@@ -3068,11 +3306,46 @@
         "riskPerShare": 11.24,
         "quantitySuggested": 22,
         "plannedMaxLossUsd": 247.28,
-        "targets": {
-          "oneR": 131.29,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pass",
+          "confirmationDate": "2025-09-18",
+          "confirmationClose": 120.91,
+          "riskPerShare": 12.1,
+          "stopDistancePct": 10.01,
+          "entryExtended": true,
+          "evidence": "Daily close above pivot observed; this is a model confirmation price, not a recorded fill."
+        },
+        "courseReferenceLevels": {
           "twoR": 142.53,
           "threeR": 153.77,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "candidate",
+            "price": 123.44,
+            "source": "prior_swing_high",
+            "evidence": "Nearest prior local swing high above the confirmation close. Candidate only; manually confirm the chart level before treating it as resistance.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": 0.3,
+          "executionRewardRisk": 0.21,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Candidate resistance requires manual confirmation before reward/risk can be approved.",
+            "value": 0.20909090909090927
+          }
+        },
+        "profitProtection": {
+          "status": "candidate",
+          "price": 120.7,
+          "evidence": "Local swing low on 2025-11-07 is above the pivot and initial stop; manually confirm before raising the stop."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -3126,18 +3399,16 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 131.29,
+          "courseReferenceLevels": {
             "twoR": 142.53,
-            "threeR": 153.77,
-            "chartResistance": "unknown"
+            "threeR": 153.77
           },
           "climaxSignals": [
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "This signal is not present in the latest session.",
+              "value": false
             },
             {
               "status": "unknown",
@@ -3146,10 +3417,10 @@
               "value": null
             },
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "Latest candle is not the widest since breakout.",
+              "value": false
             }
           ],
           "positiveNewsNegativeReaction": {
@@ -3159,8 +3430,11 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
-          "Verified earnings date unavailable; earnings risk remains Unknown."
+          "Verified earnings date unavailable; earnings risk remains Unknown.",
+          "The daily-close confirmation is more than 10% above the technical stop; the entry is extended and the model plan is infeasible at that execution price.",
+          "Initial resistance is a chart candidate, not a forecast or automatic sell order; manual chart confirmation is required."
         ]
       },
       "priceSource": "data/ohlcv_bj_20260722/HOOD.csv"
@@ -3179,7 +3453,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/NTAP.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "NTAP",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -3444,7 +3718,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -3461,11 +3735,46 @@
         "riskPerShare": 36.57,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 229.4,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pending",
+          "confirmationDate": null,
+          "confirmationClose": null,
+          "riskPerShare": null,
+          "stopDistancePct": null,
+          "entryExtended": false,
+          "evidence": "No daily-close confirmation above pivot."
+        },
+        "courseReferenceLevels": {
           "twoR": 265.97,
           "threeR": 302.54,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "pending",
+            "price": null,
+            "source": "",
+            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "pending",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "pending",
+          "price": null,
+          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -3519,11 +3828,9 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 229.4,
+          "courseReferenceLevels": {
             "twoR": 265.97,
-            "threeR": 302.54,
-            "chartResistance": "unknown"
+            "threeR": 302.54
           },
           "climaxSignals": [
             {
@@ -3552,6 +3859,7 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -3573,7 +3881,7 @@
       "action": "等 trigger",
       "chartUrl": "./assets/2026-07-20/IOT.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "symbol": "IOT",
         "availability": "available",
         "dataDate": "2026-07-20",
@@ -3839,7 +4147,7 @@
         ]
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
+        "schemaVersion": "course_rules_v2",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
@@ -3856,11 +4164,46 @@
         "riskPerShare": 4.7,
         "quantitySuggested": null,
         "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 44.16,
+        "entryGate": {
+          "status": "fail",
+          "label": "Model entry gate",
+          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+        },
+        "execution": {
+          "status": "pass",
+          "confirmationDate": "2025-05-01",
+          "confirmationClose": 40.05,
+          "riskPerShare": 5.29,
+          "stopDistancePct": 13.21,
+          "entryExtended": true,
+          "evidence": "Daily close above pivot observed; this is a model confirmation price, not a recorded fill."
+        },
+        "courseReferenceLevels": {
           "twoR": 48.86,
           "threeR": 53.56,
-          "partialExitAllocation": "unknown"
+          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
+        },
+        "initialProfitReview": {
+          "resistance": {
+            "status": "unknown",
+            "price": null,
+            "source": "",
+            "evidence": "No pre-confirmation price history is available to assess overhead resistance.",
+            "manualReviewRequired": true
+          },
+          "modelRewardRisk": null,
+          "executionRewardRisk": null,
+          "validation": {
+            "status": "unknown",
+            "label": "Execution reward/risk at initial resistance",
+            "evidence": "No initial resistance is available; reward/risk remains Unknown.",
+            "value": null
+          }
+        },
+        "profitProtection": {
+          "status": "candidate",
+          "price": 45.15,
+          "evidence": "Local swing low on 2025-05-30 is above the pivot and initial stop; manually confirm before raising the stop."
         },
         "monitoring": {
           "asOf": "2026-07-20",
@@ -3914,18 +4257,16 @@
         },
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 44.16,
+          "courseReferenceLevels": {
             "twoR": 48.86,
-            "threeR": 53.56,
-            "chartResistance": "unknown"
+            "threeR": 53.56
           },
           "climaxSignals": [
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "This signal is not present in the latest session.",
+              "value": false
             },
             {
               "status": "unknown",
@@ -3934,10 +4275,10 @@
               "value": null
             },
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "Latest candle is not the widest since breakout.",
+              "value": false
             }
           ],
           "positiveNewsNegativeReaction": {
@@ -3947,15 +4288,17 @@
             "value": null
           }
         },
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
+          "Verified earnings date unavailable; earnings risk remains Unknown.",
+          "The daily-close confirmation is more than 10% above the technical stop; the entry is extended and the model plan is infeasible at that execution price."
         ]
       },
       "priceSource": "data/ohlcv_bj_20260722/IOT.csv"
     }
   ],
-  "schema_version": "course_rules_v1",
-  "methodology": "Lesson 3 strict evidence checks plus Lesson 4 public model plans; no numeric score or rating.",
+  "schema_version": "course_rules_v2",
+  "methodology": "Lesson 3 strict evidence checks plus Lesson 4 public model plans. Pivot-based sizing and 2R/3R remain course references; initial resistance and execution reward/risk require chart confirmation.",
   "disclaimer": "Public educational model plans only; not actual holdings, live alerts or personalized investment advice."
 }
