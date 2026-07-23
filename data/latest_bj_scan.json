@@ -36,7 +36,7 @@
       "action": "持倉管理",
       "chartUrl": "./assets/2026-07-20/MRVL.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "MRVL",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -45,6 +45,7 @@
         "reasons": [
           "Price is 37.0% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
+          "Candidate breakout level or 50MA unavailable.",
           "Pattern candidate requires manual chart confirmation."
         ],
         "stage2": {
@@ -93,9 +94,9 @@
               "value": null
             },
             {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
+              "status": "unknown",
+              "label": "Above 50MA on breakout",
+              "evidence": "Candidate breakout level or 50MA unavailable.",
               "value": null
             }
           ],
@@ -184,7 +185,10 @@
               "notes": [
                 "Long rounded base depth 59.6%; handle 29.3%."
               ],
-              "handleDepthPct": 29.3
+              "handleDepthPct": 29.3,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -198,7 +202,10 @@
               "cupDepthPct": 52.12,
               "handleDepthPct": 43.36,
               "handleSessions": 21,
-              "priorAdvancePct": 155.38
+              "priorAdvancePct": 155.38,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup without Handle",
@@ -210,7 +217,10 @@
                 "Cup depth 27.4%; recovered to 95.6% of the rim."
               ],
               "cupDepthPct": 27.36,
-              "priorAdvancePct": 155.38
+              "priorAdvancePct": 155.38,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "VCP",
@@ -226,7 +236,10 @@
                 14.36,
                 25.69,
                 29.3
-              ]
+              ],
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Double Bottom",
@@ -237,15 +250,27 @@
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
-              "troughs": null
+              "troughs": null,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 329.88,
-        "distanceToPivotPct": -36.96,
+        "candidateBreakout": {
+          "level": null,
+          "status": "unknown",
+          "pattern": null,
+          "basis": null,
+          "date": null,
+          "evidence": "No current course-pattern breakout structure was identified; a generic historical high is not used.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": null,
+        "distanceToCandidateBreakoutPct": null,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "closeAboveCandidateBreakout": false,
           "volumeRatio50": 0.48,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -255,13 +280,13 @@
             "id": "breakout_immediate",
             "label": "Buy on breakout",
             "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "evidence": "No daily high above the candidate breakout level."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
             "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "evidence": "Await a daily close above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -296,155 +321,22 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
-        "availability": "available",
-        "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
-        "assumptions": {
-          "entryAtPivot": true,
-          "maxRiskUsd": 250.0,
-          "defaultBuyMethod": "end_of_day"
-        },
-        "feasible": false,
-        "entryPrice": 329.88,
-        "initialStop": 177.95,
-        "supportEvidence": "Most recent local low on 2026-07-17.",
-        "stopDistancePct": 46.06,
-        "riskPerShare": 151.93,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
-        "entryGate": {
-          "status": "fail",
-          "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
-        },
-        "execution": {
-          "status": "pending",
-          "confirmationDate": null,
-          "confirmationClose": null,
-          "riskPerShare": null,
-          "stopDistancePct": null,
-          "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
-        },
-        "courseReferenceLevels": {
-          "twoR": 633.74,
-          "threeR": 785.67,
-          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
-        },
-        "initialProfitReview": {
-          "resistance": {
-            "status": "pending",
-            "price": null,
-            "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
-            "manualReviewRequired": true
-          },
-          "modelRewardRisk": null,
-          "executionRewardRisk": null,
-          "validation": {
-            "status": "pending",
-            "label": "Execution reward/risk at initial resistance",
-            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
-            "value": null
-          }
-        },
-        "profitProtection": {
-          "status": "pending",
-          "price": null,
-          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
-        },
-        "monitoring": {
-          "asOf": "2026-07-21",
-          "dailyCloseOnly": true,
-          "ma20": 240.68,
-          "lowerLows": [
-            250.52,
-            222.94,
-            177.95
-          ]
-        },
-        "stageMaturity": {
-          "status": "unknown",
-          "baseCount": null,
-          "evidence": "No verified early/late-stage evidence supplied."
-        },
-        "sellIntoWeakness": {
-          "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
-          "signals": [
-            {
-              "status": "pass",
-              "label": "Close below 20MA",
-              "evidence": "Latest close is below 20MA.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "Three lower lows",
-              "evidence": "Three descending local lows observed.",
-              "value": true
-            },
-            {
-              "status": "pending",
-              "label": "Initial stop / support breach",
-              "evidence": "Model stop has not been reached.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Price and volume deterioration",
-              "evidence": "The lesson gives no fixed threshold; review the displayed OHLCV evidence manually.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Earnings risk",
-              "evidence": "Verified earnings date unavailable.",
-              "value": null
-            }
-          ]
-        },
-        "sellIntoStrength": {
-          "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "courseReferenceLevels": {
-            "twoR": 633.74,
-            "threeR": 785.67
-          },
-          "climaxSignals": [
-            {
-              "status": "unknown",
-              "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Unusually high volume without matching price progress",
-              "evidence": "No verified event/chart judgement supplied.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            }
-          ],
-          "positiveNewsNegativeReaction": {
-            "status": "unknown",
-            "label": "Positive news with negative price action",
-            "evidence": "No verified news-reaction evidence supplied.",
-            "value": null
-          }
-        },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
-        "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
-        ]
+        "availability": "unavailable",
+        "disclaimer": "Model plan only; not an actual holding, live alert or order.",
+        "reason": "A candidate breakout level and valid OHLCV are required."
       },
       "priceSource": "data/ohlcv_bj_20260723/MRVL.csv"
     },
@@ -462,7 +354,7 @@
       "action": "持倉管理",
       "chartUrl": "./assets/2026-07-20/PANW.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "PANW",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -519,8 +411,8 @@
             },
             {
               "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
+              "label": "Above 50MA on breakout",
+              "evidence": "Price has not closed above the candidate breakout level.",
               "value": null
             }
           ],
@@ -598,7 +490,7 @@
         "pattern": {
           "confirmation": "unknown",
           "confirmedType": null,
-          "candidateType": "Double Bottom",
+          "candidateType": "Cup and Handle",
           "candidates": [
             {
               "name": "Double Bottom",
@@ -612,7 +504,10 @@
               "troughs": [
                 243.04,
                 251.15
-              ]
+              ],
+              "candidateBreakoutLevel": 302.95,
+              "candidateBreakoutBasis": "Middle peak between the two lows",
+              "candidateBreakoutDate": "2026-06-01"
             },
             {
               "name": "VCP",
@@ -626,7 +521,10 @@
               "pullbackDepthsPct": [
                 14.46,
                 14.1
-              ]
+              ],
+              "candidateBreakoutLevel": 368.17,
+              "candidateBreakoutBasis": "High before the final contraction",
+              "candidateBreakoutDate": "2026-07-06"
             },
             {
               "name": "Cup and Handle",
@@ -640,7 +538,10 @@
               "cupDepthPct": 25.49,
               "handleDepthPct": 9.43,
               "handleSessions": 5,
-              "priorAdvancePct": 111.11
+              "priorAdvancePct": 111.11,
+              "candidateBreakoutLevel": 368.8,
+              "candidateBreakoutBasis": "Handle high",
+              "candidateBreakoutDate": "2026-07-17"
             },
             {
               "name": "Saucer with Handle",
@@ -651,7 +552,10 @@
               "notes": [
                 "Long rounded base depth 55.1%; handle 14.6%."
               ],
-              "handleDepthPct": 14.6
+              "handleDepthPct": 14.6,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup without Handle",
@@ -663,15 +567,27 @@
                 "Cup depth 7.2%; recovered to 115.7% of the rim."
               ],
               "cupDepthPct": 7.24,
-              "priorAdvancePct": 111.11
+              "priorAdvancePct": 111.11,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 368.8,
-        "distanceToPivotPct": -7.23,
+        "candidateBreakout": {
+          "level": 368.8,
+          "status": "candidate",
+          "pattern": "Cup and Handle",
+          "basis": "Handle high",
+          "date": "2026-07-17",
+          "evidence": "Cup and Handle candidate: Handle high. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 368.8,
+        "distanceToCandidateBreakoutPct": -7.23,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "closeAboveCandidateBreakout": false,
           "volumeRatio50": 0.79,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -681,13 +597,13 @@
             "id": "breakout_immediate",
             "label": "Buy on breakout",
             "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "evidence": "No daily high above the candidate breakout level."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
             "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "evidence": "Await a daily close above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -722,20 +638,28 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
         "assumptions": {
-          "entryAtPivot": true,
+          "entryAtCandidateBreakoutLevel": true,
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
         "feasible": false,
-        "entryPrice": 368.8,
+        "modelEntryLevel": 368.8,
         "initialStop": 316.25,
         "supportEvidence": "Most recent local low on 2026-07-13.",
         "stopDistancePct": 14.25,
@@ -745,7 +669,7 @@
         "entryGate": {
           "status": "fail",
           "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+          "evidence": "At least one course entry condition or the candidate-breakout-level technical-stop feasibility check fails."
         },
         "execution": {
           "status": "pending",
@@ -754,7 +678,7 @@
           "riskPerShare": null,
           "stopDistancePct": null,
           "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
+          "evidence": "No daily-close confirmation above the candidate breakout level."
         },
         "courseReferenceLevels": {
           "twoR": 473.9,
@@ -766,7 +690,7 @@
             "status": "pending",
             "price": null,
             "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "evidence": "A daily close above the candidate breakout level is required before an initial profit-review level can be assessed.",
             "manualReviewRequired": true
           },
           "modelRewardRisk": null,
@@ -866,7 +790,7 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the candidate-breakout-level technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown."
@@ -888,7 +812,7 @@
       "action": "只放 watchlist",
       "chartUrl": "./assets/2026-07-20/HOLDINGS.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "CPER",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -945,8 +869,8 @@
             },
             {
               "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
+              "label": "Above 50MA on breakout",
+              "evidence": "Price has not closed above the candidate breakout level.",
               "value": null
             }
           ],
@@ -1035,7 +959,10 @@
               "notes": [
                 "Long rounded base depth 13.4%; handle 7.8%."
               ],
-              "handleDepthPct": 7.76
+              "handleDepthPct": 7.76,
+              "candidateBreakoutLevel": 39.74,
+              "candidateBreakoutBasis": "Handle high",
+              "candidateBreakoutDate": "2026-07-21"
             },
             {
               "name": "Double Bottom",
@@ -1049,7 +976,10 @@
               "troughs": [
                 35.33,
                 37.4
-              ]
+              ],
+              "candidateBreakoutLevel": 40.78,
+              "candidateBreakoutBasis": "Middle peak between the two lows",
+              "candidateBreakoutDate": "2026-05-13"
             },
             {
               "name": "VCP",
@@ -1065,7 +995,10 @@
                 2.57,
                 3.78,
                 3.67
-              ]
+              ],
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -1079,7 +1012,10 @@
               "cupDepthPct": 9.29,
               "handleDepthPct": 5.6,
               "handleSessions": 5,
-              "priorAdvancePct": 26.13
+              "priorAdvancePct": 26.13,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup without Handle",
@@ -1091,15 +1027,27 @@
                 "Cup depth 9.3%; recovered to 99.3% of the rim."
               ],
               "cupDepthPct": 9.29,
-              "priorAdvancePct": 26.13
+              "priorAdvancePct": 26.13,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 40.78,
-        "distanceToPivotPct": -3.07,
+        "candidateBreakout": {
+          "level": 39.74,
+          "status": "candidate",
+          "pattern": "Saucer with Handle",
+          "basis": "Handle high",
+          "date": "2026-07-21",
+          "evidence": "Saucer with Handle candidate: Handle high. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 39.74,
+        "distanceToCandidateBreakoutPct": -0.53,
         "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "intradayCrossObserved": true,
+          "closeAboveCandidateBreakout": false,
           "volumeRatio50": 0.92,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -1108,14 +1056,14 @@
           {
             "id": "breakout_immediate",
             "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "status": "observed",
+            "evidence": "Daily high crossed the candidate breakout level; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
             "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "evidence": "Await a daily close above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -1150,66 +1098,74 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
         "assumptions": {
-          "entryAtPivot": true,
+          "entryAtCandidateBreakoutLevel": true,
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
         "feasible": true,
-        "entryPrice": 40.78,
+        "modelEntryLevel": 39.74,
         "initialStop": 37.52,
         "supportEvidence": "Most recent local low on 2026-07-17.",
-        "stopDistancePct": 7.99,
-        "riskPerShare": 3.26,
-        "quantitySuggested": 76,
-        "plannedMaxLossUsd": 247.76,
+        "stopDistancePct": 5.59,
+        "riskPerShare": 2.22,
+        "quantitySuggested": 112,
+        "plannedMaxLossUsd": 248.64,
         "entryGate": {
           "status": "pending",
           "label": "Model entry gate",
-          "evidence": "Await a daily close above the pivot before activating a model trade plan."
+          "evidence": "Await a daily close above the candidate breakout level before activating a model trade plan."
         },
         "execution": {
-          "status": "pending",
-          "confirmationDate": null,
-          "confirmationClose": null,
-          "riskPerShare": null,
-          "stopDistancePct": null,
+          "status": "pass",
+          "confirmationDate": "2026-05-12",
+          "confirmationClose": 40.44,
+          "riskPerShare": 2.92,
+          "stopDistancePct": 7.22,
           "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
+          "evidence": "Daily close above the candidate breakout level observed; this is a model confirmation price, not a recorded fill."
         },
         "courseReferenceLevels": {
-          "twoR": 47.3,
-          "threeR": 50.56,
+          "twoR": 44.18,
+          "threeR": 46.4,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
           "resistance": {
-            "status": "pending",
+            "status": "unknown",
             "price": null,
-            "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "source": "price_discovery",
+            "evidence": "No prior overhead high above the confirmation close was found; this is price discovery, not a projected target.",
             "manualReviewRequired": true
           },
           "modelRewardRisk": null,
           "executionRewardRisk": null,
           "validation": {
-            "status": "pending",
+            "status": "unknown",
             "label": "Execution reward/risk at initial resistance",
-            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "evidence": "No initial resistance is available; reward/risk remains Unknown.",
             "value": null
           }
         },
         "profitProtection": {
           "status": "pending",
           "price": null,
-          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
+          "evidence": "No confirmed higher swing low above the candidate breakout level/support yet; retain the initial technical stop."
         },
         "monitoring": {
           "asOf": "2026-07-21",
@@ -1264,15 +1220,15 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 47.3,
-            "threeR": 50.56
+            "twoR": 44.18,
+            "threeR": 46.4
           },
           "climaxSignals": [
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "This signal is not present in the latest session.",
+              "value": false
             },
             {
               "status": "unknown",
@@ -1281,10 +1237,10 @@
               "value": null
             },
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "Latest candle is not the widest since breakout.",
+              "value": false
             }
           ],
           "positiveNewsNegativeReaction": {
@@ -1294,7 +1250,7 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Pending: Await a daily close above the pivot before activating a model trade plan.",
+        "currentAction": "Model entry gate is Pending: Await a daily close above the candidate breakout level before activating a model trade plan.",
         "notes": [
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
@@ -1315,7 +1271,7 @@
       "action": "減倉/止賺觀察",
       "chartUrl": "./assets/2026-07-20/DAVE.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "DAVE",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -1372,8 +1328,8 @@
             },
             {
               "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
+              "label": "Above 50MA on breakout",
+              "evidence": "Price has not closed above the candidate breakout level.",
               "value": null
             }
           ],
@@ -1451,7 +1407,7 @@
         "pattern": {
           "confirmation": "unknown",
           "confirmedType": null,
-          "candidateType": "Cup without Handle",
+          "candidateType": "VCP",
           "candidates": [
             {
               "name": "Cup without Handle",
@@ -1463,7 +1419,10 @@
                 "Cup depth 12.7%; recovered to 170.4% of the rim."
               ],
               "cupDepthPct": 12.72,
-              "priorAdvancePct": 80.12
+              "priorAdvancePct": 80.12,
+              "candidateBreakoutLevel": 257.58,
+              "candidateBreakoutBasis": "Left rim high",
+              "candidateBreakoutDate": "2026-05-08"
             },
             {
               "name": "VCP",
@@ -1477,7 +1436,10 @@
               "pullbackDepthsPct": [
                 10.64,
                 9.73
-              ]
+              ],
+              "candidateBreakoutLevel": 455.98,
+              "candidateBreakoutBasis": "High before the final contraction",
+              "candidateBreakoutDate": "2026-07-16"
             },
             {
               "name": "Saucer with Handle",
@@ -1488,7 +1450,10 @@
               "notes": [
                 "Long rounded base depth 45.0%; handle 20.2%."
               ],
-              "handleDepthPct": 20.24
+              "handleDepthPct": 20.24,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Double Bottom",
@@ -1499,7 +1464,10 @@
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
-              "troughs": null
+              "troughs": null,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -1513,15 +1481,27 @@
               "cupDepthPct": 32.39,
               "handleDepthPct": 10.17,
               "handleSessions": 5,
-              "priorAdvancePct": 96.35
+              "priorAdvancePct": 96.35,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 455.98,
-        "distanceToPivotPct": -3.74,
+        "candidateBreakout": {
+          "level": 455.98,
+          "status": "candidate",
+          "pattern": "VCP",
+          "basis": "High before the final contraction",
+          "date": "2026-07-16",
+          "evidence": "VCP candidate: High before the final contraction. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 455.98,
+        "distanceToCandidateBreakoutPct": -3.75,
         "breakoutEvidence": {
           "intradayCrossObserved": true,
-          "closeAbovePivot": false,
+          "closeAboveCandidateBreakout": false,
           "volumeRatio50": 1.03,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -1531,13 +1511,13 @@
             "id": "breakout_immediate",
             "label": "Buy on breakout",
             "status": "observed",
-            "evidence": "Daily high crossed candidate resistance; intraday execution cannot be verified."
+            "evidence": "Daily high crossed the candidate breakout level; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
             "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "evidence": "Await a daily close above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -1572,20 +1552,28 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
         "assumptions": {
-          "entryAtPivot": true,
+          "entryAtCandidateBreakoutLevel": true,
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
         "feasible": true,
-        "entryPrice": 455.98,
+        "modelEntryLevel": 455.98,
         "initialStop": 411.63,
         "supportEvidence": "Most recent local low on 2026-07-17.",
         "stopDistancePct": 9.73,
@@ -1595,7 +1583,7 @@
         "entryGate": {
           "status": "pending",
           "label": "Model entry gate",
-          "evidence": "Await a daily close above the pivot before activating a model trade plan."
+          "evidence": "Await a daily close above the candidate breakout level before activating a model trade plan."
         },
         "execution": {
           "status": "pending",
@@ -1604,7 +1592,7 @@
           "riskPerShare": null,
           "stopDistancePct": null,
           "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
+          "evidence": "No daily-close confirmation above the candidate breakout level."
         },
         "courseReferenceLevels": {
           "twoR": 544.68,
@@ -1616,7 +1604,7 @@
             "status": "pending",
             "price": null,
             "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "evidence": "A daily close above the candidate breakout level is required before an initial profit-review level can be assessed.",
             "manualReviewRequired": true
           },
           "modelRewardRisk": null,
@@ -1716,7 +1704,7 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Pending: Await a daily close above the pivot before activating a model trade plan.",
+        "currentAction": "Model entry gate is Pending: Await a daily close above the candidate breakout level before activating a model trade plan.",
         "notes": [
           "Verified earnings date unavailable; earnings risk remains Unknown."
         ]
@@ -1737,7 +1725,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/DELL.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "DELL",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -1793,10 +1781,10 @@
               "value": null
             },
             {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
-              "value": null
+              "status": "pass",
+              "label": "Above 50MA on breakout",
+              "evidence": "Breakout close is above 50MA.",
+              "value": true
             }
           ],
           "relativeStrengthProxy": {
@@ -1887,7 +1875,10 @@
               "troughs": [
                 146.57,
                 155.37
-              ]
+              ],
+              "candidateBreakoutLevel": 186.39,
+              "candidateBreakoutBasis": "Middle peak between the two lows",
+              "candidateBreakoutDate": "2026-03-26"
             },
             {
               "name": "Saucer with Handle",
@@ -1898,7 +1889,10 @@
               "notes": [
                 "Long rounded base depth 59.2%; handle 20.6%."
               ],
-              "handleDepthPct": 20.57
+              "handleDepthPct": 20.57,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup without Handle",
@@ -1910,7 +1904,10 @@
                 "Cup depth 26.4%; recovered to 130.9% of the rim."
               ],
               "cupDepthPct": 26.36,
-              "priorAdvancePct": 137.4
+              "priorAdvancePct": 137.4,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "VCP",
@@ -1926,7 +1923,10 @@
                 14.72,
                 11.97,
                 20.57
-              ]
+              ],
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -1940,15 +1940,27 @@
               "cupDepthPct": 18.3,
               "handleDepthPct": 20.18,
               "handleSessions": 5,
-              "priorAdvancePct": 220.3
+              "priorAdvancePct": 220.3,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 469.47,
-        "distanceToPivotPct": -13.91,
+        "candidateBreakout": {
+          "level": 186.39,
+          "status": "candidate",
+          "pattern": "Double Bottom",
+          "basis": "Middle peak between the two lows",
+          "date": "2026-03-26",
+          "evidence": "Double Bottom candidate: Middle peak between the two lows. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 186.39,
+        "distanceToCandidateBreakoutPct": 116.83,
         "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "intradayCrossObserved": true,
+          "closeAboveCandidateBreakout": true,
           "volumeRatio50": 0.55,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -1957,14 +1969,14 @@
           {
             "id": "breakout_immediate",
             "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "status": "observed",
+            "evidence": "Daily high crossed the candidate breakout level; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "status": "pass",
+            "evidence": "Daily close is above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -1999,155 +2011,23 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
-        "availability": "available",
-        "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
-        "assumptions": {
-          "entryAtPivot": true,
-          "maxRiskUsd": 250.0,
-          "defaultBuyMethod": "end_of_day"
-        },
-        "feasible": false,
-        "entryPrice": 469.47,
-        "initialStop": 368.14,
-        "supportEvidence": "Most recent local low on 2026-07-17.",
-        "stopDistancePct": 21.58,
-        "riskPerShare": 101.33,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
-        "entryGate": {
-          "status": "fail",
-          "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
-        },
-        "execution": {
-          "status": "pending",
-          "confirmationDate": null,
-          "confirmationClose": null,
-          "riskPerShare": null,
-          "stopDistancePct": null,
-          "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
-        },
-        "courseReferenceLevels": {
-          "twoR": 672.12,
-          "threeR": 773.45,
-          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
-        },
-        "initialProfitReview": {
-          "resistance": {
-            "status": "pending",
-            "price": null,
-            "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
-            "manualReviewRequired": true
-          },
-          "modelRewardRisk": null,
-          "executionRewardRisk": null,
-          "validation": {
-            "status": "pending",
-            "label": "Execution reward/risk at initial resistance",
-            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
-            "value": null
-          }
-        },
-        "profitProtection": {
-          "status": "pending",
-          "price": null,
-          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
-        },
-        "monitoring": {
-          "asOf": "2026-07-21",
-          "dailyCloseOnly": true,
-          "ma20": 417.69,
-          "lowerLows": [
-            378.66,
-            386.01,
-            368.14
-          ]
-        },
-        "stageMaturity": {
-          "status": "unknown",
-          "baseCount": null,
-          "evidence": "No verified early/late-stage evidence supplied."
-        },
-        "sellIntoWeakness": {
-          "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
-          "signals": [
-            {
-              "status": "pass",
-              "label": "Close below 20MA",
-              "evidence": "Latest close is below 20MA.",
-              "value": true
-            },
-            {
-              "status": "fail",
-              "label": "Three lower lows",
-              "evidence": "The latest three local lows are not descending.",
-              "value": false
-            },
-            {
-              "status": "pending",
-              "label": "Initial stop / support breach",
-              "evidence": "Model stop has not been reached.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Price and volume deterioration",
-              "evidence": "The lesson gives no fixed threshold; review the displayed OHLCV evidence manually.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Earnings risk",
-              "evidence": "Verified earnings date unavailable.",
-              "value": null
-            }
-          ]
-        },
-        "sellIntoStrength": {
-          "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "courseReferenceLevels": {
-            "twoR": 672.12,
-            "threeR": 773.45
-          },
-          "climaxSignals": [
-            {
-              "status": "unknown",
-              "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Unusually high volume without matching price progress",
-              "evidence": "No verified event/chart judgement supplied.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            }
-          ],
-          "positiveNewsNegativeReaction": {
-            "status": "unknown",
-            "label": "Positive news with negative price action",
-            "evidence": "No verified news-reaction evidence supplied.",
-            "value": null
-          }
-        },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
-        "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
-        ]
+        "availability": "unavailable",
+        "modelEntryLevel": 186.39,
+        "disclaimer": "Model plan only; not an actual holding, live alert or order.",
+        "reason": "No technical short-term support below the candidate breakout level was found."
       },
       "priceSource": "data/ohlcv_bj_20260723/DELL.csv"
     },
@@ -2165,7 +2045,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/LRCX.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "LRCX",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -2174,6 +2054,7 @@
         "reasons": [
           "Price is 26.6% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
+          "Breakout close is not above 50MA.",
           "Pattern candidate requires manual chart confirmation."
         ],
         "stage2": {
@@ -2222,10 +2103,10 @@
               "value": null
             },
             {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
-              "value": null
+              "status": "fail",
+              "label": "Above 50MA on breakout",
+              "evidence": "Breakout close is not above 50MA.",
+              "value": false
             }
           ],
           "relativeStrengthProxy": {
@@ -2314,7 +2195,10 @@
                 "Cup depth 24.4%; recovered to 125.4% of the rim."
               ],
               "cupDepthPct": 24.39,
-              "priorAdvancePct": 74.24
+              "priorAdvancePct": 74.24,
+              "candidateBreakoutLevel": 256.68,
+              "candidateBreakoutBasis": "Left rim high",
+              "candidateBreakoutDate": "2026-02-25"
             },
             {
               "name": "Saucer with Handle",
@@ -2325,7 +2209,10 @@
               "notes": [
                 "Long rounded base depth 44.9%; handle 19.3%."
               ],
-              "handleDepthPct": 19.27
+              "handleDepthPct": 19.27,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "VCP",
@@ -2341,7 +2228,10 @@
                 11.8,
                 28.6,
                 16.4
-              ]
+              ],
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -2355,7 +2245,10 @@
               "cupDepthPct": 27.05,
               "handleDepthPct": 31.89,
               "handleSessions": 15,
-              "priorAdvancePct": 78.37
+              "priorAdvancePct": 78.37,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Double Bottom",
@@ -2366,15 +2259,27 @@
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
-              "troughs": null
+              "troughs": null,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 438.5,
-        "distanceToPivotPct": -26.57,
+        "candidateBreakout": {
+          "level": 256.68,
+          "status": "candidate",
+          "pattern": "Cup without Handle",
+          "basis": "Left rim high",
+          "date": "2026-02-25",
+          "evidence": "Cup without Handle candidate: Left rim high. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 256.68,
+        "distanceToCandidateBreakoutPct": 25.45,
         "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "intradayCrossObserved": true,
+          "closeAboveCandidateBreakout": true,
           "volumeRatio50": 1.03,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -2383,14 +2288,14 @@
           {
             "id": "breakout_immediate",
             "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "status": "observed",
+            "evidence": "Daily high crossed the candidate breakout level; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "status": "pass",
+            "evidence": "Daily close is above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -2425,155 +2330,23 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
-        "availability": "available",
-        "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
-        "assumptions": {
-          "entryAtPivot": true,
-          "maxRiskUsd": 250.0,
-          "defaultBuyMethod": "end_of_day"
-        },
-        "feasible": false,
-        "entryPrice": 438.5,
-        "initialStop": 298.65,
-        "supportEvidence": "Most recent local low on 2026-07-17.",
-        "stopDistancePct": 31.89,
-        "riskPerShare": 139.85,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
-        "entryGate": {
-          "status": "fail",
-          "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
-        },
-        "execution": {
-          "status": "pending",
-          "confirmationDate": null,
-          "confirmationClose": null,
-          "riskPerShare": null,
-          "stopDistancePct": null,
-          "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
-        },
-        "courseReferenceLevels": {
-          "twoR": 718.2,
-          "threeR": 858.05,
-          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
-        },
-        "initialProfitReview": {
-          "resistance": {
-            "status": "pending",
-            "price": null,
-            "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
-            "manualReviewRequired": true
-          },
-          "modelRewardRisk": null,
-          "executionRewardRisk": null,
-          "validation": {
-            "status": "pending",
-            "label": "Execution reward/risk at initial resistance",
-            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
-            "value": null
-          }
-        },
-        "profitProtection": {
-          "status": "pending",
-          "price": null,
-          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
-        },
-        "monitoring": {
-          "asOf": "2026-07-21",
-          "dailyCloseOnly": true,
-          "ma20": 355.07,
-          "lowerLows": [
-            361.41,
-            313.1,
-            298.65
-          ]
-        },
-        "stageMaturity": {
-          "status": "unknown",
-          "baseCount": null,
-          "evidence": "No verified early/late-stage evidence supplied."
-        },
-        "sellIntoWeakness": {
-          "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
-          "signals": [
-            {
-              "status": "pass",
-              "label": "Close below 20MA",
-              "evidence": "Latest close is below 20MA.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "Three lower lows",
-              "evidence": "Three descending local lows observed.",
-              "value": true
-            },
-            {
-              "status": "pending",
-              "label": "Initial stop / support breach",
-              "evidence": "Model stop has not been reached.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Price and volume deterioration",
-              "evidence": "The lesson gives no fixed threshold; review the displayed OHLCV evidence manually.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Earnings risk",
-              "evidence": "Verified earnings date unavailable.",
-              "value": null
-            }
-          ]
-        },
-        "sellIntoStrength": {
-          "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "courseReferenceLevels": {
-            "twoR": 718.2,
-            "threeR": 858.05
-          },
-          "climaxSignals": [
-            {
-              "status": "unknown",
-              "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Unusually high volume without matching price progress",
-              "evidence": "No verified event/chart judgement supplied.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            }
-          ],
-          "positiveNewsNegativeReaction": {
-            "status": "unknown",
-            "label": "Positive news with negative price action",
-            "evidence": "No verified news-reaction evidence supplied.",
-            "value": null
-          }
-        },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
-        "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
-        ]
+        "availability": "unavailable",
+        "modelEntryLevel": 256.68,
+        "disclaimer": "Model plan only; not an actual holding, live alert or order.",
+        "reason": "No technical short-term support below the candidate breakout level was found."
       },
       "priceSource": "data/ohlcv_bj_20260723/LRCX.csv"
     },
@@ -2591,7 +2364,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/HOLDINGS.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "KLAC",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -2600,6 +2373,7 @@
         "reasons": [
           "Price is 29.2% below the high.",
           "Official or manually verified RS Rating evidence is unavailable.",
+          "Breakout close is not above 50MA.",
           "Pattern candidate requires manual chart confirmation."
         ],
         "stage2": {
@@ -2648,10 +2422,10 @@
               "value": null
             },
             {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
-              "value": null
+              "status": "fail",
+              "label": "Above 50MA on breakout",
+              "evidence": "Breakout close is not above 50MA.",
+              "value": false
             }
           ],
           "relativeStrengthProxy": {
@@ -2742,7 +2516,10 @@
               "troughs": [
                 164.6,
                 174.3
-              ]
+              ],
+              "candidateBreakoutLevel": 189.75,
+              "candidateBreakoutBasis": "Middle peak between the two lows",
+              "candidateBreakoutDate": "2026-05-11"
             },
             {
               "name": "Saucer with Handle",
@@ -2753,7 +2530,10 @@
               "notes": [
                 "Long rounded base depth 46.4%; handle 17.3%."
               ],
-              "handleDepthPct": 17.34
+              "handleDepthPct": 17.34,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup without Handle",
@@ -2765,7 +2545,10 @@
                 "Cup depth 16.4%; recovered to 107.6% of the rim."
               ],
               "cupDepthPct": 16.44,
-              "priorAdvancePct": 46.81
+              "priorAdvancePct": 46.81,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "VCP",
@@ -2781,7 +2564,10 @@
                 12.93,
                 31.4,
                 13.94
-              ]
+              ],
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -2795,15 +2581,27 @@
               "cupDepthPct": 32.48,
               "handleDepthPct": 33.44,
               "handleSessions": 15,
-              "priorAdvancePct": 63.26
+              "priorAdvancePct": 63.26,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 307.37,
-        "distanceToPivotPct": -29.22,
+        "candidateBreakout": {
+          "level": 189.75,
+          "status": "candidate",
+          "pattern": "Double Bottom",
+          "basis": "Middle peak between the two lows",
+          "date": "2026-05-11",
+          "evidence": "Double Bottom candidate: Middle peak between the two lows. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 189.75,
+        "distanceToCandidateBreakoutPct": 14.66,
         "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "intradayCrossObserved": true,
+          "closeAboveCandidateBreakout": true,
           "volumeRatio50": 0.77,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -2812,14 +2610,14 @@
           {
             "id": "breakout_immediate",
             "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "status": "observed",
+            "evidence": "Daily high crossed the candidate breakout level; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "status": "pass",
+            "evidence": "Daily close is above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -2854,155 +2652,23 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
-        "availability": "available",
-        "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
-        "assumptions": {
-          "entryAtPivot": true,
-          "maxRiskUsd": 250.0,
-          "defaultBuyMethod": "end_of_day"
-        },
-        "feasible": false,
-        "entryPrice": 307.37,
-        "initialStop": 204.58,
-        "supportEvidence": "Most recent local low on 2026-07-17.",
-        "stopDistancePct": 33.44,
-        "riskPerShare": 102.79,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
-        "entryGate": {
-          "status": "fail",
-          "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
-        },
-        "execution": {
-          "status": "pending",
-          "confirmationDate": null,
-          "confirmationClose": null,
-          "riskPerShare": null,
-          "stopDistancePct": null,
-          "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
-        },
-        "courseReferenceLevels": {
-          "twoR": 512.94,
-          "threeR": 615.73,
-          "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
-        },
-        "initialProfitReview": {
-          "resistance": {
-            "status": "pending",
-            "price": null,
-            "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
-            "manualReviewRequired": true
-          },
-          "modelRewardRisk": null,
-          "executionRewardRisk": null,
-          "validation": {
-            "status": "pending",
-            "label": "Execution reward/risk at initial resistance",
-            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
-            "value": null
-          }
-        },
-        "profitProtection": {
-          "status": "pending",
-          "price": null,
-          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
-        },
-        "monitoring": {
-          "asOf": "2026-07-21",
-          "dailyCloseOnly": true,
-          "ma20": 237.03,
-          "lowerLows": [
-            235.0,
-            210.86,
-            204.58
-          ]
-        },
-        "stageMaturity": {
-          "status": "unknown",
-          "baseCount": null,
-          "evidence": "No verified early/late-stage evidence supplied."
-        },
-        "sellIntoWeakness": {
-          "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
-          "signals": [
-            {
-              "status": "pass",
-              "label": "Close below 20MA",
-              "evidence": "Latest close is below 20MA.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "Three lower lows",
-              "evidence": "Three descending local lows observed.",
-              "value": true
-            },
-            {
-              "status": "pending",
-              "label": "Initial stop / support breach",
-              "evidence": "Model stop has not been reached.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Price and volume deterioration",
-              "evidence": "The lesson gives no fixed threshold; review the displayed OHLCV evidence manually.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Earnings risk",
-              "evidence": "Verified earnings date unavailable.",
-              "value": null
-            }
-          ]
-        },
-        "sellIntoStrength": {
-          "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "courseReferenceLevels": {
-            "twoR": 512.94,
-            "threeR": 615.73
-          },
-          "climaxSignals": [
-            {
-              "status": "unknown",
-              "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Unusually high volume without matching price progress",
-              "evidence": "No verified event/chart judgement supplied.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            }
-          ],
-          "positiveNewsNegativeReaction": {
-            "status": "unknown",
-            "label": "Positive news with negative price action",
-            "evidence": "No verified news-reaction evidence supplied.",
-            "value": null
-          }
-        },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
-        "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
-        ]
+        "availability": "unavailable",
+        "modelEntryLevel": 189.75,
+        "disclaimer": "Model plan only; not an actual holding, live alert or order.",
+        "reason": "No technical short-term support below the candidate breakout level was found."
       },
       "priceSource": "data/ohlcv_bj_20260723/KLAC.csv"
     },
@@ -3020,7 +2686,7 @@
       "action": "持倉管理",
       "chartUrl": "./assets/2026-07-20/HOLDINGS.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "HOOD",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -3080,10 +2746,10 @@
               "value": null
             },
             {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
-              "value": null
+              "status": "pass",
+              "label": "Above 50MA on breakout",
+              "evidence": "Breakout close is above 50MA.",
+              "value": true
             }
           ],
           "relativeStrengthProxy": {
@@ -3174,7 +2840,10 @@
               "troughs": [
                 73.26,
                 78.93
-              ]
+              ],
+              "candidateBreakoutLevel": 94.4,
+              "candidateBreakoutBasis": "Middle peak between the two lows",
+              "candidateBreakoutDate": "2026-05-29"
             },
             {
               "name": "Saucer with Handle",
@@ -3185,7 +2854,10 @@
               "notes": [
                 "Long rounded base depth 41.7%; handle 19.1%."
               ],
-              "handleDepthPct": 19.12
+              "handleDepthPct": 19.12,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "VCP",
@@ -3201,7 +2873,10 @@
                 17.51,
                 9.36,
                 17.16
-              ]
+              ],
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup without Handle",
@@ -3213,7 +2888,10 @@
                 "Cup depth 14.6%; recovered to 115.1% of the rim."
               ],
               "cupDepthPct": 14.58,
-              "priorAdvancePct": 48.63
+              "priorAdvancePct": 48.63,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -3227,15 +2905,27 @@
               "cupDepthPct": 22.7,
               "handleDepthPct": 17.16,
               "handleSessions": 5,
-              "priorAdvancePct": 77.12
+              "priorAdvancePct": 77.12,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 120.05,
-        "distanceToPivotPct": -11.4,
+        "candidateBreakout": {
+          "level": 94.4,
+          "status": "candidate",
+          "pattern": "Double Bottom",
+          "basis": "Middle peak between the two lows",
+          "date": "2026-05-29",
+          "evidence": "Double Bottom candidate: Middle peak between the two lows. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 94.4,
+        "distanceToCandidateBreakoutPct": 12.67,
         "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "intradayCrossObserved": true,
+          "closeAboveCandidateBreakout": true,
           "volumeRatio50": 0.69,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -3244,14 +2934,14 @@
           {
             "id": "breakout_immediate",
             "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "status": "observed",
+            "evidence": "Daily high crossed the candidate breakout level; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "status": "pass",
+            "evidence": "Daily close is above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -3286,66 +2976,74 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
         "assumptions": {
-          "entryAtPivot": true,
+          "entryAtCandidateBreakoutLevel": true,
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
-        "feasible": false,
-        "entryPrice": 120.05,
-        "initialStop": 96.59,
-        "supportEvidence": "Most recent local low on 2026-07-17.",
-        "stopDistancePct": 19.54,
-        "riskPerShare": 23.46,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
+        "feasible": true,
+        "modelEntryLevel": 94.4,
+        "initialStop": 92.8,
+        "supportEvidence": "Most recent local low on 2026-06-25.",
+        "stopDistancePct": 1.69,
+        "riskPerShare": 1.6,
+        "quantitySuggested": 156,
+        "plannedMaxLossUsd": 249.6,
         "entryGate": {
           "status": "fail",
           "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+          "evidence": "At least one course entry condition or the candidate-breakout-level technical-stop feasibility check fails."
         },
         "execution": {
           "status": "pass",
-          "confirmationDate": "2025-09-18",
-          "confirmationClose": 120.91,
-          "riskPerShare": 24.32,
-          "stopDistancePct": 20.11,
-          "entryExtended": true,
-          "evidence": "Daily close above pivot observed; this is a model confirmation price, not a recorded fill."
+          "confirmationDate": "2025-07-02",
+          "confirmationClose": 97.98,
+          "riskPerShare": 5.18,
+          "stopDistancePct": 5.29,
+          "entryExtended": false,
+          "evidence": "Daily close above the candidate breakout level observed; this is a model confirmation price, not a recorded fill."
         },
         "courseReferenceLevels": {
-          "twoR": 166.97,
-          "threeR": 190.43,
+          "twoR": 97.6,
+          "threeR": 99.2,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
           "resistance": {
             "status": "candidate",
-            "price": 123.44,
-            "source": "prior_swing_high",
-            "evidence": "Nearest prior local swing high above the confirmation close. Candidate only; manually confirm the chart level before treating it as resistance.",
+            "price": 99.18,
+            "source": "52_week_high",
+            "evidence": "Prior 52-week high above the confirmation close. Candidate only; manually confirm the chart level before treating it as resistance.",
             "manualReviewRequired": true
           },
-          "modelRewardRisk": 0.14,
-          "executionRewardRisk": 0.1,
+          "modelRewardRisk": 2.99,
+          "executionRewardRisk": 0.23,
           "validation": {
             "status": "pending",
             "label": "Execution reward/risk at initial resistance",
             "evidence": "Candidate resistance requires manual confirmation before reward/risk can be approved.",
-            "value": 0.10402960526315796
+            "value": 0.2316602316602319
           }
         },
         "profitProtection": {
           "status": "candidate",
-          "price": 120.7,
-          "evidence": "Local swing low on 2025-11-07 is above the pivot and initial stop; manually confirm before raising the stop."
+          "price": 96.59,
+          "evidence": "Local swing low on 2026-07-17 is above the candidate breakout level and initial stop; manually confirm before raising the stop."
         },
         "monitoring": {
           "asOf": "2026-07-21",
@@ -3400,8 +3098,8 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 166.97,
-            "threeR": 190.43
+            "twoR": 97.6,
+            "threeR": 99.2
           },
           "climaxSignals": [
             {
@@ -3430,11 +3128,10 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the candidate-breakout-level technical-stop feasibility check fails.",
         "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
+          "Technical support implies a stop closer than the lesson's illustrated 5-10% range; the support is not widened artificially.",
           "Verified earnings date unavailable; earnings risk remains Unknown.",
-          "The daily-close confirmation is more than 10% above the technical stop; the entry is extended and the model plan is infeasible at that execution price.",
           "Initial resistance is a chart candidate, not a forecast or automatic sell order; manual chart confirmation is required."
         ]
       },
@@ -3454,7 +3151,7 @@
       "action": "不適合新買",
       "chartUrl": "./assets/2026-07-20/NTAP.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "NTAP",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -3510,10 +3207,10 @@
               "value": null
             },
             {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
-              "value": null
+              "status": "pass",
+              "label": "Above 50MA on breakout",
+              "evidence": "Breakout close is above 50MA.",
+              "value": true
             }
           ],
           "relativeStrengthProxy": {
@@ -3604,7 +3301,10 @@
               "troughs": [
                 156.41,
                 149.27
-              ]
+              ],
+              "candidateBreakoutLevel": 164.66,
+              "candidateBreakoutBasis": "Middle peak between the two lows",
+              "candidateBreakoutDate": "2026-06-22"
             },
             {
               "name": "Cup without Handle",
@@ -3616,7 +3316,10 @@
                 "Cup depth 9.3%; recovered to 100.7% of the rim."
               ],
               "cupDepthPct": 9.34,
-              "priorAdvancePct": 103.21
+              "priorAdvancePct": 103.21,
+              "candidateBreakoutLevel": 164.66,
+              "candidateBreakoutBasis": "Left rim high",
+              "candidateBreakoutDate": "2026-06-22"
             },
             {
               "name": "VCP",
@@ -3632,7 +3335,10 @@
                 18.89,
                 9.34,
                 11.06
-              ]
+              ],
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Saucer with Handle",
@@ -3643,7 +3349,10 @@
               "notes": [
                 "Long rounded base depth 46.6%; handle 11.7%."
               ],
-              "handleDepthPct": 11.7
+              "handleDepthPct": 11.7,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Cup and Handle",
@@ -3657,15 +3366,27 @@
               "cupDepthPct": 15.65,
               "handleDepthPct": 11.06,
               "handleSessions": 5,
-              "priorAdvancePct": 103.21
+              "priorAdvancePct": 103.21,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 186.53,
-        "distanceToPivotPct": -11.13,
+        "candidateBreakout": {
+          "level": 164.66,
+          "status": "candidate",
+          "pattern": "Double Bottom",
+          "basis": "Middle peak between the two lows",
+          "date": "2026-06-22",
+          "evidence": "Double Bottom candidate: Middle peak between the two lows. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 164.66,
+        "distanceToCandidateBreakoutPct": 0.67,
         "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "intradayCrossObserved": true,
+          "closeAboveCandidateBreakout": true,
           "volumeRatio50": 0.44,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -3674,21 +3395,21 @@
           {
             "id": "breakout_immediate",
             "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "status": "observed",
+            "evidence": "Daily high crossed the candidate breakout level; intraday execution cannot be verified."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "status": "pass",
+            "evidence": "Daily close is above the candidate breakout level.",
             "modelDefault": true
           },
           {
             "id": "pullback_reversal",
             "label": "Pullback and reversal",
-            "status": "pending",
-            "evidence": "No complete breakout-retest-reversal sequence observed."
+            "status": "pass",
+            "evidence": "Breakout, retest near the candidate breakout level and renewed rise observed."
           }
         ],
         "screeningEvidence": [
@@ -3716,66 +3437,74 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
         "assumptions": {
-          "entryAtPivot": true,
+          "entryAtCandidateBreakoutLevel": true,
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
         "feasible": false,
-        "entryPrice": 186.53,
+        "modelEntryLevel": 164.66,
         "initialStop": 156.26,
         "supportEvidence": "Most recent local low on 2026-07-16.",
-        "stopDistancePct": 16.23,
-        "riskPerShare": 30.27,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
+        "stopDistancePct": 5.1,
+        "riskPerShare": 8.4,
+        "quantitySuggested": 29,
+        "plannedMaxLossUsd": 243.6,
         "entryGate": {
-          "status": "fail",
+          "status": "unknown",
           "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+          "evidence": "The breakout is observed, but Stage 2, pattern confirmation or other required entry evidence remains Unknown."
         },
         "execution": {
-          "status": "pending",
-          "confirmationDate": null,
-          "confirmationClose": null,
-          "riskPerShare": null,
-          "stopDistancePct": null,
-          "entryExtended": false,
-          "evidence": "No daily-close confirmation above pivot."
+          "status": "pass",
+          "confirmationDate": "2026-05-29",
+          "confirmationClose": 174.29,
+          "riskPerShare": 18.03,
+          "stopDistancePct": 10.34,
+          "entryExtended": true,
+          "evidence": "Daily close above the candidate breakout level observed; this is a model confirmation price, not a recorded fill."
         },
         "courseReferenceLevels": {
-          "twoR": 247.07,
-          "threeR": 277.34,
+          "twoR": 181.46,
+          "threeR": 189.86,
           "evidence": "Lesson 4 risk-multiple references only; not expected-profit forecasts or automatic sell orders."
         },
         "initialProfitReview": {
           "resistance": {
-            "status": "pending",
+            "status": "unknown",
             "price": null,
-            "source": "",
-            "evidence": "A daily close above the pivot is required before an initial profit-review level can be assessed.",
+            "source": "price_discovery",
+            "evidence": "No prior overhead high above the confirmation close was found; this is price discovery, not a projected target.",
             "manualReviewRequired": true
           },
           "modelRewardRisk": null,
           "executionRewardRisk": null,
           "validation": {
-            "status": "pending",
+            "status": "unknown",
             "label": "Execution reward/risk at initial resistance",
-            "evidence": "Await breakout confirmation before calculating execution reward/risk.",
+            "evidence": "No initial resistance is available; reward/risk remains Unknown.",
             "value": null
           }
         },
         "profitProtection": {
           "status": "pending",
           "price": null,
-          "evidence": "Await a daily-close breakout before monitoring for a higher swing-low support."
+          "evidence": "No confirmed higher swing low above the candidate breakout level/support yet; retain the initial technical stop."
         },
         "monitoring": {
           "asOf": "2026-07-21",
@@ -3830,15 +3559,15 @@
         "sellIntoStrength": {
           "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
           "courseReferenceLevels": {
-            "twoR": 247.07,
-            "threeR": 277.34
+            "twoR": 181.46,
+            "threeR": 189.86
           },
           "climaxSignals": [
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "This signal is not present in the latest session.",
+              "value": false
             },
             {
               "status": "unknown",
@@ -3847,10 +3576,10 @@
               "value": null
             },
             {
-              "status": "unknown",
+              "status": "fail",
               "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
+              "evidence": "Latest candle is not the widest since breakout.",
+              "value": false
             }
           ],
           "positiveNewsNegativeReaction": {
@@ -3860,10 +3589,10 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
+        "currentAction": "Model entry gate is Unknown: The breakout is observed, but Stage 2, pattern confirmation or other required entry evidence remains Unknown.",
         "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
+          "Verified earnings date unavailable; earnings risk remains Unknown.",
+          "The daily-close confirmation is more than 10% above the technical stop; the entry is extended and the model plan is infeasible at that execution price."
         ]
       },
       "priceSource": "data/ohlcv_bj_20260723/NTAP.csv"
@@ -3882,7 +3611,7 @@
       "action": "等 trigger",
       "chartUrl": "./assets/2026-07-20/IOT.png",
       "lesson3": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "symbol": "IOT",
         "availability": "available",
         "dataDate": "2026-07-21",
@@ -3942,8 +3671,8 @@
             },
             {
               "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
+              "label": "Above 50MA on breakout",
+              "evidence": "Price has not closed above the candidate breakout level.",
               "value": null
             }
           ],
@@ -4021,7 +3750,7 @@
         "pattern": {
           "confirmation": "unknown",
           "confirmedType": null,
-          "candidateType": "VCP",
+          "candidateType": "Cup and Handle",
           "candidates": [
             {
               "name": "VCP",
@@ -4035,7 +3764,10 @@
               "pullbackDepthsPct": [
                 10.47,
                 9.13
-              ]
+              ],
+              "candidateBreakoutLevel": 38.25,
+              "candidateBreakoutBasis": "High before the final contraction",
+              "candidateBreakoutDate": "2026-07-13"
             },
             {
               "name": "Cup and Handle",
@@ -4049,7 +3781,10 @@
               "cupDepthPct": 25.43,
               "handleDepthPct": 9.6,
               "handleSessions": 5,
-              "priorAdvancePct": 54.46
+              "priorAdvancePct": 54.46,
+              "candidateBreakoutLevel": 39.46,
+              "candidateBreakoutBasis": "Handle high",
+              "candidateBreakoutDate": "2026-07-17"
             },
             {
               "name": "Cup without Handle",
@@ -4061,7 +3796,10 @@
                 "Cup depth 16.5%; recovered to 104.7% of the rim."
               ],
               "cupDepthPct": 16.46,
-              "priorAdvancePct": 54.46
+              "priorAdvancePct": 54.46,
+              "candidateBreakoutLevel": 34.44,
+              "candidateBreakoutBasis": "Left rim high",
+              "candidateBreakoutDate": "2026-06-15"
             },
             {
               "name": "Saucer with Handle",
@@ -4072,7 +3810,10 @@
               "notes": [
                 "Long rounded base depth 30.9%; handle 12.5%."
               ],
-              "handleDepthPct": 12.46
+              "handleDepthPct": 12.46,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             },
             {
               "name": "Double Bottom",
@@ -4083,15 +3824,27 @@
               "notes": [
                 "No complete W-shaped candidate observed."
               ],
-              "troughs": null
+              "troughs": null,
+              "candidateBreakoutLevel": null,
+              "candidateBreakoutBasis": null,
+              "candidateBreakoutDate": null
             }
           ]
         },
-        "pivot": 39.46,
-        "distanceToPivotPct": -8.58,
+        "candidateBreakout": {
+          "level": 39.46,
+          "status": "candidate",
+          "pattern": "Cup and Handle",
+          "basis": "Handle high",
+          "date": "2026-07-17",
+          "evidence": "Cup and Handle candidate: Handle high. Manual chart confirmation is required.",
+          "manualReviewRequired": true
+        },
+        "candidateBreakoutLevel": 39.46,
+        "distanceToCandidateBreakoutPct": -8.59,
         "breakoutEvidence": {
           "intradayCrossObserved": false,
-          "closeAbovePivot": false,
+          "closeAboveCandidateBreakout": false,
           "volumeRatio50": 1.03,
           "lessonExamplePlus50Pct": false,
           "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
@@ -4101,13 +3854,13 @@
             "id": "breakout_immediate",
             "label": "Buy on breakout",
             "status": "pending",
-            "evidence": "No daily high above candidate resistance."
+            "evidence": "No daily high above the candidate breakout level."
           },
           {
             "id": "end_of_day",
             "label": "Buy near end of day",
             "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
+            "evidence": "Await a daily close above the candidate breakout level.",
             "modelDefault": true
           },
           {
@@ -4142,20 +3895,28 @@
             "evidence": "No verified evidence supplied.",
             "value": null
           }
-        ]
+        ],
+        "issuerClassification": {
+          "status": "unknown",
+          "sector": null,
+          "sectorEtf": null,
+          "industry": null,
+          "sic": null,
+          "evidence": "No verified issuer industry / sector classification was supplied."
+        }
       },
       "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v2",
+        "schemaVersion": "course_rules_v3",
         "kind": "model_plan",
         "availability": "available",
         "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
         "assumptions": {
-          "entryAtPivot": true,
+          "entryAtCandidateBreakoutLevel": true,
           "maxRiskUsd": 250.0,
           "defaultBuyMethod": "end_of_day"
         },
         "feasible": false,
-        "entryPrice": 39.46,
+        "modelEntryLevel": 39.46,
         "initialStop": 34.76,
         "supportEvidence": "Most recent local low on 2026-07-14.",
         "stopDistancePct": 11.91,
@@ -4165,7 +3926,7 @@
         "entryGate": {
           "status": "fail",
           "label": "Model entry gate",
-          "evidence": "At least one course entry condition or the pivot-based technical-stop feasibility check fails."
+          "evidence": "At least one course entry condition or the candidate-breakout-level technical-stop feasibility check fails."
         },
         "execution": {
           "status": "pass",
@@ -4174,7 +3935,7 @@
           "riskPerShare": 5.29,
           "stopDistancePct": 13.21,
           "entryExtended": true,
-          "evidence": "Daily close above pivot observed; this is a model confirmation price, not a recorded fill."
+          "evidence": "Daily close above the candidate breakout level observed; this is a model confirmation price, not a recorded fill."
         },
         "courseReferenceLevels": {
           "twoR": 48.86,
@@ -4201,7 +3962,7 @@
         "profitProtection": {
           "status": "candidate",
           "price": 45.15,
-          "evidence": "Local swing low on 2025-05-30 is above the pivot and initial stop; manually confirm before raising the stop."
+          "evidence": "Local swing low on 2025-05-30 is above the candidate breakout level and initial stop; manually confirm before raising the stop."
         },
         "monitoring": {
           "asOf": "2026-07-21",
@@ -4286,7 +4047,7 @@
             "value": null
           }
         },
-        "currentAction": "Model entry gate is Fail: At least one course entry condition or the pivot-based technical-stop feasibility check fails.",
+        "currentAction": "Model entry gate is Fail: At least one course entry condition or the candidate-breakout-level technical-stop feasibility check fails.",
         "notes": [
           "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
           "Verified earnings date unavailable; earnings risk remains Unknown.",
@@ -4296,7 +4057,7 @@
       "priceSource": "data/ohlcv_bj_20260723/IOT.csv"
     }
   ],
-  "schema_version": "course_rules_v2",
+  "schema_version": "course_rules_v3",
   "methodology": "Lesson 3 strict evidence checks plus Lesson 4 public model plans. Pivot-based sizing and 2R/3R remain course references; initial resistance and execution reward/risk require chart confirmation.",
   "disclaimer": "Public educational model plans only; not actual holdings, live alerts or personalized investment advice."
 }
