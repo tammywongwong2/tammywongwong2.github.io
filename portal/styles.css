@@ -14,7 +14,6 @@
   --blue-soft: #e4eff5;
   --shadow: 0 10px 28px rgba(32, 42, 36, 0.08);
 }
-
 * {
   box-sizing: border-box;
 }
@@ -70,6 +69,23 @@ h2 {
   text-align: right;
 }
 
+.topbar-actions {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.decision-link {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.decision-link:hover {
+  text-decoration: underline;
+}
+
 .layout {
   display: grid;
   gap: 18px;
@@ -119,6 +135,178 @@ h2 {
   margin-top: 4px;
   color: var(--muted);
   font-size: 13px;
+}
+
+.workflow-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.workflow-storage {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.workflow-card {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfa;
+}
+
+.workflow-card h3,
+.workflow-lists h3 {
+  margin: 0 0 2px;
+  font-size: 14px;
+}
+
+.workflow-card label {
+  display: grid;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.workflow-card input,
+.workflow-card select,
+.workflow-card textarea {
+  width: 100%;
+  padding: 8px 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.workflow-card textarea {
+  resize: vertical;
+}
+
+.checkbox-label {
+  display: flex !important;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 7px !important;
+}
+
+.checkbox-label input {
+  width: auto;
+}
+
+.workflow-button,
+.workflow-copy,
+.workflow-delete {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.workflow-button.primary {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.workflow-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.workflow-metrics > div {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8faf7;
+}
+
+.workflow-metrics span,
+.workflow-row small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.workflow-metrics strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.workflow-lists {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.workflow-list {
+  display: grid;
+  gap: 7px;
+}
+
+.workflow-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fbfcfa;
+}
+
+.workflow-row strong {
+  display: block;
+  font-size: 12px;
+}
+
+.workflow-row small {
+  margin-top: 3px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.workflow-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 5px;
+}
+
+.workflow-copy {
+  color: var(--green);
+}
+
+.workflow-delete {
+  color: var(--red);
+}
+
+.workflow-empty {
+  padding: 9px;
+  border: 1px dashed var(--line);
+  border-radius: 7px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .panel {
@@ -352,7 +540,9 @@ tr:last-child td {
 
 @media (max-width: 1100px) {
   .summary-grid,
-  .candidate-grid {
+  .candidate-grid,
+  .workflow-grid,
+  .workflow-lists {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -368,11 +558,22 @@ tr:last-child td {
     text-align: left;
   }
 
+  .topbar-actions {
+    justify-items: start;
+  }
+
   .summary-grid,
   .candidate-grid,
+  .workflow-grid,
+  .workflow-metrics,
+  .workflow-lists,
   .levels,
   .trade-plan {
     grid-template-columns: 1fr;
+  }
+
+  .workflow-storage {
+    text-align: left;
   }
 }
 

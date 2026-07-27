@@ -12,11 +12,59 @@
         <p class="eyebrow">BJ Trading Journal Weekly Scan</p>
         <h1>Watchlist Portal</h1>
       </div>
-      <div class="run-meta" id="runMeta">Loading...</div>
+      <div class="topbar-actions">
+        <a class="decision-link" href="./decision-engine.html">開啟 Decision Engine v0.2</a>
+        <div class="run-meta" id="runMeta">Loading...</div>
+      </div>
     </header>
 
     <main class="layout">
       <section class="summary-grid" id="summaryGrid" aria-label="Scan summary"></section>
+
+      <section class="panel workflow-panel" aria-labelledby="workflow-heading">
+        <div class="panel-head">
+          <div>
+            <h2 id="workflow-heading">每日市場流程</h2>
+            <p>按 QA-14 保存市場檢視、篩選快照及研究候選；資料只保存於此瀏覽器。</p>
+          </div>
+          <div class="workflow-storage" id="workflowStorage">未有本機流程記錄</div>
+        </div>
+        <div class="workflow-grid">
+          <div class="workflow-card">
+            <h3>每日市場檢視</h3>
+            <label>流程日期<input id="workflowDate" type="date" /></label>
+            <label>檢視時間<input id="workflowAsOf" type="datetime-local" /></label>
+            <label>市況狀態<select id="workflowMarketState"><option value="">選擇</option><option>清晰</option><option>市況緊張</option><option>Whipsaw risk</option><option>未能判定</option></select></label>
+            <label>監察時間框架<select id="workflowTimeframe"><option value="">選擇</option><option>5m</option><option>15m</option><option>1h</option><option>Daily</option><option>Weekly</option></select></label>
+            <label class="checkbox-label"><input id="workflowCloseReview" type="checkbox" /> 已完成收市後回顧</label>
+            <label>備註<textarea id="workflowNote" rows="3" placeholder="只記錄觀察，不填入未核實的結論"></textarea></label>
+            <button class="workflow-button primary" type="button" id="saveReviewButton">保存每日流程</button>
+          </div>
+          <div class="workflow-card">
+            <h3>Saved Screen Snapshot</h3>
+            <label>Snapshot 名稱<input id="screenName" placeholder="例如：Daily momentum screen" /></label>
+            <label>篩選來源<input id="screenSource" placeholder="TradingView／其他來源" /></label>
+            <label>篩選條件<textarea id="screenFilters" rows="5" placeholder="例如 Market Cap > 1B；Price > 50-day SMA"></textarea></label>
+            <label>候選股數量<input id="screenCandidateCount" type="number" min="0" step="1" placeholder="可留空" /></label>
+            <button class="workflow-button primary" type="button" id="saveScreenButton">保存篩選快照</button>
+          </div>
+          <div class="workflow-card">
+            <h3>研究候選記錄</h3>
+            <label>Symbol<input id="researchSymbol" placeholder="例如 IOT.US" /></label>
+            <label>Tags<input id="researchTags" placeholder="例如 VCP, BO" /></label>
+            <label>方向<select id="researchSide"><option>Long</option><option>Short</option></select></label>
+            <label>Last EOD Price<input id="researchLastEodPrice" type="number" step="any" placeholder="收市價" /></label>
+            <label>Research status<select id="researchStatus"><option>未研究</option><option>研究中</option><option>已送入 DE-0</option><option>暫不研究</option></select></label>
+            <button class="workflow-button primary" type="button" id="saveResearchButton">保存研究候選</button>
+          </div>
+        </div>
+        <div class="workflow-metrics" id="workflowMetrics"></div>
+        <div class="workflow-lists">
+          <div><h3>最近每日流程</h3><div id="reviewList" class="workflow-list"></div></div>
+          <div><h3>已保存篩選快照</h3><div id="screenList" class="workflow-list"></div></div>
+          <div><h3>研究候選隊列</h3><div id="researchList" class="workflow-list"></div></div>
+        </div>
+      </section>
 
       <section class="panel">
         <div class="panel-head">
@@ -53,7 +101,9 @@
                 <th>Pivot</th>
                 <th>Distance</th>
                 <th>Stop</th>
-                <th>2R / 3R</th>
+                <th>Course 2R / 3R</th>
+                <th>Initial resistance</th>
+                <th>Execution R/R</th>
                 <th>Qty</th>
                 <th>Evidence gaps</th>
               </tr>
