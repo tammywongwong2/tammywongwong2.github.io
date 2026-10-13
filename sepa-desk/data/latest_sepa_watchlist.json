@@ -1,972 +1,2529 @@
 {
-  "schema_version": "course_rules_v1",
-  "generatedAt": "2026-07-14T15:31:43.463866+00:00",
-  "dataDate": "2026-07-13",
+  "contract": "Custom Minervini-style 100-Point Contract",
+  "generatedAt": "2026-10-13T12:38:53.437182+00:00",
+  "dataDate": "2026-10-12",
   "article": {
-    "title": "Trade Journal",
-    "date": "July 13, 2026",
-    "url": "https://www.tradingforbj.com/products/bj-trading-journal/categories/2159892046/posts/2198784606"
-  },
-  "summary": {
-    "entry_confirmed": 0,
-    "watchlist": 0,
-    "needs_evidence": 0,
-    "not_eligible": 3,
-    "unavailable": 0,
-    "activeCount": 3,
-    "alerts": 0
+    "title": "October 12, 2026",
+    "date": "2026-10-12",
+    "url": "https://www.tradingforbj.com/products/bj-trading-journal/categories/2159892046/posts/2201076014"
   },
   "rankings": [
     {
-      "ticker": "MU",
-      "company": "Micron Technology",
+      "ticker": "SNOW",
+      "company": "Snowflake Inc.",
+      "dataDate": "2026-10-12",
+      "currentPrice": 360.37,
+      "source": "",
+      "score": 72,
+      "rawScore": 72,
+      "rating": "C+",
+      "stage2Pass": true,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "等 trigger",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 9,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 3,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 2,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 2.88%; stop 5.22% if valid; volume 0.86x; 50D dollar volume $1733M."
+        },
+        "catalystEventRisk": {
+          "score": 4,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 1,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 2.88,
+          "atr20Pct": 3.78,
+          "return10dPct": 9.83,
+          "evidence": "Earnings unknown; cushion 2.88%; ATR20 3.78% if available; 10D return 9.83% if available."
+        }
+      },
+      "readiness": "in_buy_zone",
+      "primaryPattern": "VCP",
+      "patternMatches": [
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 25,
+          "depth": 0.14551342598839567,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            7.03,
+            9.17,
+            4.87
+          ],
+          "finalContractionPct": 12.52,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": false,
+          "confidence": 7,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        },
+        {
+          "name": "Flat Base",
+          "matched": true,
+          "window": 25,
+          "depth": 0.14551342598839567,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            7.03,
+            9.17,
+            4.87
+          ],
+          "finalContractionPct": 12.52,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": false,
+          "confidence": 5,
+          "notes": "Base depth 14.6%; prior advance 76.8%."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 35,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": true,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 338.35,
+        "ma50": 331.59,
+        "ma150": 244.25,
+        "ma200": 231.73,
+        "ma50Change20dPct": 8.74,
+        "ma150Change20dPct": 9.88,
+        "ma200Change20dPct": 4.81,
+        "high52Week": 384.56,
+        "low52Week": 118.3,
+        "distanceFromHighPct": -6.29,
+        "aboveLowPct": 204.62,
+        "stockReturn6mPct": 166.01,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "VCP",
+        "matched": true,
+        "window": 25,
+        "depth": 0.14551342598839567,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 2,
+        "pullbackDepths": [
+          7.03,
+          9.17,
+          4.87
+        ],
+        "finalContractionPct": 12.52,
+        "tightCloses": false,
+        "atrContracting": true,
+        "volumeDryUp": false,
+        "confidence": 7,
+        "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+      },
+      "levels": {
+        "support": 332.0,
+        "resistance": 384.56,
+        "pivot": 350.27,
+        "buyZoneLow": 350.27,
+        "buyZoneHigh": 367.78,
+        "technicalStop": 331.99,
+        "stopPct": 5.22,
+        "target2R": 386.83,
+        "target3R": 405.11,
+        "distanceToPivotPct": 2.88,
+        "rewardRiskRatio": 1.88,
+        "riskPerShare": 18.28,
+        "quantitySuggested": 13,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.86,
+        "retestHold": true,
+        "averageVolume50": 4809677.0,
+        "dollarVolume50": 1733263337.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 35,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": true,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 18,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 4,
+            "finalTightness": 0,
+            "atrContraction": 2,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 8,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 0,
+            "pivotDistance": 0,
+            "breakoutVolume": 1,
+            "confirmationRetest": 4,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 11,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 0,
+            "buyZone": 2,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "331.99, below 332.00: Most recent local low on 2026-10-07. Risk 5.22%; USD250 model quantity 13.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
       "membership": {
-        "ticker": "MU",
-        "company": "Micron Technology",
+        "ticker": "SNOW",
+        "company": "Snowflake Inc.",
         "active": true,
-        "bjStatus": "new_watchlist",
-        "addedArticleDate": "July 13, 2026",
-        "lastSeenArticleDate": "July 13, 2026",
-        "stale": false
-      },
-      "dataDate": "2026-07-13",
-      "schemaVersion": "course_rules_v1",
-      "lesson3": {
-        "schemaVersion": "course_rules_v1",
-        "symbol": "MU",
-        "availability": "available",
-        "dataDate": "2026-07-13",
-        "overallStatus": "not_eligible",
-        "overallLabel": "Not eligible",
-        "reasons": [
-          "Price is 25.3% below the high.",
-          "Official or manually verified RS Rating evidence is unavailable.",
-          "Pattern candidate requires manual chart confirmation."
-        ],
-        "stage2": {
-          "overall": "fail",
-          "checks": [
-            {
-              "status": "pass",
-              "label": "Price above 150MA and 200MA",
-              "evidence": "937.00 is above both averages.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "150MA above 200MA",
-              "evidence": "150MA is above 200MA.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "200MA rising for about one month",
-              "evidence": "Current 200MA is above its value 20 sessions ago.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "50MA above 150MA and 200MA",
-              "evidence": "50MA > 150MA > 200MA.",
-              "value": true
-            },
-            {
-              "status": "fail",
-              "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 25.3% below the high.",
-              "value": false
-            },
-            {
-              "status": "pass",
-              "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 806.4% above the low.",
-              "value": true
-            },
-            {
-              "status": "unknown",
-              "label": "RS Rating above 70 and rising for about six weeks",
-              "evidence": "Official or manually verified RS Rating evidence is unavailable.",
-              "value": null
-            },
-            {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
-              "value": null
-            }
-          ],
-          "indicators": {
-            "currentPrice": 937.0,
-            "ma50": 907.42,
-            "ma150": 554.06,
-            "ma200": 468.34,
-            "ma200TwentySessionsAgo": 377.38,
-            "high52Week": 1255.0,
-            "low52Week": 103.38,
-            "distanceFromHighPct": -25.34,
-            "aboveLowPct": 806.36,
-            "rsRating": null,
-            "rsRisingSixWeeks": null
-          }
-        },
-        "pattern": {
-          "confirmation": "unknown",
-          "confirmedType": null,
-          "candidateType": "Cup without Handle",
-          "candidates": [
-            {
-              "name": "Cup without Handle",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 90,
-              "depthPct": 75.18,
-              "notes": [
-                "Cup depth 33.9%; recovered to 198.8% of the rim."
-              ],
-              "cupDepthPct": 33.91,
-              "priorAdvancePct": 99.51
-            },
-            {
-              "name": "Saucer with Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 65,
-              "depthPct": 68.25,
-              "notes": [
-                "Long rounded base depth 68.3%; handle 23.7%."
-              ],
-              "handleDepthPct": 23.7
-            },
-            {
-              "name": "VCP",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 41.66,
-              "notes": [
-                "A complete contraction sequence was not observed."
-              ],
-              "pullbackDepthsPct": [
-                6.9,
-                18.33,
-                18.43,
-                28.95
-              ]
-            },
-            {
-              "name": "Cup and Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 41.66,
-              "notes": [
-                "Cup 36.3%; handle 29.0%; prior advance 207.0%."
-              ],
-              "cupDepthPct": 36.3,
-              "handleDepthPct": 28.95,
-              "handleSessions": 15,
-              "priorAdvancePct": 206.96
-            },
-            {
-              "name": "Double Bottom",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 41.66,
-              "notes": [
-                "No complete W-shaped candidate observed."
-              ],
-              "troughs": null
-            }
-          ]
-        },
-        "pivot": 1255.0,
-        "distanceToPivotPct": -25.34,
-        "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
-          "volumeRatio50": 0.65,
-          "lessonExamplePlus50Pct": false,
-          "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
-        },
-        "entryMethods": [
-          {
-            "id": "breakout_immediate",
-            "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
-          },
-          {
-            "id": "end_of_day",
-            "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
-            "modelDefault": true
-          },
-          {
-            "id": "pullback_reversal",
-            "label": "Pullback and reversal",
-            "status": "pending",
-            "evidence": "No complete breakout-retest-reversal sequence observed."
-          }
-        ],
-        "screeningEvidence": [
-          {
-            "status": "unknown",
-            "label": "Sales growth",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "EPS growth",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "Industry strength",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "Stock story reviewed",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          }
-        ]
-      },
-      "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
-        "kind": "model_plan",
-        "availability": "available",
-        "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
-        "assumptions": {
-          "entryAtPivot": true,
-          "maxRiskUsd": 250.0,
-          "defaultBuyMethod": "end_of_day"
-        },
-        "feasible": false,
-        "entryPrice": 1255.0,
-        "initialStop": 891.66,
-        "supportEvidence": "Most recent local low on 2026-07-07.",
-        "stopDistancePct": 28.95,
-        "riskPerShare": 363.34,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 1618.34,
-          "twoR": 1981.68,
-          "threeR": 2345.02,
-          "partialExitAllocation": "unknown"
-        },
-        "monitoring": {
-          "asOf": "2026-07-13",
-          "dailyCloseOnly": true,
-          "ma20": 1050.62,
-          "lowerLows": [
-            991.1,
-            1023.65,
-            891.66
-          ]
-        },
-        "stageMaturity": {
-          "status": "unknown",
-          "baseCount": null,
-          "evidence": "No verified early/late-stage evidence supplied."
-        },
-        "sellIntoWeakness": {
-          "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
-          "signals": [
-            {
-              "status": "pass",
-              "label": "Close below 20MA",
-              "evidence": "Latest close is below 20MA.",
-              "value": true
-            },
-            {
-              "status": "fail",
-              "label": "Three lower lows",
-              "evidence": "The latest three local lows are not descending.",
-              "value": false
-            },
-            {
-              "status": "pending",
-              "label": "Initial stop / support breach",
-              "evidence": "Model stop has not been reached.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Price and volume deterioration",
-              "evidence": "The lesson gives no fixed threshold; review the displayed OHLCV evidence manually.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Earnings risk",
-              "evidence": "Verified earnings date unavailable.",
-              "value": null
-            }
-          ]
-        },
-        "sellIntoStrength": {
-          "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 1618.34,
-            "twoR": 1981.68,
-            "threeR": 2345.02,
-            "chartResistance": "unknown"
-          },
-          "climaxSignals": [
-            {
-              "status": "unknown",
-              "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Unusually high volume without matching price progress",
-              "evidence": "No verified event/chart judgement supplied.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            }
-          ],
-          "positiveNewsNegativeReaction": {
-            "status": "unknown",
-            "label": "Positive news with negative price action",
-            "evidence": "No verified news-reaction evidence supplied.",
-            "value": null
-          }
-        },
-        "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
-        ]
+        "bjStatus": "continued_watchlist",
+        "chartUrl": "./assets/2026-10-12/SNOW.webp"
       }
     },
     {
-      "ticker": "ALAB",
-      "company": "Astera Labs",
+      "ticker": "NOW",
+      "company": "ServiceNow Inc.",
+      "dataDate": "2026-10-12",
+      "currentPrice": 140.32,
+      "source": "",
+      "score": 71,
+      "rawScore": 71,
+      "rating": "C+",
+      "stage2Pass": false,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "持倉管理",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 3,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 1,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance -1.54%; stop 4.87% if valid; volume 0.66x; 50D dollar volume $2049M."
+        },
+        "catalystEventRisk": {
+          "score": 3,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 0,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 0.0,
+          "atr20Pct": 3.87,
+          "return10dPct": 6.75,
+          "evidence": "Earnings unknown; cushion 0.00%; ATR20 3.87% if available; 10D return 6.75% if available."
+        }
+      },
+      "readiness": "near_pivot",
+      "primaryPattern": "VCP",
+      "patternMatches": [
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 25,
+          "depth": 0.1443644501149286,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            8.47,
+            10.8,
+            3.71
+          ],
+          "finalContractionPct": 13.51,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": true,
+          "confidence": 7,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        },
+        {
+          "name": "Flat Base",
+          "matched": true,
+          "window": 25,
+          "depth": 0.1443644501149286,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            8.47,
+            10.8,
+            3.71
+          ],
+          "finalContractionPct": 13.51,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": true,
+          "confidence": 5,
+          "notes": "Base depth 14.4%; prior advance 67.4%."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 23,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": false,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": false,
+          "near52WeekHigh": false,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 137.25,
+        "ma50": 132.81,
+        "ma150": 112.45,
+        "ma200": 115.27,
+        "ma50Change20dPct": 10.44,
+        "ma150Change20dPct": 3.5,
+        "ma200Change20dPct": -2.21,
+        "high52Week": 192.97,
+        "low52Week": 81.24,
+        "distanceFromHighPct": -27.28,
+        "aboveLowPct": 72.72,
+        "stockReturn6mPct": 59.84,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "VCP",
+        "matched": true,
+        "window": 25,
+        "depth": 0.1443644501149286,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 2,
+        "pullbackDepths": [
+          8.47,
+          10.8,
+          3.71
+        ],
+        "finalContractionPct": 13.51,
+        "tightCloses": false,
+        "atrContracting": true,
+        "volumeDryUp": true,
+        "confidence": 7,
+        "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+      },
+      "levels": {
+        "support": 135.58,
+        "resistance": 146.98,
+        "pivot": 142.51,
+        "buyZoneLow": 142.51,
+        "buyZoneHigh": 149.64,
+        "technicalStop": 135.57,
+        "stopPct": 4.87,
+        "target2R": 156.39,
+        "target3R": 163.33,
+        "distanceToPivotPct": -1.54,
+        "rewardRiskRatio": 0.64,
+        "riskPerShare": 6.94,
+        "quantitySuggested": 36,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.66,
+        "retestHold": false,
+        "averageVolume50": 14603611.0,
+        "dollarVolume50": 2049178653.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 23,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": false,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": false,
+            "near52WeekHigh": false,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 20,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 4,
+            "finalTightness": 0,
+            "atrContraction": 2,
+            "volumeDryUp": 2
+          }
+        },
+        "pivotReadiness": {
+          "score": 18,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 5,
+            "pivotDistance": 8,
+            "breakoutVolume": 2,
+            "confirmationRetest": 0,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 10,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 0,
+            "buyZone": 1,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "135.57, below 135.58: Most recent local low on 2026-10-08. Risk 4.87%; USD250 model quantity 36.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
       "membership": {
-        "ticker": "ALAB",
-        "company": "Astera Labs",
+        "ticker": "NOW",
+        "company": "ServiceNow Inc.",
+        "active": true,
+        "bjStatus": "position",
+        "chartUrl": "./assets/2026-10-12/NOW.webp"
+      }
+    },
+    {
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "dataDate": "2026-10-12",
+      "currentPrice": 70.33,
+      "source": "",
+      "score": 70,
+      "rawScore": 70,
+      "rating": "C+",
+      "stage2Pass": true,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "持倉管理",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 4,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 2,
+            "stopEfficiency": 0,
+            "breakoutRetestQuality": 1,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance -4.39%; stop 17.52% if valid; volume 0.92x; 50D dollar volume $1504M."
+        },
+        "catalystEventRisk": {
+          "score": 3,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 0,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 0.0,
+          "atr20Pct": 4.88,
+          "return10dPct": 12.29,
+          "evidence": "Earnings unknown; cushion 0.00%; ATR20 4.88% if available; 10D return 12.29% if available."
+        }
+      },
+      "readiness": "near_pivot",
+      "primaryPattern": "VCP",
+      "patternMatches": [
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 35,
+          "depth": 0.3787384448069603,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 3,
+          "pullbackDepths": [
+            18.08,
+            11.47,
+            7.57
+          ],
+          "finalContractionPct": 17.51,
+          "tightCloses": false,
+          "atrContracting": false,
+          "volumeDryUp": false,
+          "confidence": 8,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 35,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": true,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 64.68,
+        "ma50": 58.62,
+        "ma150": 43.66,
+        "ma200": 38.3,
+        "ma50Change20dPct": 14.07,
+        "ma150Change20dPct": 15.07,
+        "ma200Change20dPct": 12.06,
+        "high52Week": 73.56,
+        "low52Week": 19.84,
+        "distanceFromHighPct": -4.39,
+        "aboveLowPct": 254.49,
+        "stockReturn6mPct": 187.41,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "VCP",
+        "matched": true,
+        "window": 35,
+        "depth": 0.3787384448069603,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 3,
+        "pullbackDepths": [
+          18.08,
+          11.47,
+          7.57
+        ],
+        "finalContractionPct": 17.51,
+        "tightCloses": false,
+        "atrContracting": false,
+        "volumeDryUp": false,
+        "confidence": 8,
+        "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+      },
+      "levels": {
+        "support": 60.68,
+        "resistance": null,
+        "pivot": 73.56,
+        "buyZoneLow": 73.56,
+        "buyZoneHigh": 77.24,
+        "technicalStop": 60.67,
+        "stopPct": 17.52,
+        "target2R": 99.34,
+        "target3R": 112.23,
+        "distanceToPivotPct": -4.39,
+        "rewardRiskRatio": null,
+        "riskPerShare": 12.89,
+        "quantitySuggested": null,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.92,
+        "retestHold": false,
+        "averageVolume50": 21383530.0,
+        "dollarVolume50": 1503903662.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 35,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": true,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 18,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 6,
+            "finalTightness": 0,
+            "atrContraction": 0,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 11,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 5,
+            "pivotDistance": 6,
+            "breakoutVolume": 0,
+            "confirmationRetest": 0,
+            "structure": 0
+          }
+        },
+        "riskFeasibility": {
+          "score": 6,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 0,
+            "rewardRisk": 0,
+            "buyZone": 1,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "60.67, below 60.68: Most recent local low on 2026-09-29. Risk 17.52%; USD250 model quantity None.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. Stop wider than10%; size is arithmetic, not an approved trade. No verified overhead target; quantity withheld. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
+      "membership": {
+        "ticker": "HPE",
+        "company": "Hewlett Packard Enterprise Company",
+        "active": true,
+        "bjStatus": "position",
+        "chartUrl": "./assets/2026-10-12/HOLDINGS.webp"
+      }
+    },
+    {
+      "ticker": "ZETA",
+      "company": "Zeta Global Holdings Corp.",
+      "dataDate": "2026-10-12",
+      "currentPrice": 33.51,
+      "source": "",
+      "score": 69,
+      "rawScore": 69,
+      "rating": "C",
+      "stage2Pass": true,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "持倉管理",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 7,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 2,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 1,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance -3.71%; stop 7.21% if valid; volume 0.53x; 50D dollar volume $258M."
+        },
+        "catalystEventRisk": {
+          "score": 3,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 0,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 0.0,
+          "atr20Pct": 4.32,
+          "return10dPct": 15.59,
+          "evidence": "Earnings unknown; cushion 0.00%; ATR20 4.32% if available; 10D return 15.59% if available."
+        }
+      },
+      "readiness": "near_pivot",
+      "primaryPattern": "VCP",
+      "patternMatches": [
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 25,
+          "depth": 0.19454022988505737,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            7.62,
+            12.43,
+            7.18
+          ],
+          "finalContractionPct": 18.23,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": false,
+          "confidence": 7,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 35,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": true,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 31.32,
+        "ma50": 29.89,
+        "ma150": 22.57,
+        "ma200": 21.72,
+        "ma50Change20dPct": 15.34,
+        "ma150Change20dPct": 9.26,
+        "ma200Change20dPct": 6.33,
+        "high52Week": 34.8,
+        "low52Week": 14.37,
+        "distanceFromHighPct": -3.71,
+        "aboveLowPct": 133.28,
+        "stockReturn6mPct": 106.85,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "VCP",
+        "matched": true,
+        "window": 25,
+        "depth": 0.19454022988505737,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 2,
+        "pullbackDepths": [
+          7.62,
+          12.43,
+          7.18
+        ],
+        "finalContractionPct": 18.23,
+        "tightCloses": false,
+        "atrContracting": true,
+        "volumeDryUp": false,
+        "confidence": 7,
+        "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+      },
+      "levels": {
+        "support": 32.3,
+        "resistance": null,
+        "pivot": 34.8,
+        "buyZoneLow": 34.8,
+        "buyZoneHigh": 36.54,
+        "technicalStop": 32.29,
+        "stopPct": 7.21,
+        "target2R": 39.82,
+        "target3R": 42.33,
+        "distanceToPivotPct": -3.71,
+        "rewardRiskRatio": null,
+        "riskPerShare": 2.51,
+        "quantitySuggested": null,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.53,
+        "retestHold": false,
+        "averageVolume50": 7684596.0,
+        "dollarVolume50": 257510828.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 35,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": true,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 18,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 4,
+            "finalTightness": 0,
+            "atrContraction": 2,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 6,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 0,
+            "pivotDistance": 6,
+            "breakoutVolume": 0,
+            "confirmationRetest": 0,
+            "structure": 0
+          }
+        },
+        "riskFeasibility": {
+          "score": 10,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 0,
+            "buyZone": 1,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "32.29, below 32.30: Most recent local low on 2026-10-08. Risk 7.21%; USD250 model quantity None.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. No verified overhead target; quantity withheld. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
+      "membership": {
+        "ticker": "ZETA",
+        "company": "Zeta Global Holdings Corp.",
+        "active": true,
+        "bjStatus": "position",
+        "chartUrl": "./assets/2026-10-12/HOLDINGS.webp"
+      }
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies Inc.",
+      "dataDate": "2026-10-12",
+      "currentPrice": 209.0,
+      "source": "",
+      "score": 68,
+      "rawScore": 68,
+      "rating": "C",
+      "stage2Pass": false,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "只放 watchlist",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 7,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 1,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 2,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 6.58%; stop 5.76% if valid; volume 0.72x; 50D dollar volume $7047M."
+        },
+        "catalystEventRisk": {
+          "score": 6,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 2,
+            "gapVolatility": 2,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 6.58,
+          "atr20Pct": 2.96,
+          "return10dPct": 11.48,
+          "evidence": "Earnings unknown; cushion 6.58%; ATR20 2.96% if available; 10D return 11.48% if available."
+        }
+      },
+      "readiness": "extended",
+      "primaryPattern": "VCP",
+      "patternMatches": [
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 35,
+          "depth": 0.2272467489653183,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            12.03,
+            12.65,
+            5.07
+          ],
+          "finalContractionPct": 13.21,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": true,
+          "confidence": 7,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        },
+        {
+          "name": "Cup & Handle",
+          "matched": true,
+          "window": 35,
+          "depth": 0.2272467489653183,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            12.03,
+            12.65,
+            5.07
+          ],
+          "finalContractionPct": 13.21,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": true,
+          "confidence": 6,
+          "notes": "Cup depth 15.5%; handle depth 13.2%; upper-half handle=True."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 29,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": false,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 188.78,
+        "ma50": 178.7,
+        "ma150": 150.99,
+        "ma200": 152.41,
+        "ma50Change20dPct": 15.43,
+        "ma150Change20dPct": 4.52,
+        "ma200Change20dPct": 0.55,
+        "high52Week": 212.94,
+        "low52Week": 106.37,
+        "distanceFromHighPct": -1.85,
+        "aboveLowPct": 96.48,
+        "stockReturn6mPct": 54.02,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "VCP",
+        "matched": true,
+        "window": 35,
+        "depth": 0.2272467489653183,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 2,
+        "pullbackDepths": [
+          12.03,
+          12.65,
+          5.07
+        ],
+        "finalContractionPct": 13.21,
+        "tightCloses": false,
+        "atrContracting": true,
+        "volumeDryUp": true,
+        "confidence": 7,
+        "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+      },
+      "levels": {
+        "support": 184.81,
+        "resistance": 212.94,
+        "pivot": 196.09,
+        "buyZoneLow": 196.09,
+        "buyZoneHigh": 205.89,
+        "technicalStop": 184.8,
+        "stopPct": 5.76,
+        "target2R": 218.67,
+        "target3R": 229.96,
+        "distanceToPivotPct": 6.58,
+        "rewardRiskRatio": 1.49,
+        "riskPerShare": 11.29,
+        "quantitySuggested": 22,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.72,
+        "retestHold": true,
+        "averageVolume50": 33717412.0,
+        "dollarVolume50": 7046939066.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 29,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": false,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 20,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 4,
+            "finalTightness": 0,
+            "atrContraction": 2,
+            "volumeDryUp": 2
+          }
+        },
+        "pivotReadiness": {
+          "score": 10,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 0,
+            "pivotDistance": 2,
+            "breakoutVolume": 1,
+            "confirmationRetest": 4,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 9,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 0,
+            "buyZone": 0,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "184.80, below 184.81: Most recent local low on 2026-09-29. Risk 5.76%; USD250 model quantity 22.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
+      "membership": {
+        "ticker": "PLTR",
+        "company": "Palantir Technologies Inc.",
+        "active": true,
+        "bjStatus": "rejoined_watchlist",
+        "chartUrl": "./assets/2026-10-12/PLTR.webp"
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corporation",
+      "dataDate": "2026-10-12",
+      "currentPrice": 541.15,
+      "source": "",
+      "score": 67,
+      "rawScore": 67,
+      "rating": "C",
+      "stage2Pass": false,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "持倉管理",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 5,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 1,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 0,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 5.28%; stop 4.43% if valid; volume 0.76x; 50D dollar volume $13035M."
+        },
+        "catalystEventRisk": {
+          "score": 6,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 2,
+            "gapVolatility": 2,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 5.28,
+          "atr20Pct": 2.17,
+          "return10dPct": 6.27,
+          "evidence": "Earnings unknown; cushion 5.28%; ATR20 2.17% if available; 10D return 6.27% if available."
+        }
+      },
+      "readiness": "extended",
+      "primaryPattern": "VCP",
+      "patternMatches": [
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 25,
+          "depth": 0.10454361204259868,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 3,
+          "pullbackDepths": [
+            4.46,
+            3.67,
+            3.15
+          ],
+          "finalContractionPct": 7.43,
+          "tightCloses": false,
+          "atrContracting": false,
+          "volumeDryUp": false,
+          "confidence": 9,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        },
+        {
+          "name": "Cup & Handle",
+          "matched": true,
+          "window": 65,
+          "depth": 0.3046578472196632,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": false,
+          "contractionCount": 3,
+          "pullbackDepths": [
+            5.75,
+            4.46,
+            3.67,
+            3.15
+          ],
+          "finalContractionPct": 7.43,
+          "tightCloses": false,
+          "atrContracting": false,
+          "volumeDryUp": false,
+          "confidence": 7,
+          "notes": "Cup depth 27.3%; handle depth 7.4%; upper-half handle=True."
+        },
+        {
+          "name": "Flat Base",
+          "matched": true,
+          "window": 25,
+          "depth": 0.10454361204259868,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 3,
+          "pullbackDepths": [
+            4.46,
+            3.67,
+            3.15
+          ],
+          "finalContractionPct": 7.43,
+          "tightCloses": false,
+          "atrContracting": false,
+          "volumeDryUp": false,
+          "confidence": 6,
+          "notes": "Base depth 10.5%; prior advance 48.3%."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 29,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": false,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 511.89,
+        "ma50": 501.98,
+        "ma150": 433.63,
+        "ma200": 434.28,
+        "ma50Change20dPct": 10.09,
+        "ma150Change20dPct": 3.51,
+        "ma200Change20dPct": 0.66,
+        "high52Week": 553.72,
+        "low52Week": 349.2,
+        "distanceFromHighPct": -2.27,
+        "aboveLowPct": 54.97,
+        "stockReturn6mPct": 37.66,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "VCP",
+        "matched": true,
+        "window": 25,
+        "depth": 0.10454361204259868,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 3,
+        "pullbackDepths": [
+          4.46,
+          3.67,
+          3.15
+        ],
+        "finalContractionPct": 7.43,
+        "tightCloses": false,
+        "atrContracting": false,
+        "volumeDryUp": false,
+        "confidence": 9,
+        "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+      },
+      "levels": {
+        "support": 491.22,
+        "resistance": 553.72,
+        "pivot": 514,
+        "buyZoneLow": 514,
+        "buyZoneHigh": 539.7,
+        "technicalStop": 491.21,
+        "stopPct": 4.43,
+        "target2R": 559.58,
+        "target3R": 582.37,
+        "distanceToPivotPct": 5.28,
+        "rewardRiskRatio": 1.74,
+        "riskPerShare": 22.79,
+        "quantitySuggested": 10,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.76,
+        "retestHold": false,
+        "averageVolume50": 24088025.0,
+        "dollarVolume50": 13035234512.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 29,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": false,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 18,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 6,
+            "finalTightness": 0,
+            "atrContraction": 0,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 11,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 5,
+            "pivotDistance": 2,
+            "breakoutVolume": 1,
+            "confirmationRetest": 0,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 9,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 0,
+            "buyZone": 0,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "491.21, below 491.22: Most recent local low on 2026-09-24. Risk 4.43%; USD250 model quantity 10.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
+      "membership": {
+        "ticker": "MSFT",
+        "company": "Microsoft Corporation",
+        "active": true,
+        "bjStatus": "position",
+        "chartUrl": "./assets/2026-10-12/MSFT.webp"
+      }
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms Inc.",
+      "dataDate": "2026-10-12",
+      "currentPrice": 742.96,
+      "source": "",
+      "score": 66,
+      "rawScore": 66,
+      "rating": "C",
+      "stage2Pass": false,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "持倉管理",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 5,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 1,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 0,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 7.86%; stop 4.07% if valid; volume 1.30x; 50D dollar volume $14174M."
+        },
+        "catalystEventRisk": {
+          "score": 5,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 2,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 7.86,
+          "atr20Pct": 3.45,
+          "return10dPct": 3.82,
+          "evidence": "Earnings unknown; cushion 7.86%; ATR20 3.45% if available; 10D return 3.82% if available."
+        }
+      },
+      "readiness": "extended",
+      "primaryPattern": "VCP",
+      "patternMatches": [
+        {
+          "name": "VCP",
+          "matched": true,
+          "window": 25,
+          "depth": 0.2181008110597944,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            8.54,
+            4.8
+          ],
+          "finalContractionPct": 5.39,
+          "tightCloses": true,
+          "atrContracting": false,
+          "volumeDryUp": false,
+          "confidence": 7,
+          "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+        },
+        {
+          "name": "Cup & Handle",
+          "matched": true,
+          "window": 35,
+          "depth": 0.2994530014136611,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": false,
+          "contractionCount": 2,
+          "pullbackDepths": [
+            6.28,
+            8.54,
+            4.8
+          ],
+          "finalContractionPct": 5.39,
+          "tightCloses": true,
+          "atrContracting": false,
+          "volumeDryUp": false,
+          "confidence": 7,
+          "notes": "Cup depth 29.9%; handle depth 5.4%; upper-half handle=True."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 27,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": false,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": false
+        },
+        "ma20": 723.05,
+        "ma50": 643.46,
+        "ma150": 621.98,
+        "ma200": 630.52,
+        "ma50Change20dPct": 6.79,
+        "ma150Change20dPct": 1.53,
+        "ma200Change20dPct": 1.13,
+        "high52Week": 779.82,
+        "low52Week": 520.26,
+        "distanceFromHighPct": -4.73,
+        "aboveLowPct": 42.81,
+        "stockReturn6mPct": 12.15,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "VCP",
+        "matched": true,
+        "window": 25,
+        "depth": 0.2181008110597944,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 2,
+        "pullbackDepths": [
+          8.54,
+          4.8
+        ],
+        "finalContractionPct": 5.39,
+        "tightCloses": true,
+        "atrContracting": false,
+        "volumeDryUp": false,
+        "confidence": 7,
+        "notes": "At least two progressively smaller pullbacks with a final contraction no wider than 12%."
+      },
+      "levels": {
+        "support": 660.8,
+        "resistance": 744.0,
+        "pivot": 688.84,
+        "buyZoneLow": 688.84,
+        "buyZoneHigh": 723.28,
+        "technicalStop": 660.79,
+        "stopPct": 4.07,
+        "target2R": 744.94,
+        "target3R": 772.99,
+        "distanceToPivotPct": 7.86,
+        "rewardRiskRatio": 1.97,
+        "riskPerShare": 28.05,
+        "quantitySuggested": 8,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 1.3,
+        "retestHold": false,
+        "averageVolume50": 19077462.0,
+        "dollarVolume50": 14173790841.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 27,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": false,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": false
+          }
+        },
+        "patternContraction": {
+          "score": 19,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 4,
+            "finalTightness": 3,
+            "atrContraction": 0,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 11,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 5,
+            "pivotDistance": 2,
+            "breakoutVolume": 1,
+            "confirmationRetest": 0,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 9,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 0,
+            "buyZone": 0,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "660.79, below 660.80: Most recent local low on 2026-09-18. Risk 4.07%; USD250 model quantity 8.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
+      "membership": {
+        "ticker": "META",
+        "company": "Meta Platforms Inc.",
+        "active": true,
+        "bjStatus": "position",
+        "chartUrl": "./assets/2026-10-12/META.webp"
+      }
+    },
+    {
+      "ticker": "TEAM",
+      "company": "Atlassian Corporation",
+      "dataDate": "2026-10-12",
+      "currentPrice": 207.75,
+      "source": "",
+      "score": 65,
+      "rawScore": 65,
+      "rating": "C",
+      "stage2Pass": true,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "等 trigger",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 3,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 2,
+            "stopEfficiency": 0,
+            "breakoutRetestQuality": 0,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 3.88%; stop 15.98% if valid; volume 0.49x; 50D dollar volume $842M."
+        },
+        "catalystEventRisk": {
+          "score": 4,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 1,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 3.88,
+          "atr20Pct": 4.02,
+          "return10dPct": 16.36,
+          "evidence": "Earnings unknown; cushion 3.88%; ATR20 4.02% if available; 10D return 16.36% if available."
+        }
+      },
+      "readiness": "in_buy_zone",
+      "primaryPattern": "High Tight Flag",
+      "patternMatches": [
+        {
+          "name": "High Tight Flag",
+          "matched": true,
+          "window": 15,
+          "depth": 0.2104397669610975,
+          "durationOk": true,
+          "depthOk": true,
+          "priorAdvanceOk": true,
+          "contractionCount": 0,
+          "pullbackDepths": [],
+          "finalContractionPct": 21.04,
+          "tightCloses": false,
+          "atrContracting": true,
+          "volumeDryUp": true,
+          "confidence": 7,
+          "notes": "Prior 40-session advance 122.3%; flag depth 21.0%."
+        }
+      ],
+      "stage2Indicators": {
+        "score": 35,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": true,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
+        },
+        "ma20": 192.03,
+        "ma50": 175.98,
+        "ma150": 113.53,
+        "ma200": 113.51,
+        "ma50Change20dPct": 29.42,
+        "ma150Change20dPct": 15.08,
+        "ma200Change20dPct": 3.06,
+        "high52Week": 212.84,
+        "low52Week": 56.01,
+        "distanceFromHighPct": -2.39,
+        "aboveLowPct": 270.92,
+        "stockReturn6mPct": 247.93,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
+      },
+      "patternEvidence": {
+        "name": "High Tight Flag",
+        "matched": true,
+        "window": 15,
+        "depth": 0.2104397669610975,
+        "durationOk": true,
+        "depthOk": true,
+        "priorAdvanceOk": true,
+        "contractionCount": 0,
+        "pullbackDepths": [],
+        "finalContractionPct": 21.04,
+        "tightCloses": false,
+        "atrContracting": true,
+        "volumeDryUp": true,
+        "confidence": 7,
+        "notes": "Prior 40-session advance 122.3%; flag depth 21.0%."
+      },
+      "levels": {
+        "support": 168.05,
+        "resistance": 212.84,
+        "pivot": 200,
+        "buyZoneLow": 200,
+        "buyZoneHigh": 210.0,
+        "technicalStop": 168.04,
+        "stopPct": 15.98,
+        "target2R": 263.92,
+        "target3R": 295.88,
+        "distanceToPivotPct": 3.88,
+        "rewardRiskRatio": 0.4,
+        "riskPerShare": 31.96,
+        "quantitySuggested": 7,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.49,
+        "retestHold": false,
+        "averageVolume50": 4054162.0,
+        "dollarVolume50": 842252118.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 35,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": true,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
+          }
+        },
+        "patternContraction": {
+          "score": 16,
+          "max": 25,
+          "parts": {
+            "recognized": 5,
+            "durationDepth": 4,
+            "priorAdvance": 3,
+            "contractions": 0,
+            "finalTightness": 0,
+            "atrContraction": 2,
+            "volumeDryUp": 2
+          }
+        },
+        "pivotReadiness": {
+          "score": 9,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 5,
+            "pivotDistance": 0,
+            "breakoutVolume": 1,
+            "confirmationRetest": 0,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 5,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 0,
+            "rewardRisk": 0,
+            "buyZone": 0,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "168.04, below 168.05: Most recent local low on 2026-09-29. Risk 15.98%; USD250 model quantity 7.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. Stop wider than10%; size is arithmetic, not an approved trade. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
+      "membership": {
+        "ticker": "TEAM",
+        "company": "Atlassian Corporation",
         "active": true,
         "bjStatus": "new_watchlist",
-        "addedArticleDate": "July 13, 2026",
-        "lastSeenArticleDate": "July 13, 2026",
-        "stale": false
+        "chartUrl": "./assets/2026-10-12/TEAM.webp"
+      }
+    },
+    {
+      "ticker": "GTLB",
+      "company": "GitLab Inc.",
+      "dataDate": "2026-10-12",
+      "currentPrice": 56.01,
+      "source": "",
+      "score": 44,
+      "rawScore": 44,
+      "rating": "D",
+      "stage2Pass": true,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "blocked",
+      "practicalAction": "等 trigger",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 1,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 0,
+            "stopEfficiency": 0,
+            "breakoutRetestQuality": 0,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 9.07%; stop 13.90% if valid; volume 0.87x; 50D dollar volume $270M."
+        },
+        "catalystEventRisk": {
+          "score": 3,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 2,
+            "gapVolatility": 1,
+            "climaxRisk": 0
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 9.07,
+          "atr20Pct": 3.3,
+          "return10dPct": 21.21,
+          "evidence": "Earnings unknown; cushion 9.07%; ATR20 3.30% if available; 10D return 21.21% if available."
+        }
       },
-      "dataDate": "2026-07-13",
-      "schemaVersion": "course_rules_v1",
-      "lesson3": {
-        "schemaVersion": "course_rules_v1",
-        "symbol": "ALAB",
-        "availability": "available",
-        "dataDate": "2026-07-13",
-        "overallStatus": "not_eligible",
-        "overallLabel": "Not eligible",
-        "reasons": [
-          "Price is 27.5% below the high.",
-          "Official or manually verified RS Rating evidence is unavailable.",
-          "Pattern candidate requires manual chart confirmation."
-        ],
-        "stage2": {
-          "overall": "fail",
-          "checks": [
-            {
-              "status": "pass",
-              "label": "Price above 150MA and 200MA",
-              "evidence": "362.05 is above both averages.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "150MA above 200MA",
-              "evidence": "150MA is above 200MA.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "200MA rising for about one month",
-              "evidence": "Current 200MA is above its value 20 sessions ago.",
-              "value": true
-            },
-            {
-              "status": "pass",
-              "label": "50MA above 150MA and 200MA",
-              "evidence": "50MA > 150MA > 200MA.",
-              "value": true
-            },
-            {
-              "status": "fail",
-              "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 27.5% below the high.",
-              "value": false
-            },
-            {
-              "status": "pass",
-              "label": "At least about 25% above 52-week low",
-              "evidence": "Price is 310.6% above the low.",
-              "value": true
-            },
-            {
-              "status": "unknown",
-              "label": "RS Rating above 70 and rising for about six weeks",
-              "evidence": "Official or manually verified RS Rating evidence is unavailable.",
-              "value": null
-            },
-            {
-              "status": "pending",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Price has not closed above the candidate resistance.",
-              "value": null
-            }
-          ],
-          "indicators": {
-            "currentPrice": 362.05,
-            "ma50": 328.47,
-            "ma150": 209.65,
-            "ma200": 200.42,
-            "ma200TwentySessionsAgo": 181.19,
-            "high52Week": 499.48,
-            "low52Week": 88.19,
-            "distanceFromHighPct": -27.51,
-            "aboveLowPct": 310.56,
-            "rsRating": null,
-            "rsRisingSixWeeks": null
-          }
+      "readiness": "extended",
+      "primaryPattern": null,
+      "patternMatches": [],
+      "stage2Indicators": {
+        "score": 35,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": true,
+          "priceAbove200": true,
+          "ma20Above50": true,
+          "maOrder": true,
+          "ma50Rising": true,
+          "ma150Rising": true,
+          "ma200Rising20": true,
+          "near52WeekHigh": true,
+          "above52WeekLow30": true,
+          "outperformSpy6m": true
         },
-        "pattern": {
-          "confirmation": "unknown",
-          "confirmedType": null,
-          "candidateType": "Cup without Handle",
-          "candidates": [
-            {
-              "name": "Cup without Handle",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 90,
-              "depthPct": 80.4,
-              "notes": [
-                "Cup depth 27.6%; recovered to 267.8% of the rim."
-              ],
-              "cupDepthPct": 27.59,
-              "priorAdvancePct": 80.11
-            },
-            {
-              "name": "Double Bottom",
-              "status": "candidate",
-              "confirmation": "unknown",
-              "windowSessions": 65,
-              "depthPct": 75.27,
-              "notes": [
-                "Two similar lows with recovery toward intervening resistance."
-              ],
-              "troughs": [
-                179.54,
-                189.69
-              ]
-            },
-            {
-              "name": "Saucer with Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 65,
-              "depthPct": 75.27,
-              "notes": [
-                "Long rounded base depth 72.0%; handle 29.9%."
-              ],
-              "handleDepthPct": 29.91
-            },
-            {
-              "name": "VCP",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 35,
-              "depthPct": 43.56,
-              "notes": [
-                "A complete contraction sequence was not observed."
-              ],
-              "pullbackDepthsPct": [
-                10.87,
-                18.63,
-                15.53,
-                26.59
-              ]
-            },
-            {
-              "name": "Cup and Handle",
-              "status": "not_observed",
-              "confirmation": "unknown",
-              "windowSessions": 25,
-              "depthPct": 39.34,
-              "notes": [
-                "Cup 31.3%; handle 29.9%; prior advance 280.4%."
-              ],
-              "cupDepthPct": 31.29,
-              "handleDepthPct": 29.91,
-              "handleSessions": 10,
-              "priorAdvancePct": 280.4
-            }
-          ]
-        },
-        "pivot": 499.48,
-        "distanceToPivotPct": -27.51,
-        "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
-          "volumeRatio50": 1.02,
-          "lessonExamplePlus50Pct": false,
-          "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
-        },
-        "entryMethods": [
-          {
-            "id": "breakout_immediate",
-            "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
-          },
-          {
-            "id": "end_of_day",
-            "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
-            "modelDefault": true
-          },
-          {
-            "id": "pullback_reversal",
-            "label": "Pullback and reversal",
-            "status": "pending",
-            "evidence": "No complete breakout-retest-reversal sequence observed."
-          }
-        ],
-        "screeningEvidence": [
-          {
-            "status": "unknown",
-            "label": "Sales growth",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "EPS growth",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "Industry strength",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "Stock story reviewed",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          }
-        ]
+        "ma20": 50.01,
+        "ma50": 45.86,
+        "ma150": 32.91,
+        "ma200": 32.78,
+        "ma50Change20dPct": 17.71,
+        "ma150Change20dPct": 10.09,
+        "ma200Change20dPct": 3.39,
+        "high52Week": 56.64,
+        "low52Week": 18.73,
+        "distanceFromHighPct": -1.11,
+        "aboveLowPct": 199.04,
+        "stockReturn6mPct": 178.93,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": true
       },
-      "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
-        "kind": "model_plan",
-        "availability": "available",
-        "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
-        "assumptions": {
-          "entryAtPivot": true,
-          "maxRiskUsd": 250.0,
-          "defaultBuyMethod": "end_of_day"
-        },
-        "feasible": false,
-        "entryPrice": 499.48,
-        "initialStop": 366.66,
-        "supportEvidence": "Most recent local low on 2026-07-07.",
-        "stopDistancePct": 26.59,
-        "riskPerShare": 132.82,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 632.3,
-          "twoR": 765.12,
-          "threeR": 897.94,
-          "partialExitAllocation": "unknown"
-        },
-        "monitoring": {
-          "asOf": "2026-07-13",
-          "dailyCloseOnly": true,
-          "ma20": 405.68,
-          "lowerLows": [
-            303.0,
-            372.5,
-            366.66
-          ]
-        },
-        "stageMaturity": {
-          "status": "unknown",
-          "baseCount": null,
-          "evidence": "No verified early/late-stage evidence supplied."
-        },
-        "sellIntoWeakness": {
-          "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
-          "signals": [
-            {
-              "status": "pass",
-              "label": "Close below 20MA",
-              "evidence": "Latest close is below 20MA.",
-              "value": true
-            },
-            {
-              "status": "fail",
-              "label": "Three lower lows",
-              "evidence": "The latest three local lows are not descending.",
-              "value": false
-            },
-            {
-              "status": "pass",
-              "label": "Initial stop / support breach",
-              "evidence": "Latest daily low reached the model stop.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Price and volume deterioration",
-              "evidence": "The lesson gives no fixed threshold; review the displayed OHLCV evidence manually.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Earnings risk",
-              "evidence": "Verified earnings date unavailable.",
-              "value": null
-            }
-          ]
-        },
-        "sellIntoStrength": {
-          "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 632.3,
-            "twoR": 765.12,
-            "threeR": 897.94,
-            "chartResistance": "unknown"
-          },
-          "climaxSignals": [
-            {
-              "status": "unknown",
-              "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Unusually high volume without matching price progress",
-              "evidence": "No verified event/chart judgement supplied.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            }
-          ],
-          "positiveNewsNegativeReaction": {
-            "status": "unknown",
-            "label": "Positive news with negative price action",
-            "evidence": "No verified news-reaction evidence supplied.",
-            "value": null
+      "patternEvidence": null,
+      "levels": {
+        "support": 44.22,
+        "resistance": 56.64,
+        "pivot": 51.35,
+        "buyZoneLow": 51.35,
+        "buyZoneHigh": 53.92,
+        "technicalStop": 44.21,
+        "stopPct": 13.9,
+        "target2R": 65.63,
+        "target3R": 72.77,
+        "distanceToPivotPct": 9.07,
+        "rewardRiskRatio": 0.74,
+        "riskPerShare": 7.14,
+        "quantitySuggested": 35,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.87,
+        "retestHold": false,
+        "averageVolume50": 4820084.0,
+        "dollarVolume50": 269972899.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 35,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": true,
+            "priceAbove200": true,
+            "ma20Above50": true,
+            "maOrder": true,
+            "ma50Rising": true,
+            "ma150Rising": true,
+            "ma200Rising20": true,
+            "near52WeekHigh": true,
+            "above52WeekLow30": true,
+            "outperformSpy6m": true
           }
         },
-        "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
-        ]
+        "patternContraction": {
+          "score": 0,
+          "max": 25,
+          "parts": {
+            "recognized": 0,
+            "durationDepth": 0,
+            "priorAdvance": 0,
+            "contractions": 0,
+            "finalTightness": 0,
+            "atrContraction": 0,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 4,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 0,
+            "pivotDistance": 0,
+            "breakoutVolume": 1,
+            "confirmationRetest": 0,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 5,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 0,
+            "rewardRisk": 0,
+            "buyZone": 0,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "44.21, below 44.22: Most recent local low on 2026-09-28. Risk 13.9%; USD250 model quantity 35.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. Stop wider than10%; size is arithmetic, not an approved trade. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
+      "membership": {
+        "ticker": "GTLB",
+        "company": "GitLab Inc.",
+        "active": true,
+        "bjStatus": "new_watchlist",
+        "chartUrl": "./assets/2026-10-12/GTLB.webp"
       }
     },
     {
       "ticker": "SPCX",
-      "company": "Space Exploration Technologies",
+      "company": "Space Exploration Technologies Corp.",
+      "dataDate": "2026-10-12",
+      "currentPrice": 163.42,
+      "source": "",
+      "score": 34,
+      "rawScore": 34,
+      "rating": "D",
+      "stage2Pass": false,
+      "stage2Method": "standard",
+      "scoreCapped": false,
+      "clientBuyability": "not_buyable",
+      "practicalDecision": "conditional",
+      "practicalAction": "持倉管理",
+      "executionOverlays": {
+        "marketEnvironment": {
+          "score": 8,
+          "max": 10,
+          "parts": {
+            "spyAbove20": 2,
+            "spyAbove50": 2,
+            "spy20Above50": 2,
+            "spy50Above200": 2,
+            "distributionPressure": 0
+          },
+          "distributionDays25": 9,
+          "evidence": "SPY 778.10; 20/50/200MA 768.84/768.20/723.28; 9 distribution days in 25 sessions."
+        },
+        "entryEfficiency": {
+          "score": 7,
+          "max": 10,
+          "parts": {
+            "pivotProximity": 1,
+            "stopEfficiency": 3,
+            "breakoutRetestQuality": 2,
+            "volumeConfirmation": 0,
+            "liquiditySlippage": 1
+          },
+          "evidence": "Distance 5.94%; stop 5.77% if valid; volume 0.67x; 50D dollar volume $16569M."
+        },
+        "catalystEventRisk": {
+          "score": 5,
+          "max": 10,
+          "parts": {
+            "earningsRunway": 0,
+            "profitCushion": 2,
+            "gapVolatility": 1,
+            "climaxRisk": 2
+          },
+          "earningsDate": null,
+          "daysToEarnings": null,
+          "profitCushionPct": 5.94,
+          "atr20Pct": 4.03,
+          "return10dPct": 12.34,
+          "evidence": "Earnings unknown; cushion 5.94%; ATR20 4.03% if available; 10D return 12.34% if available."
+        }
+      },
+      "readiness": "extended",
+      "primaryPattern": null,
+      "patternMatches": [],
+      "stage2Indicators": {
+        "score": 13,
+        "checks": {
+          "priceAbove20": true,
+          "priceAbove50": true,
+          "priceAbove150": false,
+          "priceAbove200": false,
+          "ma20Above50": true,
+          "maOrder": false,
+          "ma50Rising": true,
+          "ma150Rising": false,
+          "ma200Rising20": false,
+          "near52WeekHigh": false,
+          "above52WeekLow30": true,
+          "outperformSpy6m": false
+        },
+        "ma20": 155.17,
+        "ma50": 145.34,
+        "ma150": null,
+        "ma200": null,
+        "ma50Change20dPct": 7.82,
+        "ma150Change20dPct": null,
+        "ma200Change20dPct": null,
+        "high52Week": 225.64,
+        "low52Week": 104.83,
+        "distanceFromHighPct": -27.57,
+        "aboveLowPct": 55.89,
+        "stockReturn6mPct": null,
+        "spyReturn6mPct": 13.41,
+        "ipoRelativeStrengthAvailableHistory": false
+      },
+      "patternEvidence": null,
+      "levels": {
+        "support": 145.36,
+        "resistance": 172.4,
+        "pivot": 154.25,
+        "buyZoneLow": 154.25,
+        "buyZoneHigh": 161.96,
+        "technicalStop": 145.35,
+        "stopPct": 5.77,
+        "target2R": 172.05,
+        "target3R": 180.95,
+        "distanceToPivotPct": 5.94,
+        "rewardRiskRatio": 2.04,
+        "riskPerShare": 8.9,
+        "quantitySuggested": 28,
+        "maxRiskUsd": 250.0
+      },
+      "breakout": {
+        "confirmed": false,
+        "volumeRatio50": 0.67,
+        "retestHold": true,
+        "averageVolume50": 101387542.0,
+        "dollarVolume50": 16568752179.0
+      },
+      "earningsDate": null,
+      "daysToEarnings": null,
+      "categories": {
+        "stage2TrendRs": {
+          "score": 13,
+          "max": 35,
+          "parts": {
+            "priceAbove20": true,
+            "priceAbove50": true,
+            "priceAbove150": false,
+            "priceAbove200": false,
+            "ma20Above50": true,
+            "maOrder": false,
+            "ma50Rising": true,
+            "ma150Rising": false,
+            "ma200Rising20": false,
+            "near52WeekHigh": false,
+            "above52WeekLow30": true,
+            "outperformSpy6m": false
+          }
+        },
+        "patternContraction": {
+          "score": 0,
+          "max": 25,
+          "parts": {
+            "recognized": 0,
+            "durationDepth": 0,
+            "priorAdvance": 0,
+            "contractions": 0,
+            "finalTightness": 0,
+            "atrContraction": 0,
+            "volumeDryUp": 0
+          }
+        },
+        "pivotReadiness": {
+          "score": 10,
+          "max": 25,
+          "parts": {
+            "pivotQuality": 0,
+            "pivotDistance": 2,
+            "breakoutVolume": 1,
+            "confirmationRetest": 4,
+            "structure": 3
+          }
+        },
+        "riskFeasibility": {
+          "score": 11,
+          "max": 15,
+          "parts": {
+            "technicalStop": 4,
+            "stopPct": 4,
+            "rewardRisk": 2,
+            "buyZone": 0,
+            "liquidity": 1,
+            "earnings": 0
+          }
+        }
+      },
+      "sellSystem": {
+        "initialStop": "145.35, below 145.36: Most recent local low on 2026-09-28. Risk 5.77%; USD250 model quantity 28.",
+        "pullbackQuality": "Good: tennis-ball bounce, follow-through, more green candles, quick recovery and breakout-area hold. Bad: egg-like drop, weak bounce, high-volume selling or prolonged close below breakout.",
+        "earlyExit": "Two or more violations raise early-exit risk: high-volume close below20MA after breakout; three lower lows on above-average volume; breakout volume below1.5x; immediate negative reaction; earnings soon without a5-10% cushion. Article earnings dates require IR verification.",
+        "stopAdjustment": "At2R protect capital at breakeven or +2-3%; at3R raise stop below a confirmed higher low. Stops cannot guarantee the USD250 budget across gaps.",
+        "profitTaking": "Early Stage2: sell into weakness. Extended/mature action or known resistance: sell into strength. Review resistance before mechanical2R/3R targets.",
+        "climaxRisk": "Watch >25% in1-2 weeks, >30% above area of value, near-vertical advance, exhaustion volume or reversal."
+      },
+      "caveats": [
+        "Not ready now. Pattern confirmation, retest volume and nearby resistance must be resolved. Earnings dates are article estimates. 150/200MA history unavailable; no automatic IPO Stage2 pass. ",
+        "Readiness uses article pivot where supplied and R/R to observed swing resistance; mechanical3R is not resistance. Fresh baseline; daily prior score unavailable."
+      ],
+      "dataQuality": "ok",
+      "dataQualityIssues": [],
+      "lastGoodRetained": false,
+      "previousScore": null,
+      "previousRating": null,
+      "scoreDelta": null,
+      "categoryChanges": [],
       "membership": {
         "ticker": "SPCX",
-        "company": "Space Exploration Technologies",
+        "company": "Space Exploration Technologies Corp.",
         "active": true,
-        "bjStatus": "new_watchlist",
-        "addedArticleDate": "July 13, 2026",
-        "lastSeenArticleDate": "July 13, 2026",
-        "stale": false
-      },
-      "dataDate": "2026-07-13",
-      "schemaVersion": "course_rules_v1",
-      "lesson3": {
-        "schemaVersion": "course_rules_v1",
-        "symbol": "SPCX",
-        "availability": "available",
-        "dataDate": "2026-07-13",
-        "overallStatus": "not_eligible",
-        "overallLabel": "Not eligible",
-        "reasons": [
-          "150MA or 200MA unavailable.",
-          "150MA or 200MA unavailable.",
-          "At least 220 sessions are required.",
-          "Required averages unavailable.",
-          "Price is 38.3% below the high.",
-          "Price is only 1.7% above the low.",
-          "Official or manually verified RS Rating evidence is unavailable.",
-          "Pivot or 50MA unavailable.",
-          "Pattern candidate requires manual chart confirmation."
-        ],
-        "stage2": {
-          "overall": "fail",
-          "checks": [
-            {
-              "status": "unknown",
-              "label": "Price above 150MA and 200MA",
-              "evidence": "150MA or 200MA unavailable.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "150MA above 200MA",
-              "evidence": "150MA or 200MA unavailable.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "200MA rising for about one month",
-              "evidence": "At least 220 sessions are required.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "50MA above 150MA and 200MA",
-              "evidence": "Required averages unavailable.",
-              "value": null
-            },
-            {
-              "status": "fail",
-              "label": "Within about 25% of 52-week high",
-              "evidence": "Price is 38.3% below the high.",
-              "value": false
-            },
-            {
-              "status": "fail",
-              "label": "At least about 25% above 52-week low",
-              "evidence": "Price is only 1.7% above the low.",
-              "value": false
-            },
-            {
-              "status": "unknown",
-              "label": "RS Rating above 70 and rising for about six weeks",
-              "evidence": "Official or manually verified RS Rating evidence is unavailable.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Above 50MA when leaving the base",
-              "evidence": "Pivot or 50MA unavailable.",
-              "value": null
-            }
-          ],
-          "indicators": {
-            "currentPrice": 139.14,
-            "ma50": null,
-            "ma150": null,
-            "ma200": null,
-            "ma200TwentySessionsAgo": null,
-            "high52Week": 225.64,
-            "low52Week": 136.78,
-            "distanceFromHighPct": -38.34,
-            "aboveLowPct": 1.73,
-            "rsRating": null,
-            "rsRisingSixWeeks": null
-          }
-        },
-        "pattern": {
-          "confirmation": "unknown",
-          "confirmedType": null,
-          "candidateType": null,
-          "candidates": []
-        },
-        "pivot": 225.64,
-        "distanceToPivotPct": -38.34,
-        "breakoutEvidence": {
-          "intradayCrossObserved": false,
-          "closeAbovePivot": false,
-          "volumeRatio50": 0.48,
-          "lessonExamplePlus50Pct": false,
-          "note": "The lesson shows roughly +50% breakout volume as an example; it is evidence, not an invented hard gate."
-        },
-        "entryMethods": [
-          {
-            "id": "breakout_immediate",
-            "label": "Buy on breakout",
-            "status": "pending",
-            "evidence": "No daily high above candidate resistance."
-          },
-          {
-            "id": "end_of_day",
-            "label": "Buy near end of day",
-            "status": "pending",
-            "evidence": "Await a daily close above candidate resistance.",
-            "modelDefault": true
-          },
-          {
-            "id": "pullback_reversal",
-            "label": "Pullback and reversal",
-            "status": "pending",
-            "evidence": "No complete breakout-retest-reversal sequence observed."
-          }
-        ],
-        "screeningEvidence": [
-          {
-            "status": "unknown",
-            "label": "Sales growth",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "EPS growth",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "Industry strength",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          },
-          {
-            "status": "unknown",
-            "label": "Stock story reviewed",
-            "evidence": "No verified evidence supplied.",
-            "value": null
-          }
-        ]
-      },
-      "lesson4ModelPlan": {
-        "schemaVersion": "course_rules_v1",
-        "kind": "model_plan",
-        "availability": "available",
-        "disclaimer": "Public educational model plan only; not an actual holding, live alert or order.",
-        "assumptions": {
-          "entryAtPivot": true,
-          "maxRiskUsd": 250.0,
-          "defaultBuyMethod": "end_of_day"
-        },
-        "feasible": false,
-        "entryPrice": 225.64,
-        "initialStop": 148.51,
-        "supportEvidence": "Most recent local low on 2026-06-26.",
-        "stopDistancePct": 34.18,
-        "riskPerShare": 77.13,
-        "quantitySuggested": null,
-        "plannedMaxLossUsd": null,
-        "targets": {
-          "oneR": 302.77,
-          "twoR": 379.9,
-          "threeR": 457.03,
-          "partialExitAllocation": "unknown"
-        },
-        "monitoring": {
-          "asOf": "2026-07-13",
-          "dailyCloseOnly": true,
-          "ma20": 162.65,
-          "lowerLows": [
-            147.11,
-            148.51
-          ]
-        },
-        "stageMaturity": {
-          "status": "unknown",
-          "baseCount": null,
-          "evidence": "No verified early/late-stage evidence supplied."
-        },
-        "sellIntoWeakness": {
-          "courseUse": "Early Stage 2: allow normal pullbacks and sell when weakness is actually observed.",
-          "signals": [
-            {
-              "status": "pass",
-              "label": "Close below 20MA",
-              "evidence": "Latest close is below 20MA.",
-              "value": true
-            },
-            {
-              "status": "unknown",
-              "label": "Three lower lows",
-              "evidence": "Fewer than three confirmed local lows.",
-              "value": null
-            },
-            {
-              "status": "pass",
-              "label": "Initial stop / support breach",
-              "evidence": "Latest daily low reached the model stop.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Price and volume deterioration",
-              "evidence": "The lesson gives no fixed threshold; review the displayed OHLCV evidence manually.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Earnings risk",
-              "evidence": "Verified earnings date unavailable.",
-              "value": null
-            }
-          ]
-        },
-        "sellIntoStrength": {
-          "courseUse": "Late-stage market or stock: consider realizing gains into strength and resistance.",
-          "levels": {
-            "oneR": 302.77,
-            "twoR": 379.9,
-            "threeR": 457.03,
-            "chartResistance": "unknown"
-          },
-          "climaxSignals": [
-            {
-              "status": "unknown",
-              "label": "Correction volume exceeds every post-breakout day",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Unusually high volume without matching price progress",
-              "evidence": "No verified event/chart judgement supplied.",
-              "value": null
-            },
-            {
-              "status": "unknown",
-              "label": "Longest daily candle since breakout",
-              "evidence": "No completed model breakout history.",
-              "value": null
-            }
-          ],
-          "positiveNewsNegativeReaction": {
-            "status": "unknown",
-            "label": "Positive news with negative price action",
-            "evidence": "No verified news-reaction evidence supplied.",
-            "value": null
-          }
-        },
-        "notes": [
-          "Technical stop is wider than 10%; this model entry is not feasible and no position size is suggested.",
-          "Verified earnings date unavailable; earnings risk remains Unknown."
-        ]
+        "bjStatus": "position",
+        "chartUrl": "./assets/2026-10-12/SPCX.webp"
       }
     }
   ],
-  "alerts": [],
-  "methodology": "Lesson 3 pass/fail/unknown checks plus Lesson 4 public model plans. No numeric score or rating.",
-  "disclaimer": "Public educational model plans only; not actual holdings, live alerts or personalized investment advice."
+  "alerts": [
+    {
+      "ticker": "TEAM",
+      "event": "bj_added",
+      "type": "bj_status",
+      "message": "TradingForBJ monitoring Added: TEAM",
+      "date": "2026-10-12"
+    },
+    {
+      "ticker": "GTLB",
+      "event": "bj_added",
+      "type": "bj_status",
+      "message": "TradingForBJ monitoring Added: GTLB",
+      "date": "2026-10-12"
+    },
+    {
+      "ticker": "PLTR",
+      "event": "bj_added",
+      "type": "bj_status",
+      "message": "TradingForBJ monitoring Added: PLTR",
+      "date": "2026-10-12"
+    },
+    {
+      "ticker": "SNDK",
+      "event": "bj_sold",
+      "type": "bj_status",
+      "message": "TradingForBJ holdings table: Exited",
+      "date": "2026-10-12"
+    }
+  ],
+  "summary": {
+    "activeCount": 10,
+    "readyNow": 0,
+    "prepareOrder": 0,
+    "approaching": 0,
+    "practicalApproved": 0,
+    "practicalConditional": 1,
+    "practicalBlocked": 9,
+    "alerts": 4
+  },
+  "sourceNotes": [
+    "Authenticated Chrome profile tam2. Article date, not lesson order, selected October 12 as newest. Only body selector #block-1481845691504 text/images contributed current ticker evidence. All 13 exported images were matched to current body image src values; no sidebar, preview, cache-only or other-article asset was used as current evidence.",
+    "The current holdings image header reads Nov 12, 26, conflicting with the October 12 page heading and dated financial disclosure. Evidence is anchored to the October 12 article; the table header is a source inconsistency, not a future-dated data point.",
+    "Current watchlist table and bottom charts confirm SNOW/PLTR/TEAM/GTLB. HOOD is absent from the current article body, so it is not included or treated as sold. ESTC disappearance from monitoring is not a sale.",
+    "PLTR historical monitoring evidence: August 30 body watched a pullback toward181 and rebound before entering: https://www.tradingforbj.com/products/bj-trading-journal/categories/2160508426/posts/2199935059 . September 14 table later says Added and sold. Current PLTR is monitoring, not a disclosed holding. Historical TEAM/GTLB coverage is incomplete; new means absent from the immediately previous article.",
+    "Market data: Nasdaq daily OHLCV through October 12, 2026, separate from intraday article chart labels. Yahoo returned HTTP 429 and Alpaca returned an internal error; neither was used. No challenge bypass was used.",
+    "SPCX issuer verified as Space Exploration Technologies Corp., Nasdaq common stock, using https://www.nasdaq.com/market-activity/stocks/spcx and https://ir.nasdaq.com/node/110646/pdf . It is not the former similarly named ETF. Only June 11, 2026 onward bars are eligible; insufficient 150/200MA history remains unknown.",
+    "Earnings dates below are transcribed from the current article table, not independently confirmed issuer dates. No earnings-readiness point is awarded solely from these estimates. Proprietary RS Rating and institutional money flow are unavailable; 6-month return versus SPY and dollar-volume are proxies only.",
+    "SPCX has a cup-like IPO structure, not a confirmed textbook Cup and Handle. Other automatic pattern matches are screening hypotheses requiring chart review. Price being above a pivot is not itself a volume-confirmed actionable breakout.",
+    "Prior persisted scan is from July/August, not the immediately prior daily run. Scores establish a fresh baseline; no fictitious daily score delta or breakout alert is emitted. Membership comparisons use the actual October 4 article.",
+    "Ethereum is marked Exited in the current body holdings table; Bitcoin is comparison context. Both are outside the US-equity candidate universe. CPER and GLDM remain separately excluded funds."
+  ],
+  "disclaimer": "Educational trade-plan candidates only, not personalized financial advice.",
+  "historyPolicy": "90 calendar days; this run is a fresh baseline after a multi-month observation gap."
 }
